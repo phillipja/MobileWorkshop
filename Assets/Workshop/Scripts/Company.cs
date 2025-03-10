@@ -1,6 +1,7 @@
 using Graph;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Assertions;
 using UnityEngine.InputSystem;
@@ -8,18 +9,25 @@ using UnityEngine.InputSystem;
 public class Company : MonoBehaviour
 {
     const int START_SIZE = 4;
-
+    [SerializeField] private List<SO_Person> _persons;
+    [Space]
     [SerializeField] private SO_Graph _graph;
-    [SerializeField] private SO_GraphCategory _controlVarCategory;
+    [SerializeField] private SO_GraphCategory _controlVariableCategory;
+    [SerializeField] private SO_GraphCategory _personalBenefitCategory;
     [Space]
     [SerializeField] private InputAction _regenerateSubgraph;
     [Header("UI")]
+    [SerializeField] private TextMeshProUGUI _person;
+    [Space]
     [SerializeField] private Transform _startNodesContainer;
     [SerializeField] private Transform _edgesContainer;
     [SerializeField] private Transform _nodesContainer;
     [Space]
     [SerializeField] private Single _singlePrefab;
     [SerializeField] private Double _doublePrefab;
+    [Header("Runtime")]
+    [SerializeField] private List<SO_Person> _viableCandidates = new(10);
+
 
     private HashSet<SO_GraphNode> _startNodes;
     private HashSet<SO_GraphEdge> _edges;
@@ -32,7 +40,8 @@ public class Company : MonoBehaviour
     void Start()
     {
         Assert.IsNotNull(_graph, "Missing Graph!");
-        Assert.IsNotNull(_graph, "Missing category of control variables!");
+        Assert.IsNotNull(_controlVariableCategory, "Missing category for control variables!");
+        Assert.IsNotNull(_personalBenefitCategory, "Missing category for personal benefit!");
 
         _startNodes = new(START_SIZE);
         _edges = new(_graph.edges.Count);
@@ -43,6 +52,7 @@ public class Company : MonoBehaviour
         _uiNodes = new(_graph.nodes.Count);
 
         GenerateSubgraph();
+        FindPersonalities();
     }
 
     private void OnEnable()
@@ -68,6 +78,7 @@ public class Company : MonoBehaviour
         ClearUIElements(_uiNodes);
 
         GenerateSubgraph();
+        FindPersonalities();
 
         void ClearUIElements(List<GameObject> elements)
         {
@@ -83,7 +94,7 @@ public class Company : MonoBehaviour
     {
         Debug.Log("Generate Subgraph");
 
-        var startNodes = _graph.nodes.Where(n => n.category == _controlVarCategory).ToArray();
+        var startNodes = _graph.nodes.Where(n => n.category == _controlVariableCategory).ToArray();
         for(int i = 0; i < START_SIZE; i++)
         {
             bool searchingNode = true;
@@ -139,6 +150,28 @@ public class Company : MonoBehaviour
             GetSubgraphRecursive(edge.to, nodes, edges);
             nodes.Add(edge.to);
             edges.Add(edge);
+        }
+    }
+
+    private void FindPersonalities()
+    {
+        _viableCandidates.Clear();
+        var persBenefit = _nodes.Where(n => n.category == _personalBenefitCategory).ToList();
+
+        if(persBenefit.Count == 0)
+            return;
+
+        foreach(var person in _persons)
+        {
+            bool isViable = person.nodes.All(n => persBenefit.Contains(n));
+            if(isViable)
+                _viableCandidates.Add(person);
+        }
+
+        _person.text = "";
+        foreach(var person in _viableCandidates)
+        {
+            _person.text += $"{person.forename} {person.surname}, ";
         }
     }
 }
