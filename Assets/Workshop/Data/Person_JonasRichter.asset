@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9186e663d39d17049b1f0cf75e565e85, type: 3}
+  m_Name: Person_JonasRichter
+  m_EditorClassIdentifier: 
+  forename: Jonas
+  surname: Richter
+  description: "Jonas Richter ist ein ausgeglichener Mensch, der Ordnung und Harmonie
+    in seinem Leben sch\xE4tzt. Romantik ist f\xFCr ihn keine blo\xDFe Emotion, sondern
+    ein gut durchdachter Teil seines Lebens, den er mit Struktur und Achtsamkeit
+    pflegt. Gleichzeitig ist ihm Ruhe und Stressfreiheit sehr wichtig \u2013 er l\xE4sst
+    sich ungern von \xE4u\xDFeren Einfl\xFCssen aus der Balance bringen und sucht
+    aktiv nach Wegen, sein Leben in geordneten Bahnen zu halten."
+  <nodes>k__BackingField:
+  - {fileID: 7955698759766521540, guid: 6bcf75186f193144fb014f759abf59c8, type: 2}
+  - {fileID: -8995980195603107877, guid: 6bcf75186f193144fb014f759abf59c8, type: 2}
+  - {fileID: -8786458790315288926, guid: 6bcf75186f193144fb014f759abf59c8, type: 2}

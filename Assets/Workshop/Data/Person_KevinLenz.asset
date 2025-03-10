@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9186e663d39d17049b1f0cf75e565e85, type: 3}
+  m_Name: Person_KevinLenz
+  m_EditorClassIdentifier: 
+  forename: Kevin
+  surname: Lenz
+  description: "Kevin Lenz ist ein unabh\xE4ngiger und stolzer Mensch, der sich durch
+    nichts und niemanden einschr\xE4nken lassen m\xF6chte. Er liebt es, sein eigenes
+    Tempo zu bestimmen und sch\xE4tzt die Freiheit, sein Leben nach seinen eigenen
+    Vorstellungen zu gestalten. Gleichzeitig ist ihm ein stressfreies und ausgeglichenes
+    Leben wichtig, da er keinen Sinn darin sieht, sich unn\xF6tig aufzureiben."
+  <nodes>k__BackingField:
+  - {fileID: -2066487766534761923, guid: 6bcf75186f193144fb014f759abf59c8, type: 2}
+  - {fileID: -3484663922366581266, guid: 6bcf75186f193144fb014f759abf59c8, type: 2}
+  - {fileID: -8786458790315288926, guid: 6bcf75186f193144fb014f759abf59c8, type: 2}

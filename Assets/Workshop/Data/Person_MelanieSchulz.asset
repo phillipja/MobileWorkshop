@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9186e663d39d17049b1f0cf75e565e85, type: 3}
+  m_Name: Person_MelanieSchulz
+  m_EditorClassIdentifier: 
+  forename: Melanie
+  surname: Schulz
+  description: "Melanie Schulz ist eine romantische Seele mit einer tiefen Sehnsucht
+    nach emotionaler Verbundenheit. Sie ist neugierig auf Menschen und ihre Geschichten,
+    liebt tiefgr\xFCndige Gespr\xE4che und sch\xE4tzt echte, authentische Beziehungen.
+    Gleichzeitig ist sie jemand, der gerne in einer stressfreien Umgebung lebt und
+    Konflikte nach M\xF6glichkeit vermeidet. Sie bringt Harmonie und Verst\xE4ndnis
+    in ihr Umfeld und gibt anderen das Gef\xFChl, geh\xF6rt und wertgesch\xE4tzt
+    zu werden."
+  <nodes>k__BackingField:
+  - {fileID: 6864572645472728950, guid: 6bcf75186f193144fb014f759abf59c8, type: 2}
+  - {fileID: -8995980195603107877, guid: 6bcf75186f193144fb014f759abf59c8, type: 2}
+  - {fileID: -8786458790315288926, guid: 6bcf75186f193144fb014f759abf59c8, type: 2}

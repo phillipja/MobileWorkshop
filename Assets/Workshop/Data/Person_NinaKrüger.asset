@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9186e663d39d17049b1f0cf75e565e85, type: 3}
+  m_Name: "Person_NinaKr\xFCger"
+  m_EditorClassIdentifier: 
+  forename: Nina
+  surname: "Kr\xFCger"
+  description: "Nina Kr\xFCger ist eine tiefsinnige Person, die sich f\xFCr die Gemeinschaft
+    und das Wohl aller einsetzt, ohne dabei ihr eigenes Bed\xFCrfnis nach innerer
+    Ruhe aus den Augen zu verlieren. Sie glaubt an das Gute in den Menschen und setzt
+    sich f\xFCr eine harmonische Gesellschaft ein, in der jeder seinen Platz findet.
+    Ihr Idealismus treibt sie an, sich f\xFCr soziale Themen zu engagieren, w\xE4hrend
+    sie gleichzeitig darauf achtet, sich nicht von Stress und negativen Energien
+    vereinnahmen zu lassen."
+  <nodes>k__BackingField:
+  - {fileID: -222536074712506626, guid: 6bcf75186f193144fb014f759abf59c8, type: 2}
+  - {fileID: -8787811764973957960, guid: 6bcf75186f193144fb014f759abf59c8, type: 2}
+  - {fileID: -8786458790315288926, guid: 6bcf75186f193144fb014f759abf59c8, type: 2}

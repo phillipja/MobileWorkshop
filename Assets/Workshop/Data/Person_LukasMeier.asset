@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9186e663d39d17049b1f0cf75e565e85, type: 3}
+  m_Name: Person_LukasMeier
+  m_EditorClassIdentifier: 
+  forename: Lukas
+  surname: Meier
+  description: "Lukas Meier ist ein neugieriger und aufgeschlossener Mensch, der
+    sich gerne mit neuen Ideen und Perspektiven auseinandersetzt. Gleichzeitig hat
+    er eine tiefe Verbundenheit zu seiner Familie, die f\xFCr ihn eine zentrale Rolle
+    im Leben spielt. Er ist ein ruhiger und verst\xE4ndnisvoller Mensch, der Konflikten
+    eher aus dem Weg geht und stattdessen auf Akzeptanz und Harmonie setzt. Seine
+    freundliche und offene Art macht ihn zu einem beliebten Gespr\xE4chspartner,
+    der immer ein offenes Ohr f\xFCr andere hat."
+  <nodes>k__BackingField:
+  - {fileID: -5284313494743751183, guid: 6bcf75186f193144fb014f759abf59c8, type: 2}
+  - {fileID: 6864572645472728950, guid: 6bcf75186f193144fb014f759abf59c8, type: 2}
+  - {fileID: -3795652455997224800, guid: 6bcf75186f193144fb014f759abf59c8, type: 2}

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9186e663d39d17049b1f0cf75e565e85, type: 3}
+  m_Name: Person_SarahFischer
+  m_EditorClassIdentifier: 
+  forename: Sarah
+  surname: Fischer
+  description: "Sarah Fischer ist eine neugierige Person, die stets neue Dinge entdecken
+    m\xF6chte, dabei aber eine gewisse innere Ruhe bewahrt. Sie liebt es, sich in
+    eine stressfreie Umgebung zur\xFCckzuziehen, in der sie ihre Gedanken ordnen
+    und reflektieren kann. Konflikte vermeidet sie, indem sie auf Akzeptanz und Harmonie
+    setzt, statt sich in unn\xF6tige Streitereien zu verwickeln. Ihr ruhiges Wesen
+    macht sie zu einer gesch\xE4tzten Gespr\xE4chspartnerin, die mit Bedacht und
+    Feingef\xFChl auf andere eingeht."
+  <nodes>k__BackingField:
+  - {fileID: -5284313494743751183, guid: 6bcf75186f193144fb014f759abf59c8, type: 2}
+  - {fileID: -8786458790315288926, guid: 6bcf75186f193144fb014f759abf59c8, type: 2}
+  - {fileID: 6864572645472728950, guid: 6bcf75186f193144fb014f759abf59c8, type: 2}

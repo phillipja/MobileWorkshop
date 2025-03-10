@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9186e663d39d17049b1f0cf75e565e85, type: 3}
+  m_Name: Person_JulianWeber
+  m_EditorClassIdentifier: 
+  forename: Julian
+  surname: Weber
+  description: "Julian Weber ist ein wissbegieriger und ehrgeiziger Mensch, der seine
+    Unabh\xE4ngigkeit sehr sch\xE4tzt. Er stellt viele Fragen, hinterfragt bestehende
+    Strukturen und sucht immer nach neuen Herausforderungen. Sein ausgepr\xE4gtes
+    Ehrgef\xFChl l\xE4sst ihn dabei stets nach H\xF6herem streben \u2013 er m\xF6chte
+    nicht nur f\xFCr sich selbst erfolgreich sein, sondern auch Anerkennung f\xFCr
+    seine Leistungen erhalten. Trotz seines Ehrgeizes bleibt er offen f\xFCr andere
+    Perspektiven und respektiert unterschiedliche Meinungen. Freiheit und Selbstbestimmung
+    sind f\xFCr ihn essenziell, weshalb er ungern in vorgegebene Muster gepresst
+    wird."
+  <nodes>k__BackingField:
+  - {fileID: 6864572645472728950, guid: 6bcf75186f193144fb014f759abf59c8, type: 2}
+  - {fileID: -2066487766534761923, guid: 6bcf75186f193144fb014f759abf59c8, type: 2}
+  - {fileID: -3484663922366581266, guid: 6bcf75186f193144fb014f759abf59c8, type: 2}
