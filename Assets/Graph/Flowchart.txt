@@ -1,0 +1,250 @@
+flowchart LR
+    %% --------------------------------------------------
+    %% ------------------ Stellgrößen -------------------
+    %% --------------------------------------------------
+    subgraph S ["Stellgrößen (S1–S10)"]
+    S1(Entwicklungsbudget)
+    S2(Maschinenstunden)
+    S3(Personentage)
+    S4(Serverzeit)
+    S5(Budget Fremdleistungen)
+    S6(Marketingausgaben)
+    S7(Schulungsinvestitionen)
+    S8(Einstellung neuer Mitarbeitender)
+    S9(Erweiterung Büroflächen)
+    S10(IT-Infrastruktur Upgrades)
+    end
+
+    %% --------------------------------------------------
+    %% -------- Direkter Unternehmensnutzen ------------
+    %% --------------------------------------------------
+    subgraph D["Direkter Nutzen (D1–D10)"]
+    D1(Gewinnsteigerung)
+    D2(Kostensenkung)
+    D3(Marktanteilsgewinn)
+    D4(Produktionsoptimierung)
+    D5(Produktqualität)
+    D6(Kundenzufriedenheit)
+    D7(Lieferfähigkeit)
+    D8(Flexibilität)
+    D9(Entwicklungsgeschwindigkeit)
+    D10(Risikominimierung)
+    end
+
+    %% --------------------------------------------------
+    %% --------------- Zukünftige Effekte --------------
+    %% --------------------------------------------------
+    subgraph Z["Zukünftige Effekte (Z1–Z9)"]
+    Z1(Abhängigkeit von Zulieferern)
+    Z2(Umweltprobleme)
+    Z3(Technologische Obsoleszenz)
+    Z4(Späte Kundenunzufriedenheit)
+    Z5(Veränderte Wettbewerbslandschaft)
+    Z6(Langfristige Reputation +/-)
+    Z7(Innovationsdruck)
+    Z8(Kultureller Wandel)
+    Z9(Neue Geschäftsfelder)
+    end
+
+    %% --------------------------------------------------
+    %% ---------------- Sekundäre Effekte --------------
+    %% --------------------------------------------------
+    subgraph SE["Sekundäre Effekte (SE1–SE8)"]
+    SE1(Umweltauswirkungen)
+    SE2(Sichtbarkeit in der Öffentlichkeit)
+    SE3(Politische Unterstützung/Gegenwind)
+    SE4(Attraktivität als Arbeitgeber)
+    SE5(Mitarbeiterzufriedenheit)
+    SE6(Branchentrends)
+    SE7(Finanzielle Förderungen)
+    SE8(Mediale Aufmerksamkeit)
+    end
+
+    %% --------------------------------------------------
+    %% ---------------- Ethische Aspekte ----------------
+    %% --------------------------------------------------
+    subgraph Eth["Ethische Aspekte (Eth1–Eth6)"]
+    Eth1(Faire Arbeitsbedingungen)
+    Eth2(Umweltschutz & Nachhaltigkeit)
+    Eth3(Regionale Verantwortung)
+    Eth4(Integrität / Korruptionsfreiheit)
+    Eth5(Datenschutz)
+    Eth6(Ehrliche Kommunikation)
+    end
+
+    %% --------------------------------------------------
+    %% -------- Private Nutzenfunktionen (Reiss) --------
+    %% --------------------------------------------------
+    subgraph P["Private Nutzen (P1–P12)"]
+    P1(Akzeptanz)
+    P2(Neugier)
+    P3(Familie)
+    P4(Ehre/Stolz)
+    P5(Idealismus)
+    P6(Unabhängigkeit)
+    P7(Ordnung)
+    P8(Physische Aktivität)
+    P9(Romantik/Zuneigung)
+    P10(Soziale Zugehörigkeit)
+    P11(Status)
+    P12(Ruhe / Stressfreiheit)
+    end
+
+    %% --------------------------------------------------
+    %% --------------- Kanten (Beispiele) ---------------
+    %% Erläuterung:
+    %% " -->|pos| " = verstärkender/positiver Zusammenhang
+    %% " -->|neg| " = dämpfender/negativer Zusammenhang
+    %% --------------------------------------------------
+
+    %% ------------------- Stellgrößen -------------------
+    S1 --> |pos| D1
+    S1 --> |pos| D9
+    S1 --> |pos| Z7
+    S1 --> |neg| SE1
+    S1 --> |pos| P2
+
+    S2 --> |pos| D2
+    S2 --> |neg| D10
+    S2 --> |pos| Z1
+    S2 --> |pos| SE5
+    S2 --> |pos| P11
+
+    S3 --> |pos| D4
+    S3 --> |pos| D5
+    S3 --> |neg| Z2
+    S3 --> |pos| SE4
+    S3 --> |pos| P1
+
+    S4 --> |pos| D9
+    S4 --> |neg| D2
+    S4 --> |pos| Z3
+    S4 --> |pos| SE8
+    S4 --> |pos| P6
+
+    S5 --> |pos| D1
+    S5 --> |pos| D8
+    S5 --> |pos| Z6
+    S5 --> |neg| SE1
+    S5 --> |pos| P5
+
+    S6 --> |pos| D3
+    S6 --> |neg| D2
+    S6 --> |pos| Z6
+    S6 --> |pos| SE2
+    S6 --> |pos| P4
+
+    S7 --> |pos| D5
+    S7 --> |pos| D10
+    S7 --> |pos| Z8
+    S7 --> |pos| SE5
+    S7 --> |neg| SE7
+    S7 --> |pos| P8
+
+    S8 --> |pos| D7
+    S8 --> |neg| D1
+    S8 --> |pos| Z8
+    S8 --> |pos| SE5
+    S8 --> |pos| P3
+
+    S9 --> |pos| D4
+    S9 --> |neg| D2
+    S9 --> |pos| Z4
+    S9 --> |pos| SE4
+    S9 --> |pos| P10
+
+    S10 --> |pos| D9
+    S10 --> |neg| D10
+    S10 --> |pos| Z3
+    S10 --> |pos| SE8
+    S10 --> |pos| P7
+
+
+    %% --------------- Direkter Nutzen -------------------
+    D1 --> |pos| D3    
+    %% Gewinnsteigerung kann zu Marktanteilsgewinn führen
+    D1 --> |pos| SE2   
+    %% Mehr Gewinn -> mehr Öffentlichkeit
+    D1 --> |pos| Z5    
+    %% Mehr Gewinn kann Wettbewerber anlocken => veränderte Landschaft
+    D2 --> |pos| Z9   
+    %% Niedrige Kosten -> Investitionsspielraum in neue Felder
+    D3 --> |pos| SE8  
+    %% Höherer Marktanteil -> mehr mediale Aufmerksamkeit
+    D4 --> |pos| Z7    
+    %% Bessere Produktion -> weniger Innovationsdruck ODER mehr, je nach Kontext
+    D5 --> |pos| D6    
+    %% Höhere Produktqualität -> Kundenzufriedenheit
+    D6 --> |pos| D1    
+    %% Zufriedene Kunden -> mehr Gewinn
+    D7 --> |pos| D10   
+    %% Stabile Lieferfähigkeit -> geringeres Tagesrisiko
+    D8 --> |pos| Z8    
+    %% Flexibilität -> kultureller Wandel (agiler)
+    D9 --> |pos| Z5    
+    %% Schnelle Entwicklung -> Konkurrenzdruck (Wettbewerbslandschaft ändert sich)
+    D10 --> |neg| SE3  
+    %% Weniger Risiko -> weniger politisches Eingreifen
+
+    %% --------------- Zukünftige Effekte ---------------
+    Z1 --> |neg| D2    
+    %% Zulieferabhängigkeit kann Kosten erhöhen
+    Z2 --> |pos| Eth2  
+    %% Umweltprobleme -> Dringender Umweltschutz
+    Z3 --> |neg| D9    
+    %% Obsoleszenz -> geringere Entwicklungsgeschwindigkeit
+    Z4 --> |neg| SE5   
+    %% Kundenunzufriedenheit -> Mitarbeiterstolz / Zufriedenheit sinkt
+    Z5 --> |pos| Eth4  
+    %% Veränderte Landschaft -> Thema Integrität kann in Fokus rücken
+    Z6 --> |pos| SE2   
+    %% Reputationsgewinn -> größere Sichtbarkeit
+    Z7 --> |pos| P2    
+    %% Innovationsdruck -> Befriedigung von Neugier
+    Z8 --> |pos| SE4   
+    %% Kultureller Wandel -> Arbeitgeberattraktivität
+    Z9 --> |pos| SE6  
+    %% Neue Geschäftsfelder -> neue Branchentrends
+
+    %% --------------- Sekundäre Effekte ---------------
+    SE1 --> |pos| Eth2  
+    %% Umweltauswirkungen -> Druck in Richtung Nachhaltigkeit
+    SE2 --> |pos| Eth6 
+    %% Höhere Sichtbarkeit -> Bedarf an ehrlicher Kommunikation
+    SE3 --> |pos| Eth3  
+    %% Politische Unterstützung -> regionale Verantwortung gefordert
+    SE4 --> |pos| Eth1  
+    %% Arbeitgeberattraktivität -> Faire Arbeitsbedingungen im Fokus
+    SE5 --> |pos| P12   
+    %% Zufriedene Mitarbeiter -> mehr Ruhe/stressfreie Umgebung
+    SE6 --> |pos| P5    
+    %% Branchentrends anführen -> Idealismus (Fortschritt) befriedigt
+    SE7 --> |neg| Eth4  
+    %% Förderungen vs. strikte Integrität (Interessenkonflikte)
+    SE8 --> |pos| Eth5 
+    %% Mediale Aufmerksamkeit -> Datenschutzrisiken rücken in Fokus
+
+    %% --------------- Ethische Aspekte ---------------
+    Eth1 --> |pos| P3    
+    %% Faire Bedingungen -> Familienfreundlichkeit
+    Eth2 --> |pos| P5    
+    %% Umweltschutz -> Idealismus
+    Eth3 --> |pos| P4    
+    %% Regionale Verantwortung -> Stolz/Ehre
+    Eth4 --> |pos| P1    
+    %% Integrität -> Akzeptanz durch andere
+    Eth5 --> |pos| P10   
+    %% Datenschutz -> Vertrauen -> soziale Zugehörigkeit
+    Eth6 --> |pos| P9  
+    %% Ehrliche Kommunikation -> fördert enge Bindungen (Romantik/Zuneigung)
+
+    %% --------------- Private Nutzenfunktionen ---------------
+    %% Schon weitgehend abgedeckt durch obenstehende Pfeile.
+    %% Zusätzliche Quervernetzungen für mehr Komplexität:
+    %% Akzeptanz fördert soziale Zugehörigkeit
+    %%P2 --> |pos| D3    
+    %% Neugier -> neue Märkte, Innovation
+    %%P11 --> |pos| S6   
+    %% Status -> höheres Marketingbudget
+    %%P12 --> |neg| S8   
+    %% Wunsch nach Ruhe -> weniger Neueinstellungen (Komplexität)

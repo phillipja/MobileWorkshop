@@ -1,0 +1,2745 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9061651519105848573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_S9
+  m_EditorClassIdentifier: 
+  category: {fileID: -3490913034789869368}
+  index: 9
+  description: "Erweiterung B\xFCrofl\xE4chen"
+--- !u!114 &-8995980195603107877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_P9
+  m_EditorClassIdentifier: 
+  category: {fileID: 1839462168444158829}
+  index: 9
+  description: Romantik/Zuneigung
+--- !u!114 &-8972207352452533087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S8posSE5
+  m_EditorClassIdentifier: 
+  from: {fileID: -5525480237745470737}
+  to: {fileID: 1767108850400462733}
+  weight: 1
+  _funcType: 3
+  _constants:
+  - 0.91997623
+  - -1.7538046
+  - 0.6127845
+  - 0.8739383
+--- !u!114 &-8787811764973957960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_P10
+  m_EditorClassIdentifier: 
+  category: {fileID: 1839462168444158829}
+  index: 10
+  description: "Soziale Zugeh\xF6rigkeit"
+--- !u!114 &-8786458790315288926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_P12
+  m_EditorClassIdentifier: 
+  category: {fileID: 1839462168444158829}
+  index: 12
+  description: Ruhe / Stressfreiheit
+--- !u!114 &-8616052443569680097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6b67ba4ead8a294e825f98acc581876, type: 3}
+  m_Name: Category_SE
+  m_EditorClassIdentifier: 
+  id: SE
+  description: "Sekund\xE4re Effekte"
+--- !u!114 &-8395779716164334548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_D5
+  m_EditorClassIdentifier: 
+  category: {fileID: -6360444683553001369}
+  index: 5
+  description: "Produktqualit\xE4t"
+--- !u!114 &-8318338971400348486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_SE4posETH1
+  m_EditorClassIdentifier: 
+  from: {fileID: 2044700844754999809}
+  to: {fileID: 7476924019340110952}
+  weight: 1
+  _funcType: 2
+  _constants:
+  - 0.2714378
+  - -0.2841233
+  - 0.24933541
+--- !u!114 &-8238134301108731788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S8negD1
+  m_EditorClassIdentifier: 
+  from: {fileID: -5525480237745470737}
+  to: {fileID: 8701548455762230979}
+  weight: 2
+  _funcType: 0
+  _constants:
+  - -1.1011931
+  - 0.39412567
+--- !u!114 &-8173648527228365059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S8posP3
+  m_EditorClassIdentifier: 
+  from: {fileID: -5525480237745470737}
+  to: {fileID: -3795652455997224800}
+  weight: 1
+  _funcType: 0
+  _constants:
+  - 1.912636
+  - 0.04320109
+--- !u!114 &-7932552370371319206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_D3
+  m_EditorClassIdentifier: 
+  category: {fileID: -6360444683553001369}
+  index: 3
+  description: Marktanteilsgewinn
+--- !u!114 &-7656919256021345366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_D2
+  m_EditorClassIdentifier: 
+  category: {fileID: -6360444683553001369}
+  index: 2
+  description: Kostensenkung
+--- !u!114 &-7555247697683763275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S8posD7
+  m_EditorClassIdentifier: 
+  from: {fileID: -5525480237745470737}
+  to: {fileID: -6821320143802655879}
+  weight: 1
+  _funcType: 1
+  _constants:
+  - 1.3515497
+  - 0.12610723
+--- !u!114 &-7513968868959374672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_D2posZ9
+  m_EditorClassIdentifier: 
+  from: {fileID: -7656919256021345366}
+  to: {fileID: -3426535589833426830}
+  weight: 1
+  _funcType: 1
+  _constants:
+  - 1.7199132
+  - 0.8507809
+--- !u!114 &-7507225518213935300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S5posD1
+  m_EditorClassIdentifier: 
+  from: {fileID: 1511353909385735657}
+  to: {fileID: 8701548455762230979}
+  weight: 1
+  _funcType: 0
+  _constants:
+  - 0.9125955
+  - 0.08988559
+--- !u!114 &-6942816976506428852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S10negD10
+  m_EditorClassIdentifier: 
+  from: {fileID: 6433015302260640108}
+  to: {fileID: 8030587270645960156}
+  weight: 2
+  _funcType: 0
+  _constants:
+  - -0.5020966
+  - 0.5897708
+--- !u!114 &-6899551962791478509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_ETH6posP9
+  m_EditorClassIdentifier: 
+  from: {fileID: 8071591883300996726}
+  to: {fileID: -8995980195603107877}
+  weight: 1
+  _funcType: 3
+  _constants:
+  - 1.7650592
+  - -4.7631445
+  - 1.6640124
+  - -0.9954295
+--- !u!114 &-6821320143802655879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_D7
+  m_EditorClassIdentifier: 
+  category: {fileID: -6360444683553001369}
+  index: 7
+  description: "Lieferf\xE4higkeit"
+--- !u!114 &-6592553145761675431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_D8posZ8
+  m_EditorClassIdentifier: 
+  from: {fileID: -556404333707019539}
+  to: {fileID: 46367988631691554}
+  weight: 1
+  _funcType: 1
+  _constants:
+  - 0.7694744
+  - 0.4595416
+--- !u!114 &-6565787915344206077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_D1posD3
+  m_EditorClassIdentifier: 
+  from: {fileID: 8701548455762230979}
+  to: {fileID: -7932552370371319206}
+  weight: 1
+  _funcType: 0
+  _constants:
+  - 1.2524847
+  - -0.41345298
+--- !u!114 &-6477784614326755999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_SE1posETH2
+  m_EditorClassIdentifier: 
+  from: {fileID: 8708641258793075611}
+  to: {fileID: 193959490880464978}
+  weight: 1
+  _funcType: 0
+  _constants:
+  - 1.9047958
+  - 0.46658322
+--- !u!114 &-6421755439951685341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S6posP4
+  m_EditorClassIdentifier: 
+  from: {fileID: -1848797013884535677}
+  to: {fileID: -2066487766534761923}
+  weight: 1
+  _funcType: 1
+  _constants:
+  - 0.6687871
+  - 0.26858318
+--- !u!114 &-6360444683553001369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6b67ba4ead8a294e825f98acc581876, type: 3}
+  m_Name: Category_D
+  m_EditorClassIdentifier: 
+  id: D
+  description: Direkter Nutzen
+--- !u!114 &-6209497121716400097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S5posP5
+  m_EditorClassIdentifier: 
+  from: {fileID: 1511353909385735657}
+  to: {fileID: -222536074712506626}
+  weight: 1
+  _funcType: 0
+  _constants:
+  - 1.261671
+  - -0.18096054
+--- !u!114 &-6087354233441005270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S7posSE5
+  m_EditorClassIdentifier: 
+  from: {fileID: 8286754716232815317}
+  to: {fileID: 1767108850400462733}
+  weight: 1
+  _funcType: 0
+  _constants:
+  - 0.773822
+  - 0.18156946
+--- !u!114 &-6048004762868490333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_ETH5
+  m_EditorClassIdentifier: 
+  category: {fileID: 6983073845269114971}
+  index: 5
+  description: Datenschutz
+--- !u!114 &-5814956508625259728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_D5posD6
+  m_EditorClassIdentifier: 
+  from: {fileID: -8395779716164334548}
+  to: {fileID: -190485407881745344}
+  weight: 1
+  _funcType: 3
+  _constants:
+  - 0.82325965
+  - 1.8959614
+  - 1.0273584
+  - 0.11885941
+--- !u!114 &-5765376257053924930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_P8
+  m_EditorClassIdentifier: 
+  category: {fileID: 1839462168444158829}
+  index: 8
+  description: "Physische Aktivit\xE4t"
+--- !u!114 &-5560438405413186135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S1posD1
+  m_EditorClassIdentifier: 
+  from: {fileID: 3296130973968120204}
+  to: {fileID: 8701548455762230979}
+  weight: 1
+  _funcType: 0
+  _constants:
+  - 0.6261526
+  - -0.2841872
+--- !u!114 &-5525480237745470737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_S8
+  m_EditorClassIdentifier: 
+  category: {fileID: -3490913034789869368}
+  index: 8
+  description: Einstellung neuer Mitarbeitender
+--- !u!114 &-5326753178452298602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S7posD5
+  m_EditorClassIdentifier: 
+  from: {fileID: 8286754716232815317}
+  to: {fileID: -8395779716164334548}
+  weight: 1
+  _funcType: 2
+  _constants:
+  - 0.6078878
+  - -0.5662694
+  - 0.18839419
+--- !u!114 &-5284313494743751183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_P1
+  m_EditorClassIdentifier: 
+  category: {fileID: 1839462168444158829}
+  index: 1
+  description: Akzeptanz
+--- !u!114 &-5166715763187751801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S1negSE1
+  m_EditorClassIdentifier: 
+  from: {fileID: 3296130973968120204}
+  to: {fileID: 8708641258793075611}
+  weight: 2
+  _funcType: 2
+  _constants:
+  - -0.72242093
+  - -0.490564
+  - -0.28518927
+--- !u!114 &-5108439621962584788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_SE6posP5
+  m_EditorClassIdentifier: 
+  from: {fileID: -4979703880756011960}
+  to: {fileID: -222536074712506626}
+  weight: 1
+  _funcType: 3
+  _constants:
+  - 1.7743896
+  - -0.08317447
+  - 2.6049058
+  - 0.028287053
+--- !u!114 &-5098321977641638272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_S3
+  m_EditorClassIdentifier: 
+  category: {fileID: -3490913034789869368}
+  index: 3
+  description: Personentage
+--- !u!114 &-5006214122220720642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_Z1
+  m_EditorClassIdentifier: 
+  category: {fileID: 4898586686910451480}
+  index: 1
+  description: "Abh\xE4ngigkeit von Zulieferern"
+--- !u!114 &-4979703880756011960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_SE6
+  m_EditorClassIdentifier: 
+  category: {fileID: -8616052443569680097}
+  index: 6
+  description: Branchentrends
+--- !u!114 &-4733207509688085184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_ETH3
+  m_EditorClassIdentifier: 
+  category: {fileID: 6983073845269114971}
+  index: 3
+  description: Regionale Verantwortung
+--- !u!114 &-4681346770874545113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_SE5posP12
+  m_EditorClassIdentifier: 
+  from: {fileID: 1767108850400462733}
+  to: {fileID: -8786458790315288926}
+  weight: 1
+  _funcType: 1
+  _constants:
+  - 1.7153696
+  - 0.18260872
+--- !u!114 &-4554977733540101653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S6posZ6
+  m_EditorClassIdentifier: 
+  from: {fileID: -1848797013884535677}
+  to: {fileID: -491963226692955541}
+  weight: 1
+  _funcType: 1
+  _constants:
+  - 0.6432809
+  - 0.22885418
+--- !u!114 &-4424195509320529760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_ETH4
+  m_EditorClassIdentifier: 
+  category: {fileID: 6983073845269114971}
+  index: 4
+  description: "Integrit\xE4t / Korruptionsfreiheit"
+--- !u!114 &-4406873837137196065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S4posP6
+  m_EditorClassIdentifier: 
+  from: {fileID: 3943707832669566738}
+  to: {fileID: -3484663922366581266}
+  weight: 1
+  _funcType: 3
+  _constants:
+  - 0.9574717
+  - -3.587989
+  - 1.2539809
+  - 0.67187405
+--- !u!114 &-4272330207543134066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S6negD2
+  m_EditorClassIdentifier: 
+  from: {fileID: -1848797013884535677}
+  to: {fileID: -7656919256021345366}
+  weight: 2
+  _funcType: 1
+  _constants:
+  - 1.0081947
+  - -0.3500747
+--- !u!114 &-3941747440502765253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_SE7
+  m_EditorClassIdentifier: 
+  category: {fileID: -8616052443569680097}
+  index: 7
+  description: "Finanzielle F\xF6rderungen"
+--- !u!114 &-3795652455997224800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_P3
+  m_EditorClassIdentifier: 
+  category: {fileID: 1839462168444158829}
+  index: 3
+  description: Familie
+--- !u!114 &-3705033270765716101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_Z8posSE4
+  m_EditorClassIdentifier: 
+  from: {fileID: 46367988631691554}
+  to: {fileID: 2044700844754999809}
+  weight: 1
+  _funcType: 0
+  _constants:
+  - 0.5692062
+  - 0.6978476
+--- !u!114 &-3505804053402541454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S10posD9
+  m_EditorClassIdentifier: 
+  from: {fileID: 6433015302260640108}
+  to: {fileID: 6381140385727755798}
+  weight: 1
+  _funcType: 1
+  _constants:
+  - 1.9826968
+  - 0.7685069
+--- !u!114 &-3490913034789869368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6b67ba4ead8a294e825f98acc581876, type: 3}
+  m_Name: Category_S
+  m_EditorClassIdentifier: 
+  id: S
+  description: "Stellgr\xF6\xDFen"
+--- !u!114 &-3484663922366581266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_P6
+  m_EditorClassIdentifier: 
+  category: {fileID: 1839462168444158829}
+  index: 6
+  description: "Unabh\xE4ngigkeit"
+--- !u!114 &-3426535589833426830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_Z9
+  m_EditorClassIdentifier: 
+  category: {fileID: 4898586686910451480}
+  index: 9
+  description: "Neue Gesch\xE4ftsfelder"
+--- !u!114 &-3366319810928043291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_SE3posETH3
+  m_EditorClassIdentifier: 
+  from: {fileID: 5837693983182895018}
+  to: {fileID: -4733207509688085184}
+  weight: 1
+  _funcType: 2
+  _constants:
+  - 0.25055015
+  - 0.8546982
+  - 0.062316537
+--- !u!114 &-2706168183482393157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_D1posZ5
+  m_EditorClassIdentifier: 
+  from: {fileID: 8701548455762230979}
+  to: {fileID: 8902035451961708823}
+  weight: 1
+  _funcType: 0
+  _constants:
+  - 1.6248175
+  - -0.20176184
+--- !u!114 &-2615309205120070652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_Z4negSE5
+  m_EditorClassIdentifier: 
+  from: {fileID: 2434059438622207871}
+  to: {fileID: 1767108850400462733}
+  weight: 2
+  _funcType: 1
+  _constants:
+  - 1.7027969
+  - -0.24974173
+--- !u!114 &-2601199186879007324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S5posD8
+  m_EditorClassIdentifier: 
+  from: {fileID: 1511353909385735657}
+  to: {fileID: -556404333707019539}
+  weight: 1
+  _funcType: 2
+  _constants:
+  - 0.7350529
+  - 0.50839925
+  - -0.02413547
+--- !u!114 &-2373897663085855443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S2posP11
+  m_EditorClassIdentifier: 
+  from: {fileID: 8347961303726665960}
+  to: {fileID: 2100469089532348643}
+  weight: 1
+  _funcType: 0
+  _constants:
+  - 1.1269015
+  - 0.68594337
+--- !u!114 &-2309868811211778088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_ETH4posP1
+  m_EditorClassIdentifier: 
+  from: {fileID: -4424195509320529760}
+  to: {fileID: -5284313494743751183}
+  weight: 1
+  _funcType: 0
+  _constants:
+  - 0.80231404
+  - 0.16265309
+--- !u!114 &-2276866540857365689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S3posSE4
+  m_EditorClassIdentifier: 
+  from: {fileID: -5098321977641638272}
+  to: {fileID: 2044700844754999809}
+  weight: 1
+  _funcType: 1
+  _constants:
+  - 1.2552233
+  - 0.7949359
+--- !u!114 &-2249332644602039434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_Z5posETH4
+  m_EditorClassIdentifier: 
+  from: {fileID: 8902035451961708823}
+  to: {fileID: -4424195509320529760}
+  weight: 1
+  _funcType: 1
+  _constants:
+  - 0.92850375
+  - 0.5127093
+--- !u!114 &-2066487766534761923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_P4
+  m_EditorClassIdentifier: 
+  category: {fileID: 1839462168444158829}
+  index: 4
+  description: Ehre/Stolz
+--- !u!114 &-1848797013884535677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_S6
+  m_EditorClassIdentifier: 
+  category: {fileID: -3490913034789869368}
+  index: 6
+  description: Marketingausgaben
+--- !u!114 &-1637550553895744398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S9negD2
+  m_EditorClassIdentifier: 
+  from: {fileID: -9061651519105848573}
+  to: {fileID: -7656919256021345366}
+  weight: 2
+  _funcType: 0
+  _constants:
+  - -1.1449128
+  - -0.86555815
+--- !u!114 &-1369997832030570642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S4posZ3
+  m_EditorClassIdentifier: 
+  from: {fileID: 3943707832669566738}
+  to: {fileID: 2577854770218971107}
+  weight: 1
+  _funcType: 2
+  _constants:
+  - 0.3864025
+  - 0.85243845
+  - 0.7677798
+--- !u!114 &-880748778363742292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_D3posSE8
+  m_EditorClassIdentifier: 
+  from: {fileID: -7932552370371319206}
+  to: {fileID: 6258961742727747581}
+  weight: 1
+  _funcType: 2
+  _constants:
+  - 0.70618266
+  - 0.60586643
+  - -0.52177644
+--- !u!114 &-734575101457274596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_Z7posP2
+  m_EditorClassIdentifier: 
+  from: {fileID: 5100990974141876893}
+  to: {fileID: 6864572645472728950}
+  weight: 1
+  _funcType: 1
+  _constants:
+  - 1.442495
+  - 0.68770856
+--- !u!114 &-732265708147524243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_ETH3posP4
+  m_EditorClassIdentifier: 
+  from: {fileID: -4733207509688085184}
+  to: {fileID: -2066487766534761923}
+  weight: 1
+  _funcType: 0
+  _constants:
+  - 0.9635675
+  - 0.29765317
+--- !u!114 &-556404333707019539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_D8
+  m_EditorClassIdentifier: 
+  category: {fileID: -6360444683553001369}
+  index: 8
+  description: "Flexibilit\xE4t"
+--- !u!114 &-491963226692955541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_Z6
+  m_EditorClassIdentifier: 
+  category: {fileID: 4898586686910451480}
+  index: 6
+  description: Langfristige Reputation +/-
+--- !u!114 &-463847734604542640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S7posZ8
+  m_EditorClassIdentifier: 
+  from: {fileID: 8286754716232815317}
+  to: {fileID: 46367988631691554}
+  weight: 1
+  _funcType: 2
+  _constants:
+  - 0.8701536
+  - 0.8771417
+  - 0.92846394
+--- !u!114 &-222536074712506626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_P5
+  m_EditorClassIdentifier: 
+  category: {fileID: 1839462168444158829}
+  index: 5
+  description: Idealismus
+--- !u!114 &-190485407881745344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_D6
+  m_EditorClassIdentifier: 
+  category: {fileID: -6360444683553001369}
+  index: 6
+  description: Kundenzufriedenheit
+--- !u!114 &-162653645839512456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_D6posD1
+  m_EditorClassIdentifier: 
+  from: {fileID: -190485407881745344}
+  to: {fileID: 8701548455762230979}
+  weight: 1
+  _funcType: 1
+  _constants:
+  - 0.7214913
+  - 0.89978755
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84cd0c02ccfc0e8418acc8996e44dbba, type: 3}
+  m_Name: Graph_01
+  m_EditorClassIdentifier: 
+  categories:
+  - {fileID: -3490913034789869368}
+  - {fileID: -6360444683553001369}
+  - {fileID: 4898586686910451480}
+  - {fileID: -8616052443569680097}
+  - {fileID: 6983073845269114971}
+  - {fileID: 1839462168444158829}
+  nodes:
+  - {fileID: 3296130973968120204}
+  - {fileID: 8347961303726665960}
+  - {fileID: -5098321977641638272}
+  - {fileID: 3943707832669566738}
+  - {fileID: 1511353909385735657}
+  - {fileID: -1848797013884535677}
+  - {fileID: 8286754716232815317}
+  - {fileID: -5525480237745470737}
+  - {fileID: -9061651519105848573}
+  - {fileID: 6433015302260640108}
+  - {fileID: 8701548455762230979}
+  - {fileID: -7656919256021345366}
+  - {fileID: -7932552370371319206}
+  - {fileID: 5064854607701214908}
+  - {fileID: -8395779716164334548}
+  - {fileID: -190485407881745344}
+  - {fileID: -6821320143802655879}
+  - {fileID: -556404333707019539}
+  - {fileID: 6381140385727755798}
+  - {fileID: 8030587270645960156}
+  - {fileID: -5006214122220720642}
+  - {fileID: 3201402736531641530}
+  - {fileID: 2577854770218971107}
+  - {fileID: 2434059438622207871}
+  - {fileID: 8902035451961708823}
+  - {fileID: -491963226692955541}
+  - {fileID: 5100990974141876893}
+  - {fileID: 46367988631691554}
+  - {fileID: -3426535589833426830}
+  - {fileID: 8708641258793075611}
+  - {fileID: 5567839601557147564}
+  - {fileID: 5837693983182895018}
+  - {fileID: 2044700844754999809}
+  - {fileID: 1767108850400462733}
+  - {fileID: -4979703880756011960}
+  - {fileID: -3941747440502765253}
+  - {fileID: 6258961742727747581}
+  - {fileID: 7476924019340110952}
+  - {fileID: 193959490880464978}
+  - {fileID: -4733207509688085184}
+  - {fileID: -4424195509320529760}
+  - {fileID: -6048004762868490333}
+  - {fileID: 8071591883300996726}
+  - {fileID: -5284313494743751183}
+  - {fileID: 6864572645472728950}
+  - {fileID: -3795652455997224800}
+  - {fileID: -2066487766534761923}
+  - {fileID: -222536074712506626}
+  - {fileID: -3484663922366581266}
+  - {fileID: 7955698759766521540}
+  - {fileID: -5765376257053924930}
+  - {fileID: -8995980195603107877}
+  - {fileID: -8787811764973957960}
+  - {fileID: 2100469089532348643}
+  - {fileID: -8786458790315288926}
+  edges:
+  - {fileID: -5560438405413186135}
+  - {fileID: 7672001551877786814}
+  - {fileID: 8891394679212283752}
+  - {fileID: -5166715763187751801}
+  - {fileID: 1250418371412335507}
+  - {fileID: 4473197456383370674}
+  - {fileID: 350202467374620339}
+  - {fileID: 1956327862717687209}
+  - {fileID: 3943956934657664252}
+  - {fileID: -2373897663085855443}
+  - {fileID: 4461110030511326607}
+  - {fileID: 7924879199150680679}
+  - {fileID: 5643696822028647658}
+  - {fileID: -2276866540857365689}
+  - {fileID: 8077649288373313845}
+  - {fileID: 8974210697364375277}
+  - {fileID: 1950613071294359258}
+  - {fileID: -1369997832030570642}
+  - {fileID: 3548731387252148762}
+  - {fileID: -4406873837137196065}
+  - {fileID: -7507225518213935300}
+  - {fileID: -2601199186879007324}
+  - {fileID: 8483691481125938016}
+  - {fileID: 4820196632783417337}
+  - {fileID: -6209497121716400097}
+  - {fileID: 8140318915067311294}
+  - {fileID: -4272330207543134066}
+  - {fileID: -4554977733540101653}
+  - {fileID: 8669955733667086518}
+  - {fileID: -6421755439951685341}
+  - {fileID: -5326753178452298602}
+  - {fileID: 1639417128523692390}
+  - {fileID: -463847734604542640}
+  - {fileID: -6087354233441005270}
+  - {fileID: 8723949113356934589}
+  - {fileID: 8769032736671483263}
+  - {fileID: -7555247697683763275}
+  - {fileID: -8238134301108731788}
+  - {fileID: 4161499353696929836}
+  - {fileID: -8972207352452533087}
+  - {fileID: -8173648527228365059}
+  - {fileID: 7385631414694757433}
+  - {fileID: -1637550553895744398}
+  - {fileID: 8983384422941146483}
+  - {fileID: 8282233405390932165}
+  - {fileID: 8792183032206598864}
+  - {fileID: -3505804053402541454}
+  - {fileID: -6942816976506428852}
+  - {fileID: 5131073731082450170}
+  - {fileID: 4661632344400366445}
+  - {fileID: 5386431317735702862}
+  - {fileID: -6565787915344206077}
+  - {fileID: 7214266463418000218}
+  - {fileID: -2706168183482393157}
+  - {fileID: -7513968868959374672}
+  - {fileID: -880748778363742292}
+  - {fileID: 1829591033657205856}
+  - {fileID: -5814956508625259728}
+  - {fileID: -162653645839512456}
+  - {fileID: 5671894046846093343}
+  - {fileID: -6592553145761675431}
+  - {fileID: 8661449930762733277}
+  - {fileID: 2511119395354525110}
+  - {fileID: 1788432788375598697}
+  - {fileID: 5299328018971658148}
+  - {fileID: 1433645339657604704}
+  - {fileID: -2615309205120070652}
+  - {fileID: -2249332644602039434}
+  - {fileID: 7022222564630656441}
+  - {fileID: -734575101457274596}
+  - {fileID: -3705033270765716101}
+  - {fileID: 7185338930781295523}
+  - {fileID: -6477784614326755999}
+  - {fileID: 8165735181988128379}
+  - {fileID: -3366319810928043291}
+  - {fileID: -8318338971400348486}
+  - {fileID: -4681346770874545113}
+  - {fileID: -5108439621962584788}
+  - {fileID: 6527383512904019321}
+  - {fileID: 7987793585660404873}
+  - {fileID: 3952943238124503155}
+  - {fileID: 4379744769722865462}
+  - {fileID: -732265708147524243}
+  - {fileID: -2309868811211778088}
+  - {fileID: 4502105994981065934}
+  - {fileID: -6899551962791478509}
+--- !u!114 &46367988631691554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_Z8
+  m_EditorClassIdentifier: 
+  category: {fileID: 4898586686910451480}
+  index: 8
+  description: Kultureller Wandel
+--- !u!114 &193959490880464978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_ETH2
+  m_EditorClassIdentifier: 
+  category: {fileID: 6983073845269114971}
+  index: 2
+  description: Umweltschutz & Nachhaltigkeit
+--- !u!114 &350202467374620339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S2negD10
+  m_EditorClassIdentifier: 
+  from: {fileID: 8347961303726665960}
+  to: {fileID: 8030587270645960156}
+  weight: 2
+  _funcType: 0
+  _constants:
+  - -0.82974905
+  - 0.16245091
+--- !u!114 &1250418371412335507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S1posP2
+  m_EditorClassIdentifier: 
+  from: {fileID: 3296130973968120204}
+  to: {fileID: 6864572645472728950}
+  weight: 1
+  _funcType: 1
+  _constants:
+  - 1.4363947
+  - 0.41194472
+--- !u!114 &1433645339657604704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_Z3negD9
+  m_EditorClassIdentifier: 
+  from: {fileID: 2577854770218971107}
+  to: {fileID: 6381140385727755798}
+  weight: 2
+  _funcType: 2
+  _constants:
+  - -0.98383486
+  - 0.648613
+  - -0.43369353
+--- !u!114 &1511353909385735657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_S5
+  m_EditorClassIdentifier: 
+  category: {fileID: -3490913034789869368}
+  index: 5
+  description: Budget Fremdleistungen
+--- !u!114 &1639417128523692390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S7posD10
+  m_EditorClassIdentifier: 
+  from: {fileID: 8286754716232815317}
+  to: {fileID: 8030587270645960156}
+  weight: 1
+  _funcType: 0
+  _constants:
+  - 1.7259781
+  - 0.35464665
+--- !u!114 &1767108850400462733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_SE5
+  m_EditorClassIdentifier: 
+  category: {fileID: -8616052443569680097}
+  index: 5
+  description: Mitarbeiterzufriedenheit
+--- !u!114 &1788432788375598697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_Z1negD2
+  m_EditorClassIdentifier: 
+  from: {fileID: -5006214122220720642}
+  to: {fileID: -7656919256021345366}
+  weight: 2
+  _funcType: 0
+  _constants:
+  - -0.80752367
+  - -0.6671295
+--- !u!114 &1829591033657205856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_D4posZ7
+  m_EditorClassIdentifier: 
+  from: {fileID: 5064854607701214908}
+  to: {fileID: 5100990974141876893}
+  weight: 1
+  _funcType: 1
+  _constants:
+  - 0.58287865
+  - 0.8211179
+--- !u!114 &1839462168444158829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6b67ba4ead8a294e825f98acc581876, type: 3}
+  m_Name: Category_P
+  m_EditorClassIdentifier: 
+  id: P
+  description: Private Nutzen
+--- !u!114 &1950613071294359258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S4negD2
+  m_EditorClassIdentifier: 
+  from: {fileID: 3943707832669566738}
+  to: {fileID: -7656919256021345366}
+  weight: 2
+  _funcType: 2
+  _constants:
+  - -0.4344495
+  - 0.7621739
+  - 0.92413545
+--- !u!114 &1956327862717687209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S2posZ1
+  m_EditorClassIdentifier: 
+  from: {fileID: 8347961303726665960}
+  to: {fileID: -5006214122220720642}
+  weight: 1
+  _funcType: 3
+  _constants:
+  - 1.5515726
+  - 0.831587
+  - 2.7118425
+  - 0.25854728
+--- !u!114 &2044700844754999809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_SE4
+  m_EditorClassIdentifier: 
+  category: {fileID: -8616052443569680097}
+  index: 4
+  description: "Attraktivit\xE4t als Arbeitgeber"
+--- !u!114 &2100469089532348643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_P11
+  m_EditorClassIdentifier: 
+  category: {fileID: 1839462168444158829}
+  index: 11
+  description: Status
+--- !u!114 &2434059438622207871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_Z4
+  m_EditorClassIdentifier: 
+  category: {fileID: 4898586686910451480}
+  index: 4
+  description: "Sp\xE4te Kundenunzufriedenheit"
+--- !u!114 &2511119395354525110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_D10negSE3
+  m_EditorClassIdentifier: 
+  from: {fileID: 8030587270645960156}
+  to: {fileID: 5837693983182895018}
+  weight: 2
+  _funcType: 3
+  _constants:
+  - -0.730098
+  - -1.5262836
+  - 0.54380184
+  - -0.20585167
+--- !u!114 &2577854770218971107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_Z3
+  m_EditorClassIdentifier: 
+  category: {fileID: 4898586686910451480}
+  index: 3
+  description: Technologische Obsoleszenz
+--- !u!114 &3201402736531641530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_Z2
+  m_EditorClassIdentifier: 
+  category: {fileID: 4898586686910451480}
+  index: 2
+  description: Umweltprobleme
+--- !u!114 &3296130973968120204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_S1
+  m_EditorClassIdentifier: 
+  category: {fileID: -3490913034789869368}
+  index: 1
+  description: Entwicklungsbudget
+--- !u!114 &3548731387252148762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S4posSE8
+  m_EditorClassIdentifier: 
+  from: {fileID: 3943707832669566738}
+  to: {fileID: 6258961742727747581}
+  weight: 1
+  _funcType: 1
+  _constants:
+  - 1.9180671
+  - 0.68260187
+--- !u!114 &3943707832669566738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_S4
+  m_EditorClassIdentifier: 
+  category: {fileID: -3490913034789869368}
+  index: 4
+  description: Serverzeit
+--- !u!114 &3943956934657664252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S2posSE5
+  m_EditorClassIdentifier: 
+  from: {fileID: 8347961303726665960}
+  to: {fileID: 1767108850400462733}
+  weight: 1
+  _funcType: 3
+  _constants:
+  - 1.9830962
+  - -0.86230385
+  - 1.1599915
+  - 0.28849694
+--- !u!114 &3952943238124503155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_ETH1posP3
+  m_EditorClassIdentifier: 
+  from: {fileID: 7476924019340110952}
+  to: {fileID: -3795652455997224800}
+  weight: 1
+  _funcType: 1
+  _constants:
+  - 1.6829121
+  - 0.73870003
+--- !u!114 &4161499353696929836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S8posZ8
+  m_EditorClassIdentifier: 
+  from: {fileID: -5525480237745470737}
+  to: {fileID: 46367988631691554}
+  weight: 1
+  _funcType: 0
+  _constants:
+  - 1.7537827
+  - 0.81108785
+--- !u!114 &4379744769722865462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_ETH2posP5
+  m_EditorClassIdentifier: 
+  from: {fileID: 193959490880464978}
+  to: {fileID: -222536074712506626}
+  weight: 1
+  _funcType: 1
+  _constants:
+  - 1.0672284
+  - 0.955793
+--- !u!114 &4461110030511326607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S3posD4
+  m_EditorClassIdentifier: 
+  from: {fileID: -5098321977641638272}
+  to: {fileID: 5064854607701214908}
+  weight: 1
+  _funcType: 0
+  _constants:
+  - 1.2405326
+  - 0.90445924
+--- !u!114 &4473197456383370674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S2posD2
+  m_EditorClassIdentifier: 
+  from: {fileID: 8347961303726665960}
+  to: {fileID: -7656919256021345366}
+  weight: 1
+  _funcType: 0
+  _constants:
+  - 0.9984429
+  - -0.651037
+--- !u!114 &4502105994981065934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_ETH5posP10
+  m_EditorClassIdentifier: 
+  from: {fileID: -6048004762868490333}
+  to: {fileID: -8787811764973957960}
+  weight: 1
+  _funcType: 2
+  _constants:
+  - 0.4806422
+  - 0.15477931
+  - -0.83881164
+--- !u!114 &4661632344400366445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S10posSE8
+  m_EditorClassIdentifier: 
+  from: {fileID: 6433015302260640108}
+  to: {fileID: 6258961742727747581}
+  weight: 1
+  _funcType: 0
+  _constants:
+  - 1.6953235
+  - -0.8100052
+--- !u!114 &4820196632783417337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S5negSE1
+  m_EditorClassIdentifier: 
+  from: {fileID: 1511353909385735657}
+  to: {fileID: 8708641258793075611}
+  weight: 2
+  _funcType: 0
+  _constants:
+  - -0.24311143
+  - -0.20968449
+--- !u!114 &4898586686910451480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6b67ba4ead8a294e825f98acc581876, type: 3}
+  m_Name: Category_Z
+  m_EditorClassIdentifier: 
+  id: Z
+  description: "Zuk\xFCnftige Effekte"
+--- !u!114 &5064854607701214908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_D4
+  m_EditorClassIdentifier: 
+  category: {fileID: -6360444683553001369}
+  index: 4
+  description: Produktionsoptimierung
+--- !u!114 &5100990974141876893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_Z7
+  m_EditorClassIdentifier: 
+  category: {fileID: 4898586686910451480}
+  index: 7
+  description: Innovationsdruck
+--- !u!114 &5131073731082450170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S10posZ3
+  m_EditorClassIdentifier: 
+  from: {fileID: 6433015302260640108}
+  to: {fileID: 2577854770218971107}
+  weight: 1
+  _funcType: 0
+  _constants:
+  - 1.9464041
+  - 0.21388137
+--- !u!114 &5299328018971658148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_Z2posETH2
+  m_EditorClassIdentifier: 
+  from: {fileID: 3201402736531641530}
+  to: {fileID: 193959490880464978}
+  weight: 1
+  _funcType: 2
+  _constants:
+  - 0.9307698
+  - -0.124543786
+  - 0.1287204
+--- !u!114 &5386431317735702862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S10posP7
+  m_EditorClassIdentifier: 
+  from: {fileID: 6433015302260640108}
+  to: {fileID: 7955698759766521540}
+  weight: 1
+  _funcType: 1
+  _constants:
+  - 1.3325442
+  - 0.8056375
+--- !u!114 &5567839601557147564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_SE2
+  m_EditorClassIdentifier: 
+  category: {fileID: -8616052443569680097}
+  index: 2
+  description: "Sichtbarkeit in der \xD6ffentlichkeit"
+--- !u!114 &5643696822028647658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S3negZ2
+  m_EditorClassIdentifier: 
+  from: {fileID: -5098321977641638272}
+  to: {fileID: 3201402736531641530}
+  weight: 2
+  _funcType: 0
+  _constants:
+  - -0.4925966
+  - 0.47118208
+--- !u!114 &5671894046846093343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_D7posD10
+  m_EditorClassIdentifier: 
+  from: {fileID: -6821320143802655879}
+  to: {fileID: 8030587270645960156}
+  weight: 1
+  _funcType: 3
+  _constants:
+  - 0.77737993
+  - -0.3729216
+  - 1.357935
+  - -0.7098403
+--- !u!114 &5837693983182895018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_SE3
+  m_EditorClassIdentifier: 
+  category: {fileID: -8616052443569680097}
+  index: 3
+  description: "Politische Unterst\xFCtzung/Gegenwind"
+--- !u!114 &6258961742727747581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_SE8
+  m_EditorClassIdentifier: 
+  category: {fileID: -8616052443569680097}
+  index: 8
+  description: Mediale Aufmerksamkeit
+--- !u!114 &6381140385727755798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_D9
+  m_EditorClassIdentifier: 
+  category: {fileID: -6360444683553001369}
+  index: 9
+  description: Entwicklungsgeschwindigkeit
+--- !u!114 &6433015302260640108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_S10
+  m_EditorClassIdentifier: 
+  category: {fileID: -3490913034789869368}
+  index: 10
+  description: IT-Infrastruktur Upgrades
+--- !u!114 &6527383512904019321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_SE7negETH4
+  m_EditorClassIdentifier: 
+  from: {fileID: -3941747440502765253}
+  to: {fileID: -4424195509320529760}
+  weight: 2
+  _funcType: 1
+  _constants:
+  - 0.5567384
+  - -0.1832665
+--- !u!114 &6864572645472728950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_P2
+  m_EditorClassIdentifier: 
+  category: {fileID: 1839462168444158829}
+  index: 2
+  description: Neugier
+--- !u!114 &6983073845269114971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6b67ba4ead8a294e825f98acc581876, type: 3}
+  m_Name: Category_ETH
+  m_EditorClassIdentifier: 
+  id: ETH
+  description: Ethische Aspekte
+--- !u!114 &7022222564630656441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_Z6posSE2
+  m_EditorClassIdentifier: 
+  from: {fileID: -491963226692955541}
+  to: {fileID: 5567839601557147564}
+  weight: 1
+  _funcType: 0
+  _constants:
+  - 1.4862626
+  - -0.027551293
+--- !u!114 &7185338930781295523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_Z9posSE6
+  m_EditorClassIdentifier: 
+  from: {fileID: -3426535589833426830}
+  to: {fileID: -4979703880756011960}
+  weight: 1
+  _funcType: 0
+  _constants:
+  - 0.24045438
+  - -0.8325205
+--- !u!114 &7214266463418000218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_D1posSE2
+  m_EditorClassIdentifier: 
+  from: {fileID: 8701548455762230979}
+  to: {fileID: 5567839601557147564}
+  weight: 1
+  _funcType: 3
+  _constants:
+  - 1.5551023
+  - -0.09565306
+  - 2.617557
+  - -0.2290994
+--- !u!114 &7385631414694757433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S9posD4
+  m_EditorClassIdentifier: 
+  from: {fileID: -9061651519105848573}
+  to: {fileID: 5064854607701214908}
+  weight: 1
+  _funcType: 2
+  _constants:
+  - 0.49608916
+  - -0.70131755
+  - -0.26659262
+--- !u!114 &7476924019340110952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_ETH1
+  m_EditorClassIdentifier: 
+  category: {fileID: 6983073845269114971}
+  index: 1
+  description: Faire Arbeitsbedingungen
+--- !u!114 &7672001551877786814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S1posD9
+  m_EditorClassIdentifier: 
+  from: {fileID: 3296130973968120204}
+  to: {fileID: 6381140385727755798}
+  weight: 1
+  _funcType: 1
+  _constants:
+  - 1.594667
+  - 0.35781258
+--- !u!114 &7924879199150680679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S3posD5
+  m_EditorClassIdentifier: 
+  from: {fileID: -5098321977641638272}
+  to: {fileID: -8395779716164334548}
+  weight: 1
+  _funcType: 1
+  _constants:
+  - 1.0065839
+  - 0.3142305
+--- !u!114 &7955698759766521540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_P7
+  m_EditorClassIdentifier: 
+  category: {fileID: 1839462168444158829}
+  index: 7
+  description: Ordnung
+--- !u!114 &7987793585660404873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_SE8posETH5
+  m_EditorClassIdentifier: 
+  from: {fileID: 6258961742727747581}
+  to: {fileID: -6048004762868490333}
+  weight: 1
+  _funcType: 3
+  _constants:
+  - 1.0353023
+  - -1.2506031
+  - 0.9888254
+  - -0.87740827
+--- !u!114 &8030587270645960156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_D10
+  m_EditorClassIdentifier: 
+  category: {fileID: -6360444683553001369}
+  index: 10
+  description: Risikominimierung
+--- !u!114 &8071591883300996726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_ETH6
+  m_EditorClassIdentifier: 
+  category: {fileID: 6983073845269114971}
+  index: 6
+  description: Ehrliche Kommunikation
+--- !u!114 &8077649288373313845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S3posP1
+  m_EditorClassIdentifier: 
+  from: {fileID: -5098321977641638272}
+  to: {fileID: -5284313494743751183}
+  weight: 1
+  _funcType: 0
+  _constants:
+  - 1.0569012
+  - -0.47612703
+--- !u!114 &8140318915067311294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S6posD3
+  m_EditorClassIdentifier: 
+  from: {fileID: -1848797013884535677}
+  to: {fileID: -7932552370371319206}
+  weight: 1
+  _funcType: 0
+  _constants:
+  - 1.5713736
+  - 0.4507484
+--- !u!114 &8165735181988128379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_SE2posETH6
+  m_EditorClassIdentifier: 
+  from: {fileID: 5567839601557147564}
+  to: {fileID: 8071591883300996726}
+  weight: 1
+  _funcType: 0
+  _constants:
+  - 0.7541863
+  - 0.3639495
+--- !u!114 &8282233405390932165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S9posSE4
+  m_EditorClassIdentifier: 
+  from: {fileID: -9061651519105848573}
+  to: {fileID: 2044700844754999809}
+  weight: 1
+  _funcType: 0
+  _constants:
+  - 0.5821475
+  - 0.48332188
+--- !u!114 &8286754716232815317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_S7
+  m_EditorClassIdentifier: 
+  category: {fileID: -3490913034789869368}
+  index: 7
+  description: Schulungsinvestitionen
+--- !u!114 &8347961303726665960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_S2
+  m_EditorClassIdentifier: 
+  category: {fileID: -3490913034789869368}
+  index: 2
+  description: Maschinenstunden
+--- !u!114 &8483691481125938016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S5posZ6
+  m_EditorClassIdentifier: 
+  from: {fileID: 1511353909385735657}
+  to: {fileID: -491963226692955541}
+  weight: 1
+  _funcType: 2
+  _constants:
+  - 0.63761127
+  - -0.8025172
+  - -0.69898677
+--- !u!114 &8661449930762733277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_D9posZ5
+  m_EditorClassIdentifier: 
+  from: {fileID: 6381140385727755798}
+  to: {fileID: 8902035451961708823}
+  weight: 1
+  _funcType: 0
+  _constants:
+  - 0.47139794
+  - -0.1089803
+--- !u!114 &8669955733667086518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S6posSE2
+  m_EditorClassIdentifier: 
+  from: {fileID: -1848797013884535677}
+  to: {fileID: 5567839601557147564}
+  weight: 1
+  _funcType: 1
+  _constants:
+  - 1.04575
+  - 0.5837935
+--- !u!114 &8701548455762230979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_D1
+  m_EditorClassIdentifier: 
+  category: {fileID: -6360444683553001369}
+  index: 1
+  description: Gewinnsteigerung
+--- !u!114 &8708641258793075611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_SE1
+  m_EditorClassIdentifier: 
+  category: {fileID: -8616052443569680097}
+  index: 1
+  description: Umweltauswirkungen
+--- !u!114 &8723949113356934589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S7negSE7
+  m_EditorClassIdentifier: 
+  from: {fileID: 8286754716232815317}
+  to: {fileID: -3941747440502765253}
+  weight: 2
+  _funcType: 0
+  _constants:
+  - -1.3879229
+  - 0.090825915
+--- !u!114 &8769032736671483263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S7posP8
+  m_EditorClassIdentifier: 
+  from: {fileID: 8286754716232815317}
+  to: {fileID: -5765376257053924930}
+  weight: 1
+  _funcType: 0
+  _constants:
+  - 1.4200925
+  - -0.86528754
+--- !u!114 &8792183032206598864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S9posP10
+  m_EditorClassIdentifier: 
+  from: {fileID: -9061651519105848573}
+  to: {fileID: -8787811764973957960}
+  weight: 1
+  _funcType: 0
+  _constants:
+  - 0.5523661
+  - -0.40914214
+--- !u!114 &8891394679212283752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S1posZ7
+  m_EditorClassIdentifier: 
+  from: {fileID: 3296130973968120204}
+  to: {fileID: 5100990974141876893}
+  weight: 1
+  _funcType: 0
+  _constants:
+  - 0.2768548
+  - 0.7331991
+--- !u!114 &8902035451961708823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_Z5
+  m_EditorClassIdentifier: 
+  category: {fileID: 4898586686910451480}
+  index: 5
+  description: "Ver\xE4nderte Wettbewerbslandschaft"
+--- !u!114 &8974210697364375277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S4posD9
+  m_EditorClassIdentifier: 
+  from: {fileID: 3943707832669566738}
+  to: {fileID: 6381140385727755798}
+  weight: 1
+  _funcType: 2
+  _constants:
+  - 0.32542428
+  - -0.7630551
+  - 0.9724982
+--- !u!114 &8983384422941146483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5748581d9af7041b2716c865db2f11, type: 3}
+  m_Name: Edge_S9posZ4
+  m_EditorClassIdentifier: 
+  from: {fileID: -9061651519105848573}
+  to: {fileID: 2434059438622207871}
+  weight: 1
+  _funcType: 2
+  _constants:
+  - 0.81355536
+  - 0.35608956
+  - -0.50705004
