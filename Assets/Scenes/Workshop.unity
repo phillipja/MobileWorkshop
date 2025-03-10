@@ -708,15 +708,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd31756d04666e542b6c92f1d1effe70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eurosSlider: {fileID: 0}
-  vollzeitSlider: {fileID: 0}
-  serverSlider: {fileID: 0}
-  preset1Button: {fileID: 0}
-  preset2Button: {fileID: 0}
-  preset3Button: {fileID: 0}
-  saveButton: {fileID: 0}
-  feedbackObject: {fileID: 0}
-  saveButtonImage: {fileID: 0}
+  eurosSlider: {fileID: 8129233028465646700}
+  vollzeitSlider: {fileID: 4243926599472362511}
+  serverSlider: {fileID: 2764705893066999525}
+  preset1Button: {fileID: 8501498585576552323}
+  preset2Button: {fileID: 1541031325078232774}
+  preset3Button: {fileID: 8067288119390285031}
+  saveButton: {fileID: 1257515563043809812}
+  feedbackObject: {fileID: 4470497892492885957}
+  saveButtonImage: {fileID: 2195659117428252659}
   normalSaveColor: {r: 1, g: 1, b: 1, a: 1}
   activeSaveColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   successColor: {r: 0, g: 1, b: 0, a: 1}
