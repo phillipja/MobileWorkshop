@@ -2,6 +2,7 @@ namespace Graph
 {
     public enum MathFunc
     {
+        None,
         Linear,
         Exponential,
         Quadratic,

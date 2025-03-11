@@ -30,11 +30,9 @@ public class Company : MonoBehaviour
 
 
     private HashSet<SO_GraphNode> _startNodes;
-    private HashSet<SO_GraphEdge> _edges;
     private HashSet<SO_GraphNode> _nodes;
 
     private List<GameObject> _uiStartNodes;
-    private List<GameObject> _uiEdges;
     private List<GameObject> _uiNodes;
 
     void Start()
@@ -44,11 +42,9 @@ public class Company : MonoBehaviour
         Assert.IsNotNull(_personalBenefitCategory, "Missing category for personal benefit!");
 
         _startNodes = new(START_SIZE);
-        _edges = new(_graph.edges.Count);
         _nodes = new(_graph.nodes.Count);
 
         _uiStartNodes = new(START_SIZE);
-        _uiEdges = new(_graph.edges.Count);
         _uiNodes = new(_graph.nodes.Count);
 
         GenerateSubgraph();
@@ -71,10 +67,8 @@ public class Company : MonoBehaviour
     {
         _startNodes.Clear();
         _nodes.Clear();
-        _edges.Clear();
 
         ClearUIElements(_uiStartNodes);
-        ClearUIElements(_uiEdges);
         ClearUIElements(_uiNodes);
 
         GenerateSubgraph();
@@ -108,28 +102,19 @@ public class Company : MonoBehaviour
         foreach(SO_GraphNode node in _startNodes)
         {
             _nodes.Add(node);
-            GetSubgraphRecursive(node, _nodes, _edges);
+            GetSubgraphRecursive(node, _nodes);
         }
 
         _startNodes = _startNodes.OrderBy(n => n.index).ToHashSet();
-        _edges = _edges.OrderBy(n => n.from.id).ToHashSet();
         _nodes = _nodes.OrderBy(n => n.id).ToHashSet();
 
-        Debug.Log($"Subgraph size: Edges '{_edges.Count}' - Nodes '{_nodes.Count}'");
+        Debug.Log($"Subgraph size: Nodes '{_nodes.Count}'");
 
         foreach(var startNode in _startNodes)
         {
             var uiNode = Instantiate(_singlePrefab, _startNodesContainer);
             uiNode.Text.text = startNode.id;
             _uiStartNodes.Add(uiNode.gameObject);
-        }
-
-        foreach(var edge in _edges)
-        {
-            var uiEdge = Instantiate(_doublePrefab, _edgesContainer);
-            uiEdge.LeftText.text = edge.from.id;
-            uiEdge.RightText.text = edge.to.id;
-            _uiEdges.Add(uiEdge.gameObject);
         }
 
         foreach(var node in _nodes)
@@ -140,16 +125,15 @@ public class Company : MonoBehaviour
         }
     }
 
-    private void GetSubgraphRecursive(SO_GraphNode node, HashSet<SO_GraphNode> nodes, HashSet<SO_GraphEdge> edges)
+    private void GetSubgraphRecursive(SO_GraphNode node, HashSet<SO_GraphNode> nodes)
     {
-        if(node == null || nodes == null || edges == null)
+        if(node == null || nodes == null)
             return;
 
-        foreach(SO_GraphEdge edge in _graph.edges.Where(e => e.from == node))
+        foreach(MathModeledEdge edge in node.toEdges)
         {
-            GetSubgraphRecursive(edge.to, nodes, edges);
-            nodes.Add(edge.to);
-            edges.Add(edge);
+            GetSubgraphRecursive(edge.node, nodes);
+            nodes.Add(edge.node);
         }
     }
 

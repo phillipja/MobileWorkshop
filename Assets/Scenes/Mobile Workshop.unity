@@ -717,10 +717,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 368d02cf62050524c952bf8239c68621, type: 2}
   - {fileID: 11400000, guid: 0316a7f535a987742aff2083bbba1cb0, type: 2}
   - {fileID: 11400000, guid: 3d716d1fb7c78af4d9cf7a636e112b70, type: 2}
-  _graph: {fileID: 11400000, guid: 6bcf75186f193144fb014f759abf59c8, type: 2}
-  _controlVariableCategory: {fileID: -3490913034789869368, guid: 6bcf75186f193144fb014f759abf59c8,
+  _graph: {fileID: 11400000, guid: 7234189702dadc04e928a2cb3a205957, type: 2}
+  _controlVariableCategory: {fileID: 6074900693904722159, guid: 7234189702dadc04e928a2cb3a205957,
     type: 2}
-  _personalBenefitCategory: {fileID: 1839462168444158829, guid: 6bcf75186f193144fb014f759abf59c8,
+  _personalBenefitCategory: {fileID: 5775802090127708608, guid: 7234189702dadc04e928a2cb3a205957,
     type: 2}
   _regenerateSubgraph:
     m_Name: Regenerate Subgraph
@@ -747,6 +747,7 @@ MonoBehaviour:
     type: 3}
   _doublePrefab: {fileID: 8512349124954137509, guid: ab1d318f71866974f8e4511b92daa30b,
     type: 3}
+  _viableCandidates: []
 --- !u!4 &602934816
 Transform:
   m_ObjectHideFlags: 0

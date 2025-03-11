@@ -174,16 +174,11 @@ namespace Graph
                 if(isValid == false)
                     continue;
 
-                SO_GraphEdge edge = CreateInstance<SO_GraphEdge>();
-                edge.from = fromNode;
-                edge.to = toNode;
-                edge.weight = DetermineWeight(weightInfo);
-                edge.name = $"{EDGE_PREFIX}{from}{weightInfo}{to}";
-
-                graph.edges.Add(edge);
-                AssetDatabase.AddObjectToAsset(edge, graph);
+                toNode.fromEdges.Add(fromNode);
+                fromNode.toEdges.Add(new MathModeledEdge(toNode, DetermineWeight(weightInfo)));
             }
 
+            EditorUtility.SetDirty(graph);
             AssetDatabase.SaveAssetIfDirty(graph);
 
             Weight DetermineWeight(string info)

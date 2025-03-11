@@ -2,14 +2,20 @@ using UnityEngine;
 
 namespace Graph
 {
-    public class SO_GraphEdge : ScriptableObject
+    [System.Serializable]
+    public class MathModeledEdge
     {
-        public SO_GraphNode from;
-        public SO_GraphNode to;
+        public SO_GraphNode node;
         public Weight weight;
 
         [SerializeField] private MathFunc _funcType;
         [SerializeField] private float[] _constants;
+
+        public MathModeledEdge(SO_GraphNode toNode, Weight weight)
+        {
+            this.node = toNode;
+            this.weight = weight;
+        }
 
         public void GenerateConstants(MathFunc funcType)
         {
@@ -49,18 +55,12 @@ namespace Graph
 
             float DetermineBasedOnWeight(float posMin, float posMax, float negMin, float negMax, float none)
             {
-                switch(weight)
+                return weight switch
                 {
-                    case Weight.Positive:
-                        return Random.Range(posMin, posMax);
-
-                    case Weight.Negative:
-                        return Random.Range(negMin, negMax);
-
-                    case Weight.None:
-                    default:
-                        return none;
-                }
+                    Weight.Positive => Random.Range(posMin, posMax),
+                    Weight.Negative => Random.Range(negMin, negMax),
+                    _ => none,
+                };
             }
         }
     }

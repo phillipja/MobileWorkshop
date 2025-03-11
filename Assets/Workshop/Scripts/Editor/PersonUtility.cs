@@ -1,12 +1,7 @@
 using Graph;
-using System.Collections;
-using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
-using Unity.VisualScripting;
 using UnityEditor;
-using UnityEditor.Graphs;
 using UnityEngine;
 
 public class PersonUtility : EditorWindow
