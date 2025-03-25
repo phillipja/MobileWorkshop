@@ -174,8 +174,8 @@ namespace Graph
                 if(isValid == false)
                     continue;
 
-                toNode.fromEdges.Add(fromNode);
-                fromNode.toEdges.Add(new MathModeledEdge(toNode, DetermineWeight(weightInfo)));
+                toNode.fromEdges.Add(new MathModeledEdge(fromNode, DetermineWeight(weightInfo)));
+                fromNode.toEdges.Add(toNode);
             }
 
             EditorUtility.SetDirty(graph);

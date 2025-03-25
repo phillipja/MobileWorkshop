@@ -1,0 +1,99 @@
+Name: Lukas Meier
+Subset: {P1, P2, P3}
+Beschreibung: Lukas Meier ist ein neugieriger und aufgeschlossener Mensch, der sich gerne mit neuen Ideen und Perspektiven auseinandersetzt. Gleichzeitig hat er eine tiefe Verbundenheit zu seiner Familie, die für ihn eine zentrale Rolle im Leben spielt. Er ist ein ruhiger und verständnisvoller Mensch, der Konflikten eher aus dem Weg geht und stattdessen auf Akzeptanz und Harmonie setzt. Seine freundliche und offene Art macht ihn zu einem beliebten Gesprächspartner, der immer ein offenes Ohr für andere hat.
+
+Name: Anna Schmidt
+Subset: {P1, P4, P5}
+Beschreibung: Anna Schmidt ist eine Idealistin, die fest an ihre Werte glaubt und für das einsteht, was sie für richtig hält. Ehre und Stolz sind für sie nicht nur abstrakte Begriffe, sondern tief verankerte Prinzipien, nach denen sie ihr Leben gestaltet. Trotz ihrer starken Überzeugungen bleibt sie offen für andere Sichtweisen und begegnet ihren Mitmenschen mit Akzeptanz und Respekt. Sie sucht stets nach Möglichkeiten, die Welt positiv zu verändern und lässt sich dabei nicht so leicht von Widerständen abschrecken.
+
+Name: Tobias Wagner
+Subset: {P1, P6, P7}
+Beschreibung: Tobias Wagner ist ein unabhängiger und strukturierter Mensch, der es liebt, sein Leben selbstbestimmt zu gestalten. Ordnung und Organisation sind für ihn essenziell, um seine Ziele effizient zu erreichen. Gleichzeitig bleibt er offen für Veränderungen und akzeptiert die Vielfalt der Meinungen und Lebensweisen um ihn herum. Er strahlt eine ruhige Gelassenheit aus, die ihm hilft, Herausforderungen mit Bedacht und Entschlossenheit anzugehen.
+
+Name: Katharina Lehmann
+Subset: {P1, P8, P9}
+Beschreibung: Katharina Lehmann ist eine leidenschaftliche Person, die sowohl körperliche Aktivität als auch emotionale Nähe schätzt. Sie liebt es, sich zu bewegen – sei es durch Sport, Tanz oder lange Spaziergänge – und fühlt sich dabei besonders lebendig. Gleichzeitig ist sie ein sehr gefühlvoller Mensch, der großen Wert auf Romantik und zwischenmenschliche Beziehungen legt. Sie begegnet anderen mit Offenheit und Akzeptanz, wodurch sie oft als warmherzige und vertrauensvolle Freundin wahrgenommen wird.
+
+Name: Michael Braun
+Subset: {P1, P10, P11}
+Beschreibung: Michael Braun ist ein geselliger Mensch, der gerne Teil einer Gemeinschaft ist und sich in sozialen Gruppen wohlfühlt. Er legt Wert auf Status und Anerkennung, jedoch nicht auf Kosten anderer – ihm ist es wichtig, dass jeder seinen Platz findet und respektiert wird. Durch seine offene und akzeptierende Art kann er gut auf verschiedene Menschen eingehen und fühlt sich sowohl in großen Gruppen als auch in engeren Freundschaften wohl. Sein Ehrgeiz und sein Bedürfnis nach sozialer Zugehörigkeit treiben ihn dazu an, sich stetig weiterzuentwickeln.
+
+Name: Sarah Fischer
+Subset: {P1, P12, P2}
+Beschreibung: Sarah Fischer ist eine neugierige Person, die stets neue Dinge entdecken möchte, dabei aber eine gewisse innere Ruhe bewahrt. Sie liebt es, sich in eine stressfreie Umgebung zurückzuziehen, in der sie ihre Gedanken ordnen und reflektieren kann. Konflikte vermeidet sie, indem sie auf Akzeptanz und Harmonie setzt, statt sich in unnötige Streitereien zu verwickeln. Ihr ruhiges Wesen macht sie zu einer geschätzten Gesprächspartnerin, die mit Bedacht und Feingefühl auf andere eingeht.
+
+Name: Julian Weber
+Subset: {P2, P4, P6}
+Beschreibung: Julian Weber ist ein wissbegieriger und ehrgeiziger Mensch, der seine Unabhängigkeit sehr schätzt. Er stellt viele Fragen, hinterfragt bestehende Strukturen und sucht immer nach neuen Herausforderungen. Sein ausgeprägtes Ehrgefühl lässt ihn dabei stets nach Höherem streben – er möchte nicht nur für sich selbst erfolgreich sein, sondern auch Anerkennung für seine Leistungen erhalten. Trotz seines Ehrgeizes bleibt er offen für andere Perspektiven und respektiert unterschiedliche Meinungen. Freiheit und Selbstbestimmung sind für ihn essenziell, weshalb er ungern in vorgegebene Muster gepresst wird.
+
+Name: Laura Klein
+Subset: {P2, P5, P7}
+Beschreibung: Laura Klein ist eine Idealistin, die von ihrer Neugier getrieben wird, die Welt und ihre Menschen besser zu verstehen. Sie liebt es, über große Fragen des Lebens nachzudenken und nach Antworten zu suchen, die über das Oberflächliche hinausgehen. Gleichzeitig legt sie großen Wert auf Ordnung und Struktur, da sie sich dadurch sicherer und fokussierter fühlt. Ihr Idealismus führt oft dazu, dass sie sich für soziale oder gesellschaftliche Themen engagiert und daran glaubt, dass man durch Wissen und Organisation positive Veränderungen bewirken kann.
+
+Name: Felix Hoffmann
+Subset: {P2, P8, P10}
+Beschreibung: Felix Hoffmann ist ein energiegeladener und neugieriger Mensch, der es liebt, in Bewegung zu sein und neue Dinge auszuprobieren. Er kann nicht lange stillsitzen – sei es im Sport, bei Abenteuern oder im sozialen Leben, er sucht stets nach neuen Erlebnissen. Seine Begeisterung für soziale Interaktion macht ihn zu einem geschätzten Freundeskreis-Mitglied, das immer für spontane Aktivitäten zu haben ist. Er schätzt es, Teil einer Gemeinschaft zu sein, und ist derjenige, der gerne neue Menschen zusammenbringt und für gute Stimmung sorgt.
+
+Name: Melanie Schulz
+Subset: {P2, P9, P12}
+Beschreibung: Melanie Schulz ist eine romantische Seele mit einer tiefen Sehnsucht nach emotionaler Verbundenheit. Sie ist neugierig auf Menschen und ihre Geschichten, liebt tiefgründige Gespräche und schätzt echte, authentische Beziehungen. Gleichzeitig ist sie jemand, der gerne in einer stressfreien Umgebung lebt und Konflikte nach Möglichkeit vermeidet. Sie bringt Harmonie und Verständnis in ihr Umfeld und gibt anderen das Gefühl, gehört und wertgeschätzt zu werden.
+
+Name: Daniel König
+Subset: {P3, P4, P8}
+Beschreibung: Daniel König ist ein familienorientierter Mensch mit einem ausgeprägten Sinn für Ehre und Loyalität. Er fühlt sich besonders dann erfüllt, wenn er für seine Liebsten da sein kann und Verantwortung übernimmt. Körperliche Aktivität ist für ihn ein wichtiger Ausgleich, denn er glaubt daran, dass ein starker Körper und ein starker Geist Hand in Hand gehen. Herausforderungen schrecken ihn nicht ab – vielmehr sieht er sie als Möglichkeit, seinen Charakter zu formen und seine Werte unter Beweis zu stellen.
+
+Name: Vanessa Beck
+Subset: {P3, P5, P9}
+Beschreibung: Vanessa Beck ist eine Idealistin, die tief an die Kraft der Liebe und der Familie glaubt. Für sie sind zwischenmenschliche Beziehungen das Fundament eines erfüllten Lebens, und sie gibt alles, um diese zu pflegen und zu vertiefen. Romantik und Zuneigung sind für sie essenziell, weil sie daran glaubt, dass echte Verbindungen das Leben schöner machen. Gleichzeitig bleibt sie ihren Idealen treu und setzt sich für das ein, was sie für richtig hält, egal, wie steinig der Weg sein mag.
+
+Name: Patrick Schuster
+Subset: {P3, P6, P10}
+Beschreibung: Patrick Schuster ist ein unabhängiger Geist, der sich dennoch stark mit seiner Familie verbunden fühlt. Für ihn ist es wichtig, sein eigenes Leben zu führen, ohne dabei den Kontakt zu seinen Liebsten zu verlieren. Gleichzeitig schätzt er den Austausch mit anderen und genießt es, Teil einer Gemeinschaft zu sein, in der er sich frei entfalten kann. Seine Mischung aus Freiheitsliebe und Zugehörigkeitsgefühl macht ihn zu einem ausgeglichenen und zufriedenen Menschen.
+
+Name: Julia Mayer
+Subset: {P3, P7, P11}
+Beschreibung: Julia Mayer ist ein strukturierter und verantwortungsbewusster Mensch, der großen Wert auf Familie und Tradition legt. Sie ist jemand, der klare Regeln und feste Werte schätzt, weil sie ihr Sicherheit und Orientierung geben. Gleichzeitig ist sie ehrgeizig und strebt nach Status und Anerkennung, sowohl in ihrem sozialen Umfeld als auch im beruflichen Leben. Sie glaubt daran, dass harte Arbeit und Disziplin die Schlüssel zu einem erfolgreichen und erfüllten Leben sind.
+
+Name: Sebastian Wolf
+Subset: {P3, P12, P4}
+Beschreibung: Sebastian Wolf ist ein familienverbundener Mensch, der sich ein friedliches und ausgeglichenes Leben wünscht. Er legt großen Wert auf Ruhe und Harmonie, sowohl in seinem persönlichen Umfeld als auch in seinen Beziehungen. Gleichzeitig hat er ein starkes Ehrgefühl und möchte stets mit Würde und Respekt behandelt werden. Er geht Konflikten nicht unbedingt aus dem Weg, aber er versucht, sie auf eine ruhige und diplomatische Weise zu lösen.
+
+Name: Sophia Bauer
+Subset: {P4, P5, P11}
+Beschreibung: Sophia Bauer ist eine zielstrebige und idealistische Person, die hohe Maßstäbe an sich selbst setzt. Sie glaubt daran, dass Integrität und Prinzipientreue die Basis für persönlichen und beruflichen Erfolg sind. Anerkennung und Status sind ihr wichtig, aber nur dann, wenn sie durch harte Arbeit und Ehrlichkeit erreicht wurden. Sie ist jemand, der für seine Werte kämpft und sich nicht so leicht von seinem Weg abbringen lässt.
+
+Name: Kevin Lenz
+Subset: {P4, P6, P12}
+Beschreibung: Kevin Lenz ist ein unabhängiger und stolzer Mensch, der sich durch nichts und niemanden einschränken lassen möchte. Er liebt es, sein eigenes Tempo zu bestimmen und schätzt die Freiheit, sein Leben nach seinen eigenen Vorstellungen zu gestalten. Gleichzeitig ist ihm ein stressfreies und ausgeglichenes Leben wichtig, da er keinen Sinn darin sieht, sich unnötig aufzureiben.
+
+Name: Leonie Fuchs
+Subset: {P5, P7, P9}
+Beschreibung: Leonie Fuchs ist eine leidenschaftliche Idealistin, die großen Wert auf Ordnung und Struktur in ihrem Leben legt. Sie glaubt an eine Welt, in der Prinzipien und Werte das Fundament für echte, tiefe Verbindungen zwischen Menschen bilden. Romantik und Zuneigung spielen eine wichtige Rolle für sie – sie liebt es, Liebe nicht nur zu empfangen, sondern auch aktiv zu geben. Ihre strukturierte und organisierte Art hilft ihr dabei, ihre Ideale auch im Alltag zu leben und nicht den Blick für das Wesentliche zu verlieren.
+
+Name: Marco Brandt
+Subset: {P5, P8, P11}
+Beschreibung: Marco Brandt ist ein energiegeladener Idealist, der sich gerne körperlich auspowert und gleichzeitig nach Anerkennung strebt. Für ihn ist Sport nicht nur eine Freizeitbeschäftigung, sondern eine Möglichkeit, sich selbst stetig zu verbessern und persönliche Grenzen zu überwinden. Er glaubt daran, dass harter Einsatz und Durchhaltevermögen zu Erfolg und Status führen, weshalb er stets mit Ehrgeiz an seine Ziele herangeht. Sein Enthusiasmus und seine Disziplin inspirieren oft auch andere, über sich selbst hinauszuwachsen.
+
+Name: Nina Krüger
+Subset: {P5, P10, P12}
+Beschreibung: Nina Krüger ist eine tiefsinnige Person, die sich für die Gemeinschaft und das Wohl aller einsetzt, ohne dabei ihr eigenes Bedürfnis nach innerer Ruhe aus den Augen zu verlieren. Sie glaubt an das Gute in den Menschen und setzt sich für eine harmonische Gesellschaft ein, in der jeder seinen Platz findet. Ihr Idealismus treibt sie an, sich für soziale Themen zu engagieren, während sie gleichzeitig darauf achtet, sich nicht von Stress und negativen Energien vereinnahmen zu lassen.
+
+Name: Florian Huber
+Subset: {P6, P8, P9}
+Beschreibung: Florian Huber ist ein freiheitsliebender und leidenschaftlicher Mensch, der sich in Bewegung am wohlsten fühlt. Sei es beim Sport oder auf Reisen – er liebt es, neue Erfahrungen zu sammeln und sein Leben selbstbestimmt zu gestalten. Romantik spielt für ihn eine große Rolle, doch er möchte sich dabei nicht eingeengt fühlen, sondern eine Partnerschaft, die auf Vertrauen und individueller Freiheit basiert. Sein Charme und seine lebensfrohe Art machen ihn zu einer Person, mit der man gerne Zeit verbringt.
+
+Name: Theresa Wagner
+Subset: {P6, P10, P11}
+Beschreibung: Theresa Wagner ist eine unabhängige und selbstbewusste Person, die ihren eigenen Weg geht, aber dennoch die Zugehörigkeit zu einer Gemeinschaft schätzt. Sie ist sozial sehr aktiv, genießt es aber gleichzeitig, ihren persönlichen Raum und ihre Selbstständigkeit zu bewahren. Status und Anerkennung sind für sie wichtig, jedoch nur, wenn sie durch eigene Leistungen verdient wurden. Sie ist eine inspirierende Persönlichkeit, die durch ihre Entschlossenheit und ihren Gemeinschaftssinn andere motiviert.
+
+Name: Jonas Richter
+Subset: {P7, P9, P12}
+Beschreibung: Jonas Richter ist ein ausgeglichener Mensch, der Ordnung und Harmonie in seinem Leben schätzt. Romantik ist für ihn keine bloße Emotion, sondern ein gut durchdachter Teil seines Lebens, den er mit Struktur und Achtsamkeit pflegt. Gleichzeitig ist ihm Ruhe und Stressfreiheit sehr wichtig – er lässt sich ungern von äußeren Einflüssen aus der Balance bringen und sucht aktiv nach Wegen, sein Leben in geordneten Bahnen zu halten.
+
+Name: Caroline Bergmann
+Subset: {P7, P10, P4}
+Beschreibung: Caroline Bergmann ist eine Person mit starkem Sinn für Ehre, Struktur und soziale Zugehörigkeit. Sie liebt es, klare Regeln und Abläufe zu haben, da sie ihr Halt und Orientierung geben. In Gruppen übernimmt sie oft eine verantwortungsvolle Rolle, da sie für Gerechtigkeit und Ordnung sorgt. Gleichzeitig ist sie sehr loyal gegenüber ihrer Gemeinschaft und setzt sich für diejenigen ein, die ihr wichtig sind.
+
+Name: Tim Schäfer
+Subset: {P8, P12, P3}
+Beschreibung: Tim Schäfer ist ein naturverbundener und sportlicher Mensch, der Bewegung als seinen Ausgleich zum Alltag sieht. Gleichzeitig legt er großen Wert auf seine Familie und genießt es, gemeinsame Zeit in einer ruhigen und stressfreien Umgebung zu verbringen. Er glaubt daran, dass körperliches und seelisches Wohlbefinden Hand in Hand gehen und achtet darauf, sich nicht zu sehr von negativen Energien beeinflussen zu lassen. Seine ruhige und ausgeglichene Art macht ihn zu einer angenehmen Gesellschaft, die für Ausgeglichenheit und Verlässlichkeit steht.

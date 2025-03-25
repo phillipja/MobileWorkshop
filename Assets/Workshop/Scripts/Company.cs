@@ -130,10 +130,10 @@ public class Company : MonoBehaviour
         if(node == null || nodes == null)
             return;
 
-        foreach(MathModeledEdge edge in node.toEdges)
+        foreach(SO_GraphNode edge in node.toEdges)
         {
-            GetSubgraphRecursive(edge.node, nodes);
-            nodes.Add(edge.node);
+            GetSubgraphRecursive(edge, nodes);
+            nodes.Add(edge);
         }
     }
 

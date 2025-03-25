@@ -23,6 +23,6 @@ MonoBehaviour:
     Art macht ihn zu einer angenehmen Gesellschaft, die f\xFCr Ausgeglichenheit und
     Verl\xE4sslichkeit steht."
   <nodes>k__BackingField:
-  - {fileID: -5765376257053924930, guid: 6bcf75186f193144fb014f759abf59c8, type: 2}
-  - {fileID: -8786458790315288926, guid: 6bcf75186f193144fb014f759abf59c8, type: 2}
-  - {fileID: -3795652455997224800, guid: 6bcf75186f193144fb014f759abf59c8, type: 2}
+  - {fileID: -6292376383397886506, guid: 7234189702dadc04e928a2cb3a205957, type: 2}
+  - {fileID: 409271655690756279, guid: 7234189702dadc04e928a2cb3a205957, type: 2}
+  - {fileID: 1227396385715547613, guid: 7234189702dadc04e928a2cb3a205957, type: 2}

@@ -17,6 +17,19 @@ namespace Graph
             this.weight = weight;
         }
 
+        public float Evaluate()
+        {
+            var x = node.GetValue();
+            return _funcType switch
+            {
+                MathFunc.Linear => MathFunctions.EvaluateLinear(_constants[0], _constants[1], x),
+                MathFunc.Exponential => MathFunctions.EvaluateExponential(_constants[0], _constants[1], x),
+                MathFunc.Quadratic => MathFunctions.EvaluateQuadratic(_constants[0], _constants[1], _constants[2], x),
+                MathFunc.Sinus => MathFunctions.EvaluateSin(_constants[0], _constants[1], _constants[2], _constants[3], x),
+                _ => 0f,
+            };
+        }
+
         public void GenerateConstants(MathFunc funcType)
         {
             _funcType = funcType;

@@ -21,6 +21,6 @@ MonoBehaviour:
     behandelt werden. Er geht Konflikten nicht unbedingt aus dem Weg, aber er versucht,
     sie auf eine ruhige und diplomatische Weise zu l\xF6sen."
   <nodes>k__BackingField:
-  - {fileID: -3795652455997224800, guid: 6bcf75186f193144fb014f759abf59c8, type: 2}
-  - {fileID: -8786458790315288926, guid: 6bcf75186f193144fb014f759abf59c8, type: 2}
-  - {fileID: -2066487766534761923, guid: 6bcf75186f193144fb014f759abf59c8, type: 2}
+  - {fileID: 1227396385715547613, guid: 7234189702dadc04e928a2cb3a205957, type: 2}
+  - {fileID: 409271655690756279, guid: 7234189702dadc04e928a2cb3a205957, type: 2}
+  - {fileID: 6801082254000949997, guid: 7234189702dadc04e928a2cb3a205957, type: 2}

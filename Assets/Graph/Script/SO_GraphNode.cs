@@ -13,24 +13,46 @@ namespace Graph
         public int index;
         public string description;
 
-        public List<SO_GraphNode> fromEdges = new(2);
-        public List<MathModeledEdge> toEdges = new(2);
+        public List<MathModeledEdge> fromEdges = new(2);
+        public List<SO_GraphNode> toEdges = new(2);
+
+        private float _bufferValue;
 
         public string id => $"{category.id}{index}";
 
         private void OnEnable()
         {
-            Debug.Log("Enable");
+            ClearBufferValue();
         }
 
-        private void OnDisable()
+        public void SetBufferValue(float value)
         {
-            Debug.Log("Disable");
+            _bufferValue = value;
+        }
+
+        public void ClearBufferValue()
+        {
+            _bufferValue = 0f;
+        }
+
+        public float GetValue()
+        {
+            if(_bufferValue > 0f)
+            {
+                return _bufferValue;
+            }
+
+            foreach(var edge in fromEdges)
+            {
+                _bufferValue += edge.Evaluate();
+            }
+
+            return _bufferValue;
         }
 
         public void GenerateEdgeFunctions()
         {
-            foreach(MathModeledEdge edge in toEdges)
+            foreach(MathModeledEdge edge in fromEdges)
             {
                 float r = Random.Range(0f, 1f);
                 MathFunc funcType = r < LIN_LIMIT
