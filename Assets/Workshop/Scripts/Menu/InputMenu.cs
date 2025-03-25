@@ -8,7 +8,8 @@ using UnityEngine.UI;
 
 public class InputMenu : MonoBehaviour
 {
-    const int MAX_VALUE = 20;
+    const int MAX_SLIDER = 20;
+    const int MAX_VALUE = MAX_SLIDER * 3 / 2;
 
     [Header("Inputs")]
     [SerializeField] private LevelRegulator _inputOne;
@@ -99,7 +100,7 @@ public class InputMenu : MonoBehaviour
 
     private void InitInput(SO_GraphNode node, LevelRegulator regulator)
     {
-        regulator.Init(node, MAX_VALUE);
+        regulator.Init(node, MAX_SLIDER);
         regulator.OnValueChanged += OnInputValueChange;
 
         _nodeRegulators.Add(node, regulator);
@@ -110,16 +111,16 @@ public class InputMenu : MonoBehaviour
 
     private void OnInputValueChange(SO_GraphNode node, int newValue)
     {
-        _currentInputValueSum -= Mathf.RoundToInt(_currentInputValues[node] * MAX_VALUE);
+        _currentInputValueSum -= Mathf.RoundToInt(_currentInputValues[node] * MAX_SLIDER);
         var ensuredVal = EnsureInputValue(newValue);
         if(ensuredVal != newValue)
         {
-            var sliderValue = _currentInputValues[node] * MAX_VALUE;
+            var sliderValue = _currentInputValues[node] * MAX_SLIDER;
             _nodeRegulators[node].SetSlider(sliderValue);
         }
         else
         {
-            _currentInputValues[node] = (float) ensuredVal / MAX_VALUE;
+            _currentInputValues[node] = (float) ensuredVal / MAX_SLIDER;
             _inputValuesChanged = true;
         }
     }
