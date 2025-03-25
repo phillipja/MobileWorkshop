@@ -54,8 +54,15 @@ public class SideEffectsMenu : MonoBehaviour
         var sum = 0f;
         foreach(var node in nodes)
         {
-            sum += node.GetValue();
+            sum += node.GetValue(_manager.UseNormalizedValue);
         }
+
+        if(_manager.UseNormalizedValue
+            && nodes.Length > 0)
+        {
+            sum /= nodes.Length;
+        }
+
         indicator.SetValue(sum);
     }
 }

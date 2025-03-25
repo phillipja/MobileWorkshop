@@ -17,9 +17,9 @@ namespace Graph
             this.weight = weight;
         }
 
-        public float Evaluate()
+        public float Evaluate(bool normalized)
         {
-            var x = node.GetValue();
+            var x = node.GetValue(normalized);
             return _funcType switch
             {
                 MathFunc.Linear => MathFunctions.EvaluateLinear(_constants[0], _constants[1], x),

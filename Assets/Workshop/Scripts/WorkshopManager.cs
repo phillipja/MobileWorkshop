@@ -30,6 +30,7 @@ public class WorkshopManager : MonoBehaviour
     };
 
     private float _currentBudget;
+    private bool _useNormalizedValue;
 
     [Header("UI")]
     [SerializeField] private TreasuryMenu _treasuryMenu;
@@ -39,6 +40,7 @@ public class WorkshopManager : MonoBehaviour
 
     public float StartBudget => _startBudget;
     public float CurrentBudget => _currentBudget;
+    public bool UseNormalizedValue => _useNormalizedValue;
 
     public event Action OnGraphUpdated;
 
@@ -56,6 +58,16 @@ public class WorkshopManager : MonoBehaviour
         _benefitsMenu.Init(this, _selectedPerson);
     }
 
+    /// <summary>
+    /// Used in UI Toggle;
+    /// </summary>
+    /// <param name="active"></param>
+    public void UseNormalizedValues(bool active)
+    {
+        _useNormalizedValue = active;
+        UpdateInputValues(_inputMenu.CurrentInputValues);
+    }
+
     public void UpdateInputValues(Dictionary<SO_GraphNode, float> currentInputValues)
     {
         foreach(var node in _subGraphNodes)
@@ -67,7 +79,8 @@ public class WorkshopManager : MonoBehaviour
         {
             if(_startNodes.ContainsKey(kvp.Key))
             {
-                float value = _startBudget * _startNodes[kvp.Key] * kvp.Value;
+                float value = _useNormalizedValue ? kvp.Value
+                    :_startBudget * _startNodes[kvp.Key] * kvp.Value;
                 kvp.Key.SetBufferValue(value);
             }
         }
@@ -75,7 +88,7 @@ public class WorkshopManager : MonoBehaviour
         _currentBudget = _startBudget * (1f - _inputMenu.CurrentInputValueSum);
         foreach(var node in _subGraphNodes.Where(n => n.category == _outputCategory))
         {
-            node.GetValue();
+            node.GetValue(_useNormalizedValue);
         }
 
         OnGraphUpdated?.Invoke();

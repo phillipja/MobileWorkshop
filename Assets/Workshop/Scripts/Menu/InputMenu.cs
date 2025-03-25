@@ -36,7 +36,8 @@ public class InputMenu : MonoBehaviour
     private Dictionary<SO_GraphNode, float> _currentInputValues;
     private Dictionary<SO_GraphNode, LevelRegulator> _nodeRegulators;
 
-    public float CurrentInputValueSum => (float)_currentInputValueSum / MAX_VALUE;
+    public float CurrentInputValueSum => (float) _currentInputValueSum / MAX_VALUE;
+    public Dictionary<SO_GraphNode, float> CurrentInputValues => _currentInputValues;
 
     private void Start()
     {
@@ -79,10 +80,10 @@ public class InputMenu : MonoBehaviour
 
     private void OnGraphUpdated()
     {
-        _inputOne.UpdateUI();
-        _inputTwo.UpdateUI();
-        _inputThree.UpdateUI();
-        _inputFour.UpdateUI();
+        _inputOne.UpdateUI(_manager.UseNormalizedValue);
+        _inputTwo.UpdateUI(_manager.UseNormalizedValue);
+        _inputThree.UpdateUI(_manager.UseNormalizedValue);
+        _inputFour.UpdateUI(_manager.UseNormalizedValue);
     }
 
     public void Init(WorkshopManager manager, SO_GraphNode[] startNodes)
@@ -118,7 +119,7 @@ public class InputMenu : MonoBehaviour
         }
         else
         {
-            _currentInputValues[node] = ensuredVal / MAX_VALUE;
+            _currentInputValues[node] = (float) ensuredVal / MAX_VALUE;
             _inputValuesChanged = true;
         }
     }

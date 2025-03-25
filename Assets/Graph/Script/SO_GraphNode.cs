@@ -35,7 +35,7 @@ namespace Graph
             _bufferValue = 0f;
         }
 
-        public float GetValue()
+        public float GetValue(bool normalized)
         {
             if(_bufferValue > 0f)
             {
@@ -44,7 +44,12 @@ namespace Graph
 
             foreach(var edge in fromEdges)
             {
-                _bufferValue += edge.Evaluate();
+                _bufferValue += edge.Evaluate(normalized);
+            }
+
+            if(normalized && fromEdges.Count > 0)
+            {
+                _bufferValue /= fromEdges.Count;
             }
 
             return _bufferValue;

@@ -3,7 +3,6 @@ using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using static UnityEngine.Rendering.DebugUI;
 
 [Serializable]
 public class LevelIndicator
@@ -19,7 +18,7 @@ public class LevelIndicator
         _titelField.text = titel;
     }
 
-    public void SetValue(float value, string format = "0.00")
+    public void SetValue(float value, string format = "0.000")
     {
         _valueField.text = value.ToString(format: format);
 
@@ -59,9 +58,9 @@ public class LevelRegulator
         _levelSlider.onValueChanged.RemoveListener(OnSliderChanged);
     }
 
-    public void UpdateUI()
+    public void UpdateUI(bool useNormalizedValue)
     {
-        float value = _node.GetValue();
+        float value = _node.GetValue(useNormalizedValue);
         SetLabel(value);
     }
 
@@ -70,7 +69,7 @@ public class LevelRegulator
         OnValueChanged?.Invoke(_node, (int)value);
     }
 
-    public void SetLabel(float value, string format = "0.00")
+    public void SetLabel(float value, string format = "0.000")
     {
         _valueField.text = value.ToString(format: format);
     }
