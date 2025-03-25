@@ -54,10 +54,10 @@ public class SideEffectsMenu : MonoBehaviour
         var sum = 0f;
         foreach(var node in nodes)
         {
-            sum += node.GetValue(_manager.UseNormalizedValue);
+            sum += node.GetValue(_manager.settings);
         }
 
-        if(_manager.UseNormalizedValue
+        if(_manager.settings.useNormalizedValue
             && nodes.Length > 0)
         {
             sum /= nodes.Length;

@@ -4,10 +4,16 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using Graph;
+using UnityEngine.SceneManagement;
 
 public class WorkshopManager : MonoBehaviour
 {
     const int START_SIZE = 4;
+
+    [Header("Settings")]
+    public Settings settings;
+
+    private bool _settingsUpdated;
 
     [Header("Persons")]
     [SerializeField] private SO_Person[] _persons;
@@ -30,7 +36,6 @@ public class WorkshopManager : MonoBehaviour
     };
 
     private float _currentBudget;
-    private bool _useNormalizedValue;
 
     [Header("UI")]
     [SerializeField] private TreasuryMenu _treasuryMenu;
@@ -40,7 +45,6 @@ public class WorkshopManager : MonoBehaviour
 
     public float StartBudget => _startBudget;
     public float CurrentBudget => _currentBudget;
-    public bool UseNormalizedValue => _useNormalizedValue;
 
     public event Action OnGraphUpdated;
 
@@ -58,14 +62,41 @@ public class WorkshopManager : MonoBehaviour
         _benefitsMenu.Init(this, _selectedPerson);
     }
 
+    private void LateUpdate()
+    {
+        if(_settingsUpdated)
+        {
+            UpdateInputValues(_inputMenu.CurrentInputValues);
+            _settingsUpdated = false;
+        }
+    }
+
     /// <summary>
     /// Used in UI Toggle;
     /// </summary>
     /// <param name="active"></param>
     public void UseNormalizedValues(bool active)
     {
-        _useNormalizedValue = active;
-        UpdateInputValues(_inputMenu.CurrentInputValues);
+        settings.useNormalizedValue = active;
+        _settingsUpdated = true;
+    }
+
+    /// <summary>
+    /// Used in UI Toggle; 
+    /// </summary>
+    /// <param name="active"></param>
+    public void UseEaseFunctions(bool active)
+    {
+        settings.useEaseFunctions = active;
+        _settingsUpdated = true;
+    }
+
+    /// <summary>
+    /// Used in UI Button;
+    /// </summary>
+    public void RestartWorkshop()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void UpdateInputValues(Dictionary<SO_GraphNode, float> currentInputValues)
@@ -75,20 +106,22 @@ public class WorkshopManager : MonoBehaviour
             node.ClearBufferValue();
         }
 
+        Debug.Log("---------- Update Input Values ----------");
         foreach(var kvp in currentInputValues)
         {
             if(_startNodes.ContainsKey(kvp.Key))
             {
-                float value = _useNormalizedValue ? kvp.Value
+                float value = settings.useNormalizedValue ? kvp.Value
                     :_startBudget * _startNodes[kvp.Key] * kvp.Value;
                 kvp.Key.SetBufferValue(value);
+                Debug.Log($"{kvp.Key.id} - {value}");
             }
         }
 
         _currentBudget = _startBudget * (1f - _inputMenu.CurrentInputValueSum);
         foreach(var node in _subGraphNodes.Where(n => n.category == _outputCategory))
         {
-            node.GetValue(_useNormalizedValue);
+            node.GetValue(settings);
         }
 
         OnGraphUpdated?.Invoke();
@@ -140,9 +173,20 @@ public class WorkshopManager : MonoBehaviour
 
         foreach(SO_GraphNode edgeNode in node.toEdges)
         {
+            var edge = edgeNode.fromEdges.FirstOrDefault(e => e.node == node);
+            if(edge != null)
+                edge.IsActive = true;
+
             GetSubgraphRecursive(edgeNode, nodes);
             nodes.Add(edgeNode);
         }
     }
     #endregion
+}
+
+[Serializable]
+public struct Settings
+{
+    public bool useNormalizedValue;
+    public bool useEaseFunctions;
 }

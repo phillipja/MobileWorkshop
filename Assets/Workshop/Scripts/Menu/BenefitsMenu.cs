@@ -19,6 +19,11 @@ public class BenefitsMenu : MonoBehaviour
         _manager.OnGraphUpdated += OnGraphUpdated;
 
         _person = person;
+
+        _benefitOneField.SetTitel(_person.nodes[0].description);
+        _benefitTwoField.SetTitel(_person.nodes[1].description);
+        _benefitThreeField.SetTitel(_person.nodes[2].description);
+
         _benefitOneField.SetValue(0f);
         _benefitTwoField.SetValue(0f);
         _benefitThreeField.SetValue(0f);
@@ -39,6 +44,6 @@ public class BenefitsMenu : MonoBehaviour
 
     private void UpdateUI(SO_GraphNode node, LevelIndicator indicator)
     {
-        indicator.SetValue(node.GetValue(_manager.UseNormalizedValue));
+        indicator.SetValue(node.GetValue(_manager.settings));
     }
 }

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Graph
@@ -23,6 +24,10 @@ namespace Graph
         private void OnEnable()
         {
             ClearBufferValue();
+            foreach(var edge in fromEdges)
+            {
+                edge.IsActive = false;
+            }
         }
 
         public void SetBufferValue(float value)
@@ -35,21 +40,23 @@ namespace Graph
             _bufferValue = 0f;
         }
 
-        public float GetValue(bool normalized)
+        public float GetValue(Settings settings)
         {
             if(_bufferValue > 0f)
             {
                 return _bufferValue;
             }
 
-            foreach(var edge in fromEdges)
+            var activeEdges = fromEdges.Where(e => e.IsActive);
+            foreach(var edge in activeEdges)
             {
-                _bufferValue += edge.Evaluate(normalized);
+                _bufferValue += edge.Evaluate(settings);
             }
 
-            if(normalized && fromEdges.Count > 0)
+            int amount = activeEdges.Count();
+            if(settings.useNormalizedValue && amount > 0)
             {
-                _bufferValue /= fromEdges.Count;
+                _bufferValue /= amount;
             }
 
             return _bufferValue;

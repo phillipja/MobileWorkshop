@@ -58,9 +58,9 @@ public class LevelRegulator
         _levelSlider.onValueChanged.RemoveListener(OnSliderChanged);
     }
 
-    public void UpdateUI(bool useNormalizedValue)
+    public void UpdateUI(Settings settings)
     {
-        float value = _node.GetValue(useNormalizedValue);
+        float value = _node.GetValue(settings);
         SetLabel(value);
     }
 

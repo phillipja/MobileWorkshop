@@ -11,23 +11,42 @@ namespace Graph
         [SerializeField] private MathFunc _funcType;
         [SerializeField] private float[] _constants;
 
+        public bool IsActive { get; set; }
+
         public MathModeledEdge(SO_GraphNode toNode, Weight weight)
         {
             this.node = toNode;
             this.weight = weight;
         }
 
-        public float Evaluate(bool normalized)
+        public float Evaluate(Settings settings)
         {
-            var x = node.GetValue(normalized);
+            var x = node.GetValue(settings);
             return _funcType switch
             {
-                MathFunc.Linear => MathFunctions.EvaluateLinear(_constants[0], _constants[1], x),
-                MathFunc.Exponential => MathFunctions.EvaluateExponential(_constants[0], _constants[1], x),
-                MathFunc.Quadratic => MathFunctions.EvaluateQuadratic(_constants[0], _constants[1], _constants[2], x),
-                MathFunc.Sinus => MathFunctions.EvaluateSin(_constants[0], _constants[1], _constants[2], _constants[3], x),
+                MathFunc.Linear => settings.useEaseFunctions
+                ? MathFunctions.EvaluateLinear(x) * DeterminWeightMultiplier()
+                : MathFunctions.EvaluateLinear(_constants[0], _constants[1], x),
+
+                MathFunc.Exponential => settings.useEaseFunctions
+                ? MathFunctions.EvaluateExponential(x) * DeterminWeightMultiplier()
+                : MathFunctions.EvaluateExponential(_constants[0], _constants[1], x),
+
+                MathFunc.Quadratic => settings.useEaseFunctions
+                ? MathFunctions.EvaluateQuadratic(x) * DeterminWeightMultiplier()
+                : MathFunctions.EvaluateQuadratic(_constants[0], _constants[1], _constants[2], x),
+
+                MathFunc.Sinus => settings.useEaseFunctions
+                ? MathFunctions.EvaluateSin(x) * DeterminWeightMultiplier()
+                : MathFunctions.EvaluateSin(_constants[0], _constants[1], _constants[2], _constants[3], x),
+
                 _ => 0f,
             };
+
+            float DeterminWeightMultiplier()
+            {
+                return weight == Weight.Negative ? -1 : 1;
+            }
         }
 
         public void GenerateConstants(MathFunc funcType)

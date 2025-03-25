@@ -80,10 +80,10 @@ public class InputMenu : MonoBehaviour
 
     private void OnGraphUpdated()
     {
-        _inputOne.UpdateUI(_manager.UseNormalizedValue);
-        _inputTwo.UpdateUI(_manager.UseNormalizedValue);
-        _inputThree.UpdateUI(_manager.UseNormalizedValue);
-        _inputFour.UpdateUI(_manager.UseNormalizedValue);
+        _inputOne.UpdateUI(_manager.settings);
+        _inputTwo.UpdateUI(_manager.settings);
+        _inputThree.UpdateUI(_manager.settings);
+        _inputFour.UpdateUI(_manager.settings);
     }
 
     public void Init(WorkshopManager manager, SO_GraphNode[] startNodes)
