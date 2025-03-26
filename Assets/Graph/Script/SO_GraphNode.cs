@@ -53,10 +53,14 @@ namespace Graph
                 _bufferValue += edge.Evaluate(settings);
             }
 
-            int amount = activeEdges.Count();
-            if(settings.useNormalizedValue && amount > 0)
+            //int amount = activeEdges.Count();
+            //if(settings.useNormalizedValue && amount > 0)
+            //{
+            //    _bufferValue /= amount;
+            //}
+            if(settings.useNormalizedValue)
             {
-                _bufferValue /= amount;
+                _bufferValue = Mathf.Clamp01(_bufferValue);
             }
 
             return _bufferValue;

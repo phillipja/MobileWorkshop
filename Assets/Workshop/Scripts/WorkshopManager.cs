@@ -71,6 +71,7 @@ public class WorkshopManager : MonoBehaviour
         }
     }
 
+    #region UI Functions
     /// <summary>
     /// Used in UI Toggle;
     /// </summary>
@@ -98,6 +99,7 @@ public class WorkshopManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+    #endregion
 
     public void UpdateInputValues(Dictionary<SO_GraphNode, float> currentInputValues)
     {
@@ -106,7 +108,6 @@ public class WorkshopManager : MonoBehaviour
             node.ClearBufferValue();
         }
 
-        Debug.Log("---------- Update Input Values ----------");
         foreach(var kvp in currentInputValues)
         {
             if(_startNodes.ContainsKey(kvp.Key))
@@ -114,7 +115,6 @@ public class WorkshopManager : MonoBehaviour
                 float value = settings.useNormalizedValue ? kvp.Value
                     :_startBudget * _startNodes[kvp.Key] * kvp.Value;
                 kvp.Key.SetBufferValue(value);
-                Debug.Log($"{kvp.Key.id} - {value}");
             }
         }
 

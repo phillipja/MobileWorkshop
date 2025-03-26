@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public class InputMenu : MonoBehaviour
 {
     const int MAX_SLIDER = 20;
-    const int MAX_VALUE = MAX_SLIDER * 3 / 2;
+    const int MAX_VALUE = MAX_SLIDER * 2;
 
     [Header("Inputs")]
     [SerializeField] private LevelRegulator _inputOne;
@@ -37,7 +37,7 @@ public class InputMenu : MonoBehaviour
     private Dictionary<SO_GraphNode, float> _currentInputValues;
     private Dictionary<SO_GraphNode, LevelRegulator> _nodeRegulators;
 
-    public float CurrentInputValueSum => (float) _currentInputValueSum / MAX_VALUE;
+    public float CurrentInputValueSum => (float)_currentInputValueSum / MAX_VALUE;
     public Dictionary<SO_GraphNode, float> CurrentInputValues => _currentInputValues;
 
     private void Start()
@@ -71,6 +71,14 @@ public class InputMenu : MonoBehaviour
         {
             _manager.UpdateInputValues(_currentInputValues);
             _inputValuesChanged = false;
+        }
+
+        if(Input.GetKeyDown(KeyCode.P))
+        {
+            foreach(var item in _currentInputValues)
+            {
+                Debug.Log($"Node: {item.Key.id} - Value: {item.Value}");
+            }
         }
     }
 
@@ -111,18 +119,18 @@ public class InputMenu : MonoBehaviour
 
     private void OnInputValueChange(SO_GraphNode node, int newValue)
     {
-        _currentInputValueSum -= Mathf.RoundToInt(_currentInputValues[node] * MAX_SLIDER);
+        var oldValue = Mathf.RoundToInt(_currentInputValues[node] * MAX_SLIDER);
+        _currentInputValueSum -= oldValue;
         var ensuredVal = EnsureInputValue(newValue);
-        if(ensuredVal != newValue)
+
+        if(ensuredVal != oldValue)
         {
-            var sliderValue = _currentInputValues[node] * MAX_SLIDER;
-            _nodeRegulators[node].SetSlider(sliderValue);
-        }
-        else
-        {
-            _currentInputValues[node] = (float) ensuredVal / MAX_SLIDER;
+            _currentInputValues[node] = (float)ensuredVal / MAX_SLIDER;
             _inputValuesChanged = true;
         }
+
+        if(ensuredVal != newValue)
+            _nodeRegulators[node].SetSlider(ensuredVal);
     }
 
     private float EnsureInputValue(int amoutToAdd)
