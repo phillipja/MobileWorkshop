@@ -6675,21 +6675,21 @@ MonoBehaviour:
     _valueField: {fileID: 1824113420}
     _fillImage: {fileID: 1761738889}
     maxValue: -1
-  _futhureCategory: {fileID: 1859973656476710204, guid: 7234189702dadc04e928a2cb3a205957,
+  _futhureCategory: {fileID: 1890183593211064392, guid: 7234189702dadc04e928a2cb3a205957,
     type: 2}
   _secondaryField:
     _titelField: {fileID: 1666443927}
     _valueField: {fileID: 430038131}
     _fillImage: {fileID: 376560332}
     maxValue: -1
-  _secondaryCategory: {fileID: 7658963941044496585, guid: 7234189702dadc04e928a2cb3a205957,
+  _secondaryCategory: {fileID: 5396564150699813101, guid: 7234189702dadc04e928a2cb3a205957,
     type: 2}
   _ethicsField:
     _titelField: {fileID: 1682165410}
     _valueField: {fileID: 310929833}
     _fillImage: {fileID: 1252843205}
     maxValue: -1
-  _ethicsCategory: {fileID: -3653630390883137960, guid: 7234189702dadc04e928a2cb3a205957,
+  _ethicsCategory: {fileID: -4355678490679928069, guid: 7234189702dadc04e928a2cb3a205957,
     type: 2}
 --- !u!1 &1252843203
 GameObject:
@@ -11594,9 +11594,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0316a7f535a987742aff2083bbba1cb0, type: 2}
   - {fileID: 11400000, guid: 3d716d1fb7c78af4d9cf7a636e112b70, type: 2}
   _graph: {fileID: 11400000, guid: 7234189702dadc04e928a2cb3a205957, type: 2}
-  _inputCategory: {fileID: 3490737655862277286, guid: 7234189702dadc04e928a2cb3a205957,
+  _inputCategory: {fileID: 5903119763373296720, guid: 7234189702dadc04e928a2cb3a205957,
     type: 2}
-  _outputCategory: {fileID: 3888335634066184519, guid: 7234189702dadc04e928a2cb3a205957,
+  _outputCategory: {fileID: 1265635601877930621, guid: 7234189702dadc04e928a2cb3a205957,
     type: 2}
   _startBudget: 15
   _inputFactors:

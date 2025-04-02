@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8399182617030661219
+--- !u!114 &-8901017235440691705
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,260 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_P2
+  m_Name: Node_ETH9
   m_EditorClassIdentifier: 
-  category: {fileID: 3888335634066184519}
-  index: 2
-  description: Neugier
-  fromEdges:
-  - node: {fileID: 8758310427775393446}
-    weight: 1
-    _funcType: 4
-    _constants:
-    - 0.53900665
-    - -2.7733917
-    - 0.7217481
-    - -0.19777882
-  - node: {fileID: 4361309489856035353}
-    weight: 1
-    _funcType: 1
-    _constants:
-    - 0.96733165
-    - -0.28740752
-  toEdges: []
---- !u!114 &-8254268045928507946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_S3
-  m_EditorClassIdentifier: 
-  category: {fileID: 3490737655862277286}
-  index: 3
-  description: Personentage
-  fromEdges: []
-  toEdges:
-  - {fileID: 4921926691693072072}
-  - {fileID: -8225451541702536319}
-  - {fileID: -3424072605170924156}
-  - {fileID: -769685115792179150}
-  - {fileID: 104803286481799370}
---- !u!114 &-8225451541702536319
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_D5
-  m_EditorClassIdentifier: 
-  category: {fileID: 4140450735908983213}
-  index: 5
-  description: "Produktqualit\xE4t"
-  fromEdges:
-  - node: {fileID: -8254268045928507946}
-    weight: 1
-    _funcType: 2
-    _constants:
-    - 0.5764217
-    - 0.66967374
-  - node: {fileID: -3793670153638981055}
-    weight: 1
-    _funcType: 3
-    _constants:
-    - 0.63510084
-    - 0.34538552
-    - -0.17813003
-  toEdges:
-  - {fileID: 1586940188408010041}
---- !u!114 &-8028967334632617291
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_SE3
-  m_EditorClassIdentifier: 
-  category: {fileID: 7658963941044496585}
-  index: 3
-  description: "Politische Unterst\xFCtzung/Gegenwind"
-  fromEdges:
-  - node: {fileID: 7086002487874079671}
-    weight: 2
-    _funcType: 3
-    _constants:
-    - -0.9380972
-    - -0.88094234
-    - -0.28579152
-  toEdges:
-  - {fileID: -1651072287670501126}
---- !u!114 &-7892441601222930466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_P6
-  m_EditorClassIdentifier: 
-  category: {fileID: 3888335634066184519}
-  index: 6
-  description: "Unabh\xE4ngigkeit"
-  fromEdges:
-  - node: {fileID: -2493464866715744801}
-    weight: 1
-    _funcType: 2
-    _constants:
-    - 1.9768982
-    - 0.17091236
-  toEdges: []
---- !u!114 &-6413094168213162568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_Z3
-  m_EditorClassIdentifier: 
-  category: {fileID: 1859973656476710204}
-  index: 3
-  description: Technologische Obsoleszenz
-  fromEdges:
-  - node: {fileID: -2493464866715744801}
-    weight: 1
-    _funcType: 1
-    _constants:
-    - 0.48184898
-    - 0.013108373
-  - node: {fileID: 4732880025396535725}
-    weight: 1
-    _funcType: 1
-    _constants:
-    - 1.8298047
-    - -0.21774948
-  toEdges:
-  - {fileID: -941076371572357651}
---- !u!114 &-6292376383397886506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_P8
-  m_EditorClassIdentifier: 
-  category: {fileID: 3888335634066184519}
-  index: 8
-  description: "Physische Aktivit\xE4t"
-  fromEdges:
-  - node: {fileID: -3793670153638981055}
-    weight: 1
-    _funcType: 2
-    _constants:
-    - 0.8958514
-    - 0.6128676
-  toEdges: []
---- !u!114 &-5315727278599014273
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_P10
-  m_EditorClassIdentifier: 
-  category: {fileID: 3888335634066184519}
-  index: 10
-  description: "Soziale Zugeh\xF6rigkeit"
-  fromEdges:
-  - node: {fileID: -3020525090173019726}
-    weight: 1
-    _funcType: 1
-    _constants:
-    - 0.8182864
-    - 0.5345583
-  - node: {fileID: -337077808817427041}
-    weight: 1
-    _funcType: 1
-    _constants:
-    - 1.9015845
-    - -0.15107882
-  toEdges: []
---- !u!114 &-5141072098743514039
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_D7
-  m_EditorClassIdentifier: 
-  category: {fileID: 4140450735908983213}
-  index: 7
-  description: "Lieferf\xE4higkeit"
-  fromEdges:
-  - node: {fileID: -2715945237096112445}
-    weight: 1
-    _funcType: 4
-    _constants:
-    - 1.6750772
-    - -4.786941
-    - 0.035528734
-    - 0.70048046
-  toEdges:
-  - {fileID: 7086002487874079671}
---- !u!114 &-4253295364131094153
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_P9
-  m_EditorClassIdentifier: 
-  category: {fileID: 3888335634066184519}
+  category: {fileID: -4355678490679928069}
   index: 9
-  description: Romantik/Zuneigung
+  description: Diversity & Inclusion
   fromEdges:
-  - node: {fileID: 9142215486897131142}
+  - node: {fileID: -7292606751203914520}
+    strength: 3
     weight: 1
-    _funcType: 1
-    _constants:
-    - 1.7735748
-    - 0.5780432
+    _funcType: 9
+    _constants: []
+  - node: {fileID: -1926935277156042713}
+    strength: 3
+    weight: 1
+    _funcType: 7
+    _constants: []
+  - node: {fileID: -3233687300594107511}
+    strength: 1
+    weight: 1
+    _funcType: 6
+    _constants: []
   toEdges: []
---- !u!114 &-4202098846440853640
+--- !u!114 &-8808407956914922485
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -273,27 +42,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_ETH2
+  m_Name: Node_Z9
   m_EditorClassIdentifier: 
-  category: {fileID: -3653630390883137960}
-  index: 2
-  description: Umweltschutz & Nachhaltigkeit
+  category: {fileID: 1890183593211064392}
+  index: 9
+  description: Kultureller Wandel
   fromEdges:
-  - node: {fileID: -3424072605170924156}
+  - node: {fileID: -7292606751203914520}
+    strength: 3
     weight: 1
-    _funcType: 1
-    _constants:
-    - 0.5438611
-    - 0.1524545
-  - node: {fileID: -1032316317692246804}
+    _funcType: 9
+    _constants: []
+  - node: {fileID: -1926935277156042713}
+    strength: 3
     weight: 1
-    _funcType: 1
-    _constants:
-    - 1.6040766
-    - 0.78572536
-  toEdges:
-  - {fileID: 234768925413870107}
---- !u!114 &-3969695597169603701
+    _funcType: 9
+    _constants: []
+  - node: {fileID: -3233687300594107511}
+    strength: 1
+    weight: 1
+    _funcType: 8
+    _constants: []
+  toEdges: []
+--- !u!114 &-7917368522940620109
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -303,39 +74,93 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_SE5
+  m_Name: Node_ETH3
   m_EditorClassIdentifier: 
-  category: {fileID: 7658963941044496585}
-  index: 5
-  description: Mitarbeiterzufriedenheit
+  category: {fileID: -4355678490679928069}
+  index: 3
+  description: Transparenz in Lieferketten
   fromEdges:
-  - node: {fileID: -1760925726557219736}
+  - node: {fileID: 6595498654226717546}
+    strength: 1
     weight: 1
-    _funcType: 2
-    _constants:
-    - 1.2637128
-    - 0.23669341
-  - node: {fileID: -3793670153638981055}
+    _funcType: 6
+    _constants: []
+  - node: {fileID: -5719427482660807267}
+    strength: 2
+    weight: 1
+    _funcType: 5
+    _constants: []
+  - node: {fileID: 584254174025067202}
+    strength: 3
+    weight: 1
+    _funcType: 7
+    _constants: []
+  toEdges: []
+--- !u!114 &-7514303324008311329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_SE6
+  m_EditorClassIdentifier: 
+  category: {fileID: 5396564150699813101}
+  index: 6
+  description: Branchentrends
+  fromEdges:
+  - node: {fileID: 6595498654226717546}
+    strength: 3
+    weight: 1
+    _funcType: 7
+    _constants: []
+  - node: {fileID: -3032134513581926010}
+    strength: 2
+    weight: 1
+    _funcType: 5
+    _constants: []
+  - node: {fileID: 7503638794130490439}
+    strength: 2
     weight: 1
     _funcType: 1
-    _constants:
-    - 0.54272634
-    - -0.8123212
-  - node: {fileID: -2715945237096112445}
+    _constants: []
+  toEdges: []
+--- !u!114 &-7364600732643152832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_P14
+  m_EditorClassIdentifier: 
+  category: {fileID: 1265635601877930621}
+  index: 14
+  description: Status
+  fromEdges:
+  - node: {fileID: 6595498654226717546}
+    strength: 2
     weight: 1
-    _funcType: 2
-    _constants:
-    - 1.3917224
-    - 0.3178814
-  - node: {fileID: 2114089417486655665}
-    weight: 2
-    _funcType: 2
-    _constants:
-    - 1.1953039
-    - -0.7931117
-  toEdges:
-  - {fileID: 409271655690756279}
---- !u!114 &-3793670153638981055
+    _funcType: 5
+    _constants: []
+  - node: {fileID: 7503638794130490439}
+    strength: 3
+    weight: 1
+    _funcType: 9
+    _constants: []
+  - node: {fileID: -3233687300594107511}
+    strength: 2
+    weight: 1
+    _funcType: 1
+    _constants: []
+  toEdges: []
+--- !u!114 &-7292606751203914520
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -347,18 +172,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
   m_Name: Node_S7
   m_EditorClassIdentifier: 
-  category: {fileID: 3490737655862277286}
+  category: {fileID: 5903119763373296720}
   index: 7
   description: Schulungsinvestitionen
   fromEdges: []
   toEdges:
-  - {fileID: -8225451541702536319}
-  - {fileID: 7086002487874079671}
-  - {fileID: 5299478905371139947}
-  - {fileID: -3969695597169603701}
-  - {fileID: 4179559744009877494}
-  - {fileID: -6292376383397886506}
---- !u!114 &-3711134871839296000
+  - {fileID: 4114508732256936707}
+  - {fileID: 5355800606961494561}
+  - {fileID: -6475213419088369874}
+  - {fileID: 7548776125512952451}
+  - {fileID: -3709928925417557818}
+  - {fileID: -2734995552207117451}
+  - {fileID: -3576878120578200509}
+  - {fileID: -6409571458276652987}
+  - {fileID: -6386457613901803204}
+  - {fileID: -8808407956914922485}
+  - {fileID: 5127907991300997923}
+  - {fileID: 990338897903980185}
+  - {fileID: 5730085777268789959}
+  - {fileID: -4796569938039171847}
+  - {fileID: -1466209600781383981}
+  - {fileID: 8307732341849675082}
+  - {fileID: 8764340132780847495}
+  - {fileID: 8706761511007866131}
+  - {fileID: -694506379071689542}
+  - {fileID: -8901017235440691705}
+  - {fileID: 1245222115641774263}
+  - {fileID: 7113672321243912555}
+  - {fileID: -4483884330297611543}
+  - {fileID: 5070704866260987386}
+  - {fileID: 512930521791557838}
+  - {fileID: -3754683666302628875}
+  - {fileID: 7453320394151965818}
+  - {fileID: -7237465118989114243}
+--- !u!114 &-7237465118989114243
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -368,21 +215,324 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_ETH1
+  m_Name: Node_P13
   m_EditorClassIdentifier: 
-  category: {fileID: -3653630390883137960}
-  index: 1
-  description: Faire Arbeitsbedingungen
+  category: {fileID: 1265635601877930621}
+  index: 13
+  description: "Soziale Zugeh\xF6rigkeit"
   fromEdges:
-  - node: {fileID: -769685115792179150}
+  - node: {fileID: -7292606751203914520}
+    strength: 3
+    weight: 1
+    _funcType: 7
+    _constants: []
+  - node: {fileID: -1926935277156042713}
+    strength: 2
     weight: 1
     _funcType: 1
-    _constants:
-    - 1.5529276
-    - -0.23083556
+    _constants: []
+  - node: {fileID: -3233687300594107511}
+    strength: 2
+    weight: 1
+    _funcType: 1
+    _constants: []
+  toEdges: []
+--- !u!114 &-6909975414878539230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_Z10
+  m_EditorClassIdentifier: 
+  category: {fileID: 1890183593211064392}
+  index: 10
+  description: "Neue Gesch\xE4ftsfelder"
+  fromEdges:
+  - node: {fileID: 6595498654226717546}
+    strength: 3
+    weight: 1
+    _funcType: 9
+    _constants: []
+  - node: {fileID: -3032134513581926010}
+    strength: 2
+    weight: 1
+    _funcType: 5
+    _constants: []
+  - node: {fileID: 7503638794130490439}
+    strength: 2
+    weight: 1
+    _funcType: 1
+    _constants: []
+  - node: {fileID: -1926935277156042713}
+    strength: 1
+    weight: 1
+    _funcType: 10
+    _constants: []
+  toEdges: []
+--- !u!114 &-6475213419088369874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_D4
+  m_EditorClassIdentifier: 
+  category: {fileID: 7626927868811945440}
+  index: 4
+  description: Produktionsoptimierung
+  fromEdges:
+  - node: {fileID: -4131094473011526821}
+    strength: 3
+    weight: 1
+    _funcType: 9
+    _constants: []
+  - node: {fileID: -3723746005209509038}
+    strength: 3
+    weight: 1
+    _funcType: 7
+    _constants: []
+  - node: {fileID: -7292606751203914520}
+    strength: 2
+    weight: 1
+    _funcType: 1
+    _constants: []
+  - node: {fileID: 584254174025067202}
+    strength: 3
+    weight: 1
+    _funcType: 11
+    _constants: []
+  toEdges: []
+--- !u!114 &-6409571458276652987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_Z4
+  m_EditorClassIdentifier: 
+  category: {fileID: 1890183593211064392}
+  index: 4
+  description: "Sp\xE4te Kundenunzufriedenheit"
+  fromEdges:
+  - node: {fileID: 6595498654226717546}
+    strength: 3
+    weight: 2
+    _funcType: 7
+    _constants: []
+  - node: {fileID: -3723746005209509038}
+    strength: 2
+    weight: 2
+    _funcType: 5
+    _constants: []
+  - node: {fileID: -7292606751203914520}
+    strength: 2
+    weight: 2
+    _funcType: 1
+    _constants: []
+  toEdges: []
+--- !u!114 &-6386457613901803204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_Z6
+  m_EditorClassIdentifier: 
+  category: {fileID: 1890183593211064392}
+  index: 6
+  description: Langfristige Reputation +/-
+  fromEdges:
+  - node: {fileID: 6595498654226717546}
+    strength: 2
+    weight: 1
+    _funcType: 5
+    _constants: []
+  - node: {fileID: 7503638794130490439}
+    strength: 3
+    weight: 1
+    _funcType: 9
+    _constants: []
+  - node: {fileID: -7292606751203914520}
+    strength: 1
+    weight: 1
+    _funcType: 6
+    _constants: []
+  toEdges: []
+--- !u!114 &-6254763765652165118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_P9
+  m_EditorClassIdentifier: 
+  category: {fileID: 1265635601877930621}
+  index: 9
+  description: "Physische Aktivit\xE4t"
+  fromEdges:
+  - node: {fileID: -3723746005209509038}
+    strength: 1
+    weight: 2
+    _funcType: 6
+    _constants: []
+  - node: {fileID: -3233687300594107511}
+    strength: 2
+    weight: 1
+    _funcType: 5
+    _constants: []
+  toEdges: []
+--- !u!114 &-5719427482660807267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_S5
+  m_EditorClassIdentifier: 
+  category: {fileID: 5903119763373296720}
+  index: 5
+  description: Budget Fremdleistungen
+  fromEdges: []
   toEdges:
-  - {fileID: 1227396385715547613}
---- !u!114 &-3653630390883137960
+  - {fileID: 5355800606961494561}
+  - {fileID: -3647617005713996955}
+  - {fileID: -3709928925417557818}
+  - {fileID: 8104401055387252068}
+  - {fileID: 637523021075846334}
+  - {fileID: 5955527952635436329}
+  - {fileID: -7917368522940620109}
+  - {fileID: 7433993652240602400}
+  - {fileID: 8706761511007866131}
+  - {fileID: -4214471203506041644}
+  - {fileID: -753156790803868225}
+  - {fileID: 7582207505834649639}
+--- !u!114 &-5124568886388292763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_D8
+  m_EditorClassIdentifier: 
+  category: {fileID: 7626927868811945440}
+  index: 8
+  description: "Flexibilit\xE4t"
+  fromEdges:
+  - node: {fileID: -3723746005209509038}
+    strength: 3
+    weight: 1
+    _funcType: 9
+    _constants: []
+  - node: {fileID: -3032134513581926010}
+    strength: 2
+    weight: 1
+    _funcType: 5
+    _constants: []
+  - node: {fileID: -1926935277156042713}
+    strength: 3
+    weight: 1
+    _funcType: 7
+    _constants: []
+  - node: {fileID: 584254174025067202}
+    strength: 3
+    weight: 1
+    _funcType: 7
+    _constants: []
+  toEdges: []
+--- !u!114 &-4796569938039171847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_SE8
+  m_EditorClassIdentifier: 
+  category: {fileID: 5396564150699813101}
+  index: 8
+  description: "Finanzielle F\xF6rderungen"
+  fromEdges:
+  - node: {fileID: 6595498654226717546}
+    strength: 3
+    weight: 1
+    _funcType: 9
+    _constants: []
+  - node: {fileID: -7292606751203914520}
+    strength: 2
+    weight: 1
+    _funcType: 5
+    _constants: []
+  - node: {fileID: 584254174025067202}
+    strength: 1
+    weight: 1
+    _funcType: 6
+    _constants: []
+  toEdges: []
+--- !u!114 &-4483884330297611543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_P2
+  m_EditorClassIdentifier: 
+  category: {fileID: 1265635601877930621}
+  index: 2
+  description: Neugier
+  fromEdges:
+  - node: {fileID: 6595498654226717546}
+    strength: 3
+    weight: 1
+    _funcType: 7
+    _constants: []
+  - node: {fileID: -3032134513581926010}
+    strength: 2
+    weight: 1
+    _funcType: 5
+    _constants: []
+  - node: {fileID: -7292606751203914520}
+    strength: 2
+    weight: 1
+    _funcType: 5
+    _constants: []
+  toEdges: []
+--- !u!114 &-4355678490679928069
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -396,7 +546,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: ETH
   description: Ethische Aspekte
---- !u!114 &-3424072605170924156
+--- !u!114 &-4214471203506041644
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -406,149 +556,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_Z2
+  m_Name: Node_ETH8
   m_EditorClassIdentifier: 
-  category: {fileID: 1859973656476710204}
-  index: 2
-  description: Umweltprobleme
-  fromEdges:
-  - node: {fileID: -8254268045928507946}
-    weight: 2
-    _funcType: 2
-    _constants:
-    - 1.9500312
-    - -0.5831404
-  toEdges:
-  - {fileID: -4202098846440853640}
---- !u!114 &-3020525090173019726
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_S9
-  m_EditorClassIdentifier: 
-  category: {fileID: 3490737655862277286}
-  index: 9
-  description: "Erweiterung B\xFCrofl\xE4chen"
-  fromEdges: []
-  toEdges:
-  - {fileID: 4921926691693072072}
-  - {fileID: 3562547136166311868}
-  - {fileID: 2114089417486655665}
-  - {fileID: -769685115792179150}
-  - {fileID: -5315727278599014273}
---- !u!114 &-2715945237096112445
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_S8
-  m_EditorClassIdentifier: 
-  category: {fileID: 3490737655862277286}
+  category: {fileID: -4355678490679928069}
   index: 8
-  description: Einstellung neuer Mitarbeitender
-  fromEdges: []
-  toEdges:
-  - {fileID: -5141072098743514039}
-  - {fileID: 4277213926043206869}
-  - {fileID: 5299478905371139947}
-  - {fileID: -3969695597169603701}
-  - {fileID: 1227396385715547613}
---- !u!114 &-2649222670520645309
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_D3
-  m_EditorClassIdentifier: 
-  category: {fileID: 4140450735908983213}
-  index: 3
-  description: Marktanteilsgewinn
+  description: Ethische Investitionen
   fromEdges:
-  - node: {fileID: 2202487329829712379}
-    weight: 1
-    _funcType: 3
-    _constants:
-    - 0.107380584
-    - -0.17109048
-    - -0.47440803
-  - node: {fileID: 4277213926043206869}
-    weight: 1
-    _funcType: 3
-    _constants:
-    - 0.87467355
-    - -0.8326578
-    - -0.24533331
-  toEdges:
-  - {fileID: -1049229747987123480}
---- !u!114 &-2493464866715744801
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_S4
-  m_EditorClassIdentifier: 
-  category: {fileID: 3490737655862277286}
-  index: 4
-  description: Serverzeit
-  fromEdges: []
-  toEdges:
-  - {fileID: -941076371572357651}
-  - {fileID: 3562547136166311868}
-  - {fileID: -6413094168213162568}
-  - {fileID: -1049229747987123480}
-  - {fileID: -7892441601222930466}
---- !u!114 &-1938424854164862005
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_Z6
-  m_EditorClassIdentifier: 
-  category: {fileID: 1859973656476710204}
-  index: 6
-  description: Langfristige Reputation +/-
-  fromEdges:
-  - node: {fileID: 8842528359138838891}
-    weight: 1
-    _funcType: 2
-    _constants:
-    - 0.92859006
-    - 0.9182669
-  - node: {fileID: 2202487329829712379}
+  - node: {fileID: 6595498654226717546}
+    strength: 2
     weight: 1
     _funcType: 1
-    _constants:
-    - 1.8188598
-    - 0.99211454
-  toEdges:
-  - {fileID: 7328662359320452450}
---- !u!114 &-1760925726557219736
+    _constants: []
+  - node: {fileID: -5719427482660807267}
+    strength: 3
+    weight: 1
+    _funcType: 11
+    _constants: []
+  - node: {fileID: -3233687300594107511}
+    strength: 1
+    weight: 1
+    _funcType: 8
+    _constants: []
+  toEdges: []
+--- !u!114 &-4131094473011526821
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -560,100 +590,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
   m_Name: Node_S2
   m_EditorClassIdentifier: 
-  category: {fileID: 3490737655862277286}
+  category: {fileID: 5903119763373296720}
   index: 2
   description: Maschinenstunden
   fromEdges: []
   toEdges:
-  - {fileID: 3562547136166311868}
-  - {fileID: 7086002487874079671}
-  - {fileID: 2242137047509514785}
-  - {fileID: -3969695597169603701}
-  - {fileID: -1439715843772816738}
---- !u!114 &-1651072287670501126
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_ETH3
-  m_EditorClassIdentifier: 
-  category: {fileID: -3653630390883137960}
-  index: 3
-  description: Regionale Verantwortung
-  fromEdges:
-  - node: {fileID: -8028967334632617291}
-    weight: 1
-    _funcType: 1
-    _constants:
-    - 1.7978171
-    - 0.2803087
-  toEdges:
-  - {fileID: 6801082254000949997}
---- !u!114 &-1439715843772816738
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_P11
-  m_EditorClassIdentifier: 
-  category: {fileID: 3888335634066184519}
-  index: 11
-  description: Status
-  fromEdges:
-  - node: {fileID: -1760925726557219736}
-    weight: 1
-    _funcType: 2
-    _constants:
-    - 1.5009124
-    - 0.4137843
-  toEdges: []
---- !u!114 &-1049229747987123480
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_SE8
-  m_EditorClassIdentifier: 
-  category: {fileID: 7658963941044496585}
-  index: 8
-  description: Mediale Aufmerksamkeit
-  fromEdges:
-  - node: {fileID: -2493464866715744801}
-    weight: 1
-    _funcType: 2
-    _constants:
-    - 1.217057
-    - 0.83911264
-  - node: {fileID: 4732880025396535725}
-    weight: 1
-    _funcType: 2
-    _constants:
-    - 1.1877966
-    - 0.7748598
-  - node: {fileID: -2649222670520645309}
-    weight: 1
-    _funcType: 1
-    _constants:
-    - 1.4667377
-    - -0.60551834
-  toEdges:
-  - {fileID: -337077808817427041}
---- !u!114 &-1032316317692246804
+  - {fileID: 4114508732256936707}
+  - {fileID: 5355800606961494561}
+  - {fileID: -6475213419088369874}
+  - {fileID: -1124826516203381101}
+  - {fileID: 8104401055387252068}
+  - {fileID: 6595458537321543148}
+  - {fileID: -3908038936999828969}
+  - {fileID: -1190116463331363924}
+  - {fileID: 7582207505834649639}
+--- !u!114 &-3908038936999828969
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -665,25 +616,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
   m_Name: Node_SE1
   m_EditorClassIdentifier: 
-  category: {fileID: 7658963941044496585}
+  category: {fileID: 5396564150699813101}
   index: 1
   description: Umweltauswirkungen
   fromEdges:
-  - node: {fileID: 8758310427775393446}
+  - node: {fileID: -4131094473011526821}
+    strength: 3
+    weight: 2
+    _funcType: 9
+    _constants: []
+  - node: {fileID: -3233687300594107511}
+    strength: 2
     weight: 2
     _funcType: 1
-    _constants:
-    - -0.5498212
-    - -0.6870227
-  - node: {fileID: 8842528359138838891}
-    weight: 2
-    _funcType: 1
-    _constants:
-    - -0.6918737
-    - -0.6950836
-  toEdges:
-  - {fileID: -4202098846440853640}
---- !u!114 &-941076371572357651
+    _constants: []
+  - node: {fileID: 584254174025067202}
+    strength: 1
+    weight: 1
+    _funcType: 10
+    _constants: []
+  toEdges: []
+--- !u!114 &-3754683666302628875
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -693,120 +646,493 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_D9
+  m_Name: Node_P8
   m_EditorClassIdentifier: 
-  category: {fileID: 4140450735908983213}
-  index: 9
-  description: Entwicklungsgeschwindigkeit
-  fromEdges:
-  - node: {fileID: 8758310427775393446}
-    weight: 1
-    _funcType: 1
-    _constants:
-    - 0.7785497
-    - -0.12652528
-  - node: {fileID: -2493464866715744801}
-    weight: 1
-    _funcType: 1
-    _constants:
-    - 0.83331615
-    - -0.49916732
-  - node: {fileID: 4732880025396535725}
-    weight: 1
-    _funcType: 1
-    _constants:
-    - 0.15491074
-    - -0.6819987
-  - node: {fileID: -6413094168213162568}
-    weight: 2
-    _funcType: 2
-    _constants:
-    - 1.8788325
-    - -0.9323941
-  toEdges:
-  - {fileID: 659107048542866628}
---- !u!114 &-769685115792179150
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_SE4
-  m_EditorClassIdentifier: 
-  category: {fileID: 7658963941044496585}
-  index: 4
-  description: "Attraktivit\xE4t als Arbeitgeber"
-  fromEdges:
-  - node: {fileID: -8254268045928507946}
-    weight: 1
-    _funcType: 1
-    _constants:
-    - 0.6819913
-    - -0.4939276
-  - node: {fileID: -3020525090173019726}
-    weight: 1
-    _funcType: 2
-    _constants:
-    - 1.6005518
-    - 0.94699
-  - node: {fileID: 5299478905371139947}
-    weight: 1
-    _funcType: 1
-    _constants:
-    - 0.428379
-    - -0.6539433
-  toEdges:
-  - {fileID: -3711134871839296000}
---- !u!114 &-337077808817427041
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_ETH5
-  m_EditorClassIdentifier: 
-  category: {fileID: -3653630390883137960}
-  index: 5
-  description: Datenschutz
-  fromEdges:
-  - node: {fileID: -1049229747987123480}
-    weight: 1
-    _funcType: 1
-    _constants:
-    - 0.7229194
-    - 0.8878803
-  toEdges:
-  - {fileID: -5315727278599014273}
---- !u!114 &-187848634666458895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_P7
-  m_EditorClassIdentifier: 
-  category: {fileID: 3888335634066184519}
-  index: 7
+  category: {fileID: 1265635601877930621}
+  index: 8
   description: Ordnung
   fromEdges:
-  - node: {fileID: 4732880025396535725}
+  - node: {fileID: -7292606751203914520}
+    strength: 2
+    weight: 1
+    _funcType: 5
+    _constants: []
+  - node: {fileID: -3233687300594107511}
+    strength: 1
+    weight: 1
+    _funcType: 8
+    _constants: []
+  - node: {fileID: 584254174025067202}
+    strength: 3
+    weight: 1
+    _funcType: 9
+    _constants: []
+  toEdges: []
+--- !u!114 &-3723746005209509038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_S3
+  m_EditorClassIdentifier: 
+  category: {fileID: 5903119763373296720}
+  index: 3
+  description: Personentage
+  fromEdges: []
+  toEdges:
+  - {fileID: 5355800606961494561}
+  - {fileID: -6475213419088369874}
+  - {fileID: 7548776125512952451}
+  - {fileID: -3709928925417557818}
+  - {fileID: -1124826516203381101}
+  - {fileID: -5124568886388292763}
+  - {fileID: 2857212359453843202}
+  - {fileID: -2734995552207117451}
+  - {fileID: -6409571458276652987}
+  - {fileID: 5730085777268789959}
+  - {fileID: 8307732341849675082}
+  - {fileID: 8764340132780847495}
+  - {fileID: 5070704866260987386}
+  - {fileID: -6254763765652165118}
+  - {fileID: -753156790803868225}
+  - {fileID: 7453320394151965818}
+  - {fileID: 6642979325197182739}
+--- !u!114 &-3709928925417557818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_D6
+  m_EditorClassIdentifier: 
+  category: {fileID: 7626927868811945440}
+  index: 6
+  description: Kundenzufriedenheit
+  fromEdges:
+  - node: {fileID: 6595498654226717546}
+    strength: 2
+    weight: 1
+    _funcType: 5
+    _constants: []
+  - node: {fileID: -3723746005209509038}
+    strength: 3
+    weight: 1
+    _funcType: 9
+    _constants: []
+  - node: {fileID: -5719427482660807267}
+    strength: 1
+    weight: 1
+    _funcType: 6
+    _constants: []
+  - node: {fileID: 7503638794130490439}
+    strength: 2
     weight: 1
     _funcType: 1
-    _constants:
-    - 0.7201427
-    - -0.106800914
+    _constants: []
+  - node: {fileID: -7292606751203914520}
+    strength: 2
+    weight: 1
+    _funcType: 1
+    _constants: []
+  toEdges: []
+--- !u!114 &-3647617005713996955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_D3
+  m_EditorClassIdentifier: 
+  category: {fileID: 7626927868811945440}
+  index: 3
+  description: Marktanteilsgewinn
+  fromEdges:
+  - node: {fileID: 6595498654226717546}
+    strength: 3
+    weight: 1
+    _funcType: 9
+    _constants: []
+  - node: {fileID: -5719427482660807267}
+    strength: 2
+    weight: 1
+    _funcType: 1
+    _constants: []
+  - node: {fileID: 7503638794130490439}
+    strength: 3
+    weight: 1
+    _funcType: 7
+    _constants: []
+  - node: {fileID: -1926935277156042713}
+    strength: 1
+    weight: 1
+    _funcType: 8
+    _constants: []
+  toEdges: []
+--- !u!114 &-3576878120578200509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_Z3
+  m_EditorClassIdentifier: 
+  category: {fileID: 1890183593211064392}
+  index: 3
+  description: Technologische Obsoleszenz
+  fromEdges:
+  - node: {fileID: 6595498654226717546}
+    strength: 3
+    weight: 2
+    _funcType: 9
+    _constants: []
+  - node: {fileID: -3032134513581926010}
+    strength: 2
+    weight: 2
+    _funcType: 5
+    _constants: []
+  - node: {fileID: -7292606751203914520}
+    strength: 3
+    weight: 2
+    _funcType: 7
+    _constants: []
+  - node: {fileID: 584254174025067202}
+    strength: 3
+    weight: 2
+    _funcType: 7
+    _constants: []
+  toEdges: []
+--- !u!114 &-3233687300594107511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_S9
+  m_EditorClassIdentifier: 
+  category: {fileID: 5903119763373296720}
+  index: 9
+  description: "Erweiterung B\xFCrofl\xE4chen"
+  fromEdges: []
+  toEdges:
+  - {fileID: -1124826516203381101}
+  - {fileID: 6595458537321543148}
+  - {fileID: -8808407956914922485}
+  - {fileID: -3908038936999828969}
+  - {fileID: 8294820466987824668}
+  - {fileID: 5127907991300997923}
+  - {fileID: 990338897903980185}
+  - {fileID: 5730085777268789959}
+  - {fileID: 6718651067185375050}
+  - {fileID: 8307732341849675082}
+  - {fileID: -1190116463331363924}
+  - {fileID: 8764340132780847495}
+  - {fileID: 7433993652240602400}
+  - {fileID: -4214471203506041644}
+  - {fileID: -8901017235440691705}
+  - {fileID: 3091378226726232224}
+  - {fileID: 5070704866260987386}
+  - {fileID: -3754683666302628875}
+  - {fileID: -6254763765652165118}
+  - {fileID: -7237465118989114243}
+  - {fileID: -7364600732643152832}
+  - {fileID: 6642979325197182739}
+--- !u!114 &-3032134513581926010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_S4
+  m_EditorClassIdentifier: 
+  category: {fileID: 5903119763373296720}
+  index: 4
+  description: Serverzeit
+  fromEdges: []
+  toEdges:
+  - {fileID: 4114508732256936707}
+  - {fileID: -1124826516203381101}
+  - {fileID: -5124568886388292763}
+  - {fileID: 2857212359453843202}
+  - {fileID: -2734995552207117451}
+  - {fileID: -3576878120578200509}
+  - {fileID: 7209464470266854159}
+  - {fileID: -6909975414878539230}
+  - {fileID: -7514303324008311329}
+  - {fileID: -694506379071689542}
+  - {fileID: -4483884330297611543}
+  - {fileID: 1793516278719218645}
+--- !u!114 &-2734995552207117451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_D10
+  m_EditorClassIdentifier: 
+  category: {fileID: 7626927868811945440}
+  index: 10
+  description: Risikominimierung
+  fromEdges:
+  - node: {fileID: 6595498654226717546}
+    strength: 2
+    weight: 1
+    _funcType: 5
+    _constants: []
+  - node: {fileID: -3723746005209509038}
+    strength: 1
+    weight: 1
+    _funcType: 8
+    _constants: []
+  - node: {fileID: -3032134513581926010}
+    strength: 2
+    weight: 1
+    _funcType: 5
+    _constants: []
+  - node: {fileID: -7292606751203914520}
+    strength: 3
+    weight: 1
+    _funcType: 7
+    _constants: []
+  - node: {fileID: 584254174025067202}
+    strength: 3
+    weight: 1
+    _funcType: 7
+    _constants: []
+  toEdges: []
+--- !u!114 &-1926935277156042713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_S8
+  m_EditorClassIdentifier: 
+  category: {fileID: 5903119763373296720}
+  index: 8
+  description: Einstellung neuer Mitarbeitender
+  fromEdges: []
+  toEdges:
+  - {fileID: -3647617005713996955}
+  - {fileID: -5124568886388292763}
+  - {fileID: 2857212359453843202}
+  - {fileID: 2671799646463801395}
+  - {fileID: 637523021075846334}
+  - {fileID: -8808407956914922485}
+  - {fileID: -6909975414878539230}
+  - {fileID: 990338897903980185}
+  - {fileID: 5955527952635436329}
+  - {fileID: -1466209600781383981}
+  - {fileID: 8307732341849675082}
+  - {fileID: 7433993652240602400}
+  - {fileID: -8901017235440691705}
+  - {fileID: 7113672321243912555}
+  - {fileID: 5080825490681953573}
+  - {fileID: -753156790803868225}
+  - {fileID: -7237465118989114243}
+  - {fileID: 6642979325197182739}
+  - {fileID: 9019646319106303108}
+--- !u!114 &-1466209600781383981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_SE9
+  m_EditorClassIdentifier: 
+  category: {fileID: 5396564150699813101}
+  index: 9
+  description: "Kooperation mit NGOs/Universit\xE4ten"
+  fromEdges:
+  - node: {fileID: 6595498654226717546}
+    strength: 3
+    weight: 1
+    _funcType: 7
+    _constants: []
+  - node: {fileID: -7292606751203914520}
+    strength: 2
+    weight: 1
+    _funcType: 1
+    _constants: []
+  - node: {fileID: -1926935277156042713}
+    strength: 1
+    weight: 1
+    _funcType: 8
+    _constants: []
+  toEdges: []
+--- !u!114 &-1190116463331363924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_ETH2
+  m_EditorClassIdentifier: 
+  category: {fileID: -4355678490679928069}
+  index: 2
+  description: Umweltschutz & Nachhaltigkeit
+  fromEdges:
+  - node: {fileID: -4131094473011526821}
+    strength: 3
+    weight: 2
+    _funcType: 9
+    _constants: []
+  - node: {fileID: -3233687300594107511}
+    strength: 2
+    weight: 2
+    _funcType: 5
+    _constants: []
+  - node: {fileID: 584254174025067202}
+    strength: 1
+    weight: 1
+    _funcType: 8
+    _constants: []
+  toEdges: []
+--- !u!114 &-1124826516203381101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_D7
+  m_EditorClassIdentifier: 
+  category: {fileID: 7626927868811945440}
+  index: 7
+  description: "Lieferf\xE4higkeit"
+  fromEdges:
+  - node: {fileID: -4131094473011526821}
+    strength: 3
+    weight: 1
+    _funcType: 7
+    _constants: []
+  - node: {fileID: -3723746005209509038}
+    strength: 3
+    weight: 1
+    _funcType: 9
+    _constants: []
+  - node: {fileID: -3032134513581926010}
+    strength: 2
+    weight: 1
+    _funcType: 1
+    _constants: []
+  - node: {fileID: -3233687300594107511}
+    strength: 1
+    weight: 1
+    _funcType: 8
+    _constants: []
+  - node: {fileID: 584254174025067202}
+    strength: 3
+    weight: 1
+    _funcType: 7
+    _constants: []
+  toEdges: []
+--- !u!114 &-753156790803868225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_P10
+  m_EditorClassIdentifier: 
+  category: {fileID: 1265635601877930621}
+  index: 10
+  description: Macht
+  fromEdges:
+  - node: {fileID: -3723746005209509038}
+    strength: 3
+    weight: 1
+    _funcType: 7
+    _constants: []
+  - node: {fileID: -5719427482660807267}
+    strength: 2
+    weight: 1
+    _funcType: 5
+    _constants: []
+  - node: {fileID: -1926935277156042713}
+    strength: 3
+    weight: 1
+    _funcType: 7
+    _constants: []
+  toEdges: []
+--- !u!114 &-694506379071689542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_ETH7
+  m_EditorClassIdentifier: 
+  category: {fileID: -4355678490679928069}
+  index: 7
+  description: Datenschutz
+  fromEdges:
+  - node: {fileID: -3032134513581926010}
+    strength: 3
+    weight: 2
+    _funcType: 9
+    _constants: []
+  - node: {fileID: -7292606751203914520}
+    strength: 3
+    weight: 1
+    _funcType: 11
+    _constants: []
+  - node: {fileID: 584254174025067202}
+    strength: 3
+    weight: 1
+    _funcType: 7
+    _constants: []
   toEdges: []
 --- !u!114 &11400000
 MonoBehaviour:
@@ -821,69 +1147,80 @@ MonoBehaviour:
   m_Name: Graph
   m_EditorClassIdentifier: 
   categories:
-  - {fileID: 3490737655862277286}
-  - {fileID: 4140450735908983213}
-  - {fileID: 1859973656476710204}
-  - {fileID: 7658963941044496585}
-  - {fileID: -3653630390883137960}
-  - {fileID: 3888335634066184519}
+  - {fileID: 5903119763373296720}
+  - {fileID: 7626927868811945440}
+  - {fileID: 1890183593211064392}
+  - {fileID: 5396564150699813101}
+  - {fileID: -4355678490679928069}
+  - {fileID: 1265635601877930621}
   nodes:
-  - {fileID: 8758310427775393446}
-  - {fileID: -1760925726557219736}
-  - {fileID: -8254268045928507946}
-  - {fileID: -2493464866715744801}
-  - {fileID: 8842528359138838891}
-  - {fileID: 2202487329829712379}
-  - {fileID: -3793670153638981055}
-  - {fileID: -2715945237096112445}
-  - {fileID: -3020525090173019726}
-  - {fileID: 4732880025396535725}
-  - {fileID: 4277213926043206869}
-  - {fileID: 3562547136166311868}
-  - {fileID: -2649222670520645309}
-  - {fileID: 4921926691693072072}
-  - {fileID: -8225451541702536319}
-  - {fileID: 1586940188408010041}
-  - {fileID: -5141072098743514039}
-  - {fileID: 3234855629402933925}
-  - {fileID: -941076371572357651}
-  - {fileID: 7086002487874079671}
-  - {fileID: 2242137047509514785}
-  - {fileID: -3424072605170924156}
-  - {fileID: -6413094168213162568}
-  - {fileID: 2114089417486655665}
-  - {fileID: 659107048542866628}
-  - {fileID: -1938424854164862005}
-  - {fileID: 4361309489856035353}
-  - {fileID: 5299478905371139947}
-  - {fileID: 8491773187933010062}
-  - {fileID: -1032316317692246804}
-  - {fileID: 7328662359320452450}
-  - {fileID: -8028967334632617291}
-  - {fileID: -769685115792179150}
-  - {fileID: -3969695597169603701}
-  - {fileID: 992412925382781280}
-  - {fileID: 4179559744009877494}
-  - {fileID: -1049229747987123480}
-  - {fileID: -3711134871839296000}
-  - {fileID: -4202098846440853640}
-  - {fileID: -1651072287670501126}
-  - {fileID: 129550261926428658}
-  - {fileID: -337077808817427041}
-  - {fileID: 9142215486897131142}
-  - {fileID: 104803286481799370}
-  - {fileID: -8399182617030661219}
-  - {fileID: 1227396385715547613}
-  - {fileID: 6801082254000949997}
-  - {fileID: 234768925413870107}
-  - {fileID: -7892441601222930466}
-  - {fileID: -187848634666458895}
-  - {fileID: -6292376383397886506}
-  - {fileID: -4253295364131094153}
-  - {fileID: -5315727278599014273}
-  - {fileID: -1439715843772816738}
-  - {fileID: 409271655690756279}
---- !u!114 &104803286481799370
+  - {fileID: 6595498654226717546}
+  - {fileID: -4131094473011526821}
+  - {fileID: -3723746005209509038}
+  - {fileID: -3032134513581926010}
+  - {fileID: -5719427482660807267}
+  - {fileID: 7503638794130490439}
+  - {fileID: -7292606751203914520}
+  - {fileID: -1926935277156042713}
+  - {fileID: -3233687300594107511}
+  - {fileID: 584254174025067202}
+  - {fileID: 4114508732256936707}
+  - {fileID: 5355800606961494561}
+  - {fileID: -3647617005713996955}
+  - {fileID: -6475213419088369874}
+  - {fileID: 7548776125512952451}
+  - {fileID: -3709928925417557818}
+  - {fileID: -1124826516203381101}
+  - {fileID: -5124568886388292763}
+  - {fileID: 2857212359453843202}
+  - {fileID: -2734995552207117451}
+  - {fileID: 8104401055387252068}
+  - {fileID: 6595458537321543148}
+  - {fileID: -3576878120578200509}
+  - {fileID: -6409571458276652987}
+  - {fileID: 2671799646463801395}
+  - {fileID: -6386457613901803204}
+  - {fileID: 637523021075846334}
+  - {fileID: 7209464470266854159}
+  - {fileID: -8808407956914922485}
+  - {fileID: -6909975414878539230}
+  - {fileID: -3908038936999828969}
+  - {fileID: 8294820466987824668}
+  - {fileID: 5127907991300997923}
+  - {fileID: 990338897903980185}
+  - {fileID: 5730085777268789959}
+  - {fileID: -7514303324008311329}
+  - {fileID: 5955527952635436329}
+  - {fileID: -4796569938039171847}
+  - {fileID: -1466209600781383981}
+  - {fileID: 6718651067185375050}
+  - {fileID: 8307732341849675082}
+  - {fileID: -1190116463331363924}
+  - {fileID: -7917368522940620109}
+  - {fileID: 8764340132780847495}
+  - {fileID: 7433993652240602400}
+  - {fileID: 8706761511007866131}
+  - {fileID: -694506379071689542}
+  - {fileID: -4214471203506041644}
+  - {fileID: -8901017235440691705}
+  - {fileID: 1245222115641774263}
+  - {fileID: 7113672321243912555}
+  - {fileID: -4483884330297611543}
+  - {fileID: 3091378226726232224}
+  - {fileID: 5070704866260987386}
+  - {fileID: 5080825490681953573}
+  - {fileID: 512930521791557838}
+  - {fileID: 1793516278719218645}
+  - {fileID: -3754683666302628875}
+  - {fileID: -6254763765652165118}
+  - {fileID: -753156790803868225}
+  - {fileID: 7453320394151965818}
+  - {fileID: 7582207505834649639}
+  - {fileID: -7237465118989114243}
+  - {fileID: -7364600732643152832}
+  - {fileID: 6642979325197182739}
+  - {fileID: 9019646319106303108}
+--- !u!114 &512930521791557838
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -893,205 +1230,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_P1
+  m_Name: Node_P6
   m_EditorClassIdentifier: 
-  category: {fileID: 3888335634066184519}
-  index: 1
-  description: Akzeptanz
-  fromEdges:
-  - node: {fileID: -8254268045928507946}
-    weight: 1
-    _funcType: 4
-    _constants:
-    - 0.79963994
-    - -2.3579717
-    - 2.013039
-    - 0.9696958
-  - node: {fileID: 129550261926428658}
-    weight: 1
-    _funcType: 2
-    _constants:
-    - 1.1078957
-    - 0.7833518
-  toEdges: []
---- !u!114 &129550261926428658
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_ETH4
-  m_EditorClassIdentifier: 
-  category: {fileID: -3653630390883137960}
-  index: 4
-  description: "Integrit\xE4t / Korruptionsfreiheit"
-  fromEdges:
-  - node: {fileID: 659107048542866628}
-    weight: 1
-    _funcType: 1
-    _constants:
-    - 0.8999681
-    - -0.66779184
-  - node: {fileID: 4179559744009877494}
-    weight: 2
-    _funcType: 3
-    _constants:
-    - -0.3275609
-    - 0.19232428
-    - -0.7007179
-  toEdges:
-  - {fileID: 104803286481799370}
---- !u!114 &234768925413870107
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_P5
-  m_EditorClassIdentifier: 
-  category: {fileID: 3888335634066184519}
-  index: 5
+  category: {fileID: 1265635601877930621}
+  index: 6
   description: Idealismus
   fromEdges:
-  - node: {fileID: 8842528359138838891}
-    weight: 1
-    _funcType: 2
-    _constants:
-    - 1.067614
-    - 0.45421365
-  - node: {fileID: 992412925382781280}
-    weight: 1
-    _funcType: 3
-    _constants:
-    - 0.8612621
-    - -0.2850994
-    - -0.52089834
-  - node: {fileID: -4202098846440853640}
-    weight: 1
-    _funcType: 3
-    _constants:
-    - 0.55860007
-    - -0.114479184
-    - -0.3894738
-  toEdges: []
---- !u!114 &409271655690756279
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_P12
-  m_EditorClassIdentifier: 
-  category: {fileID: 3888335634066184519}
-  index: 12
-  description: Ruhe / Stressfreiheit
-  fromEdges:
-  - node: {fileID: -3969695597169603701}
-    weight: 1
-    _funcType: 2
-    _constants:
-    - 0.9066924
-    - 0.6332306
-  toEdges: []
---- !u!114 &659107048542866628
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_Z5
-  m_EditorClassIdentifier: 
-  category: {fileID: 1859973656476710204}
-  index: 5
-  description: "Ver\xE4nderte Wettbewerbslandschaft"
-  fromEdges:
-  - node: {fileID: 4277213926043206869}
+  - node: {fileID: 6595498654226717546}
+    strength: 2
     weight: 1
     _funcType: 1
-    _constants:
-    - 0.7680205
-    - 0.8692229
-  - node: {fileID: -941076371572357651}
+    _constants: []
+  - node: {fileID: -7292606751203914520}
+    strength: 2
     weight: 1
-    _funcType: 3
-    _constants:
-    - 0.9165509
-    - -0.45862758
-    - -0.49653184
-  toEdges:
-  - {fileID: 129550261926428658}
---- !u!114 &992412925382781280
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_SE6
-  m_EditorClassIdentifier: 
-  category: {fileID: 7658963941044496585}
-  index: 6
-  description: Branchentrends
-  fromEdges:
-  - node: {fileID: 8491773187933010062}
-    weight: 1
-    _funcType: 4
-    _constants:
-    - 0.55142313
-    - -3.2457104
-    - 0.27225164
-    - 0.8188174
-  toEdges:
-  - {fileID: 234768925413870107}
---- !u!114 &1227396385715547613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_P3
-  m_EditorClassIdentifier: 
-  category: {fileID: 3888335634066184519}
-  index: 3
-  description: Familie
-  fromEdges:
-  - node: {fileID: -2715945237096112445}
-    weight: 1
-    _funcType: 1
-    _constants:
-    - 1.148715
-    - 0.40976712
-  - node: {fileID: -3711134871839296000}
-    weight: 1
-    _funcType: 1
-    _constants:
-    - 0.5190383
-    - 0.3080227
+    _funcType: 5
+    _constants: []
   toEdges: []
---- !u!114 &1586940188408010041
+--- !u!114 &584254174025067202
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1101,83 +1257,37 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_D6
+  m_Name: Node_S10
   m_EditorClassIdentifier: 
-  category: {fileID: 4140450735908983213}
-  index: 6
-  description: Kundenzufriedenheit
-  fromEdges:
-  - node: {fileID: -8225451541702536319}
-    weight: 1
-    _funcType: 3
-    _constants:
-    - 0.8254802
-    - -0.3835603
-    - -0.73203635
-  toEdges:
-  - {fileID: 4277213926043206869}
---- !u!114 &1859973656476710204
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6b67ba4ead8a294e825f98acc581876, type: 3}
-  m_Name: Category_Z
-  m_EditorClassIdentifier: 
-  id: Z
-  description: "Zuk\xFCnftige Effekte"
---- !u!114 &2114089417486655665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_Z4
-  m_EditorClassIdentifier: 
-  category: {fileID: 1859973656476710204}
-  index: 4
-  description: "Sp\xE4te Kundenunzufriedenheit"
-  fromEdges:
-  - node: {fileID: -3020525090173019726}
-    weight: 1
-    _funcType: 3
-    _constants:
-    - 0.9880353
-    - 0.82807016
-    - 0.4673092
-  toEdges:
-  - {fileID: -3969695597169603701}
---- !u!114 &2202487329829712379
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_S6
-  m_EditorClassIdentifier: 
-  category: {fileID: 3490737655862277286}
-  index: 6
-  description: Marketingausgaben
+  category: {fileID: 5903119763373296720}
+  index: 10
+  description: IT-Infrastruktur Upgrades
   fromEdges: []
   toEdges:
-  - {fileID: -2649222670520645309}
-  - {fileID: 3562547136166311868}
-  - {fileID: -1938424854164862005}
-  - {fileID: 7328662359320452450}
-  - {fileID: 6801082254000949997}
---- !u!114 &2242137047509514785
+  - {fileID: 5355800606961494561}
+  - {fileID: -6475213419088369874}
+  - {fileID: -1124826516203381101}
+  - {fileID: -5124568886388292763}
+  - {fileID: 2857212359453843202}
+  - {fileID: -2734995552207117451}
+  - {fileID: 6595458537321543148}
+  - {fileID: -3576878120578200509}
+  - {fileID: 7209464470266854159}
+  - {fileID: -3908038936999828969}
+  - {fileID: 990338897903980185}
+  - {fileID: 5730085777268789959}
+  - {fileID: -4796569938039171847}
+  - {fileID: -1190116463331363924}
+  - {fileID: -7917368522940620109}
+  - {fileID: 8764340132780847495}
+  - {fileID: 8706761511007866131}
+  - {fileID: -694506379071689542}
+  - {fileID: 1245222115641774263}
+  - {fileID: 1793516278719218645}
+  - {fileID: -3754683666302628875}
+  - {fileID: 7582207505834649639}
+  - {fileID: 6642979325197182739}
+--- !u!114 &637523021075846334
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1187,21 +1297,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_Z1
+  m_Name: Node_Z7
   m_EditorClassIdentifier: 
-  category: {fileID: 1859973656476710204}
-  index: 1
-  description: "Abh\xE4ngigkeit von Zulieferern"
+  category: {fileID: 1890183593211064392}
+  index: 7
+  description: Innovationsdruck
   fromEdges:
-  - node: {fileID: -1760925726557219736}
+  - node: {fileID: 6595498654226717546}
+    strength: 1
+    weight: 2
+    _funcType: 6
+    _constants: []
+  - node: {fileID: -5719427482660807267}
+    strength: 2
     weight: 1
     _funcType: 1
-    _constants:
-    - 1.0767452
-    - -0.7269449
-  toEdges:
-  - {fileID: 3562547136166311868}
---- !u!114 &3234855629402933925
+    _constants: []
+  - node: {fileID: -1926935277156042713}
+    strength: 1
+    weight: 2
+    _funcType: 8
+    _constants: []
+  toEdges: []
+--- !u!114 &990338897903980185
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1211,35 +1329,39 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_D8
+  m_Name: Node_SE4
   m_EditorClassIdentifier: 
-  category: {fileID: 4140450735908983213}
-  index: 8
-  description: "Flexibilit\xE4t"
+  category: {fileID: 5396564150699813101}
+  index: 4
+  description: "Attraktivit\xE4t als Arbeitgeber"
   fromEdges:
-  - node: {fileID: 8842528359138838891}
+  - node: {fileID: 6595498654226717546}
+    strength: 2
     weight: 1
-    _funcType: 2
-    _constants:
-    - 1.793596
-    - 0.551748
-  toEdges:
-  - {fileID: 5299478905371139947}
---- !u!114 &3490737655862277286
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6b67ba4ead8a294e825f98acc581876, type: 3}
-  m_Name: Category_S
-  m_EditorClassIdentifier: 
-  id: S
-  description: "Stellgr\xF6\xDFen"
---- !u!114 &3562547136166311868
+    _funcType: 5
+    _constants: []
+  - node: {fileID: -7292606751203914520}
+    strength: 3
+    weight: 1
+    _funcType: 7
+    _constants: []
+  - node: {fileID: -1926935277156042713}
+    strength: 1
+    weight: 1
+    _funcType: 6
+    _constants: []
+  - node: {fileID: -3233687300594107511}
+    strength: 2
+    weight: 1
+    _funcType: 5
+    _constants: []
+  - node: {fileID: 584254174025067202}
+    strength: 2
+    weight: 1
+    _funcType: 1
+    _constants: []
+  toEdges: []
+--- !u!114 &1245222115641774263
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1249,47 +1371,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_D2
+  m_Name: Node_ETH10
   m_EditorClassIdentifier: 
-  category: {fileID: 4140450735908983213}
-  index: 2
-  description: Kostensenkung
+  category: {fileID: -4355678490679928069}
+  index: 10
+  description: Ehrliche Kommunikation
   fromEdges:
-  - node: {fileID: -1760925726557219736}
+  - node: {fileID: 7503638794130490439}
+    strength: 3
+    weight: 1
+    _funcType: 7
+    _constants: []
+  - node: {fileID: -7292606751203914520}
+    strength: 2
     weight: 1
     _funcType: 1
-    _constants:
-    - 1.3858544
-    - -0.2553717
-  - node: {fileID: -2493464866715744801}
-    weight: 2
-    _funcType: 3
-    _constants:
-    - -0.81112516
-    - -0.2598585
-    - -0.6552634
-  - node: {fileID: 2202487329829712379}
-    weight: 2
-    _funcType: 2
-    _constants:
-    - 1.422287
-    - -0.718786
-  - node: {fileID: -3020525090173019726}
-    weight: 2
-    _funcType: 3
-    _constants:
-    - -0.10930963
-    - 0.61792254
-    - -0.98871636
-  - node: {fileID: 2242137047509514785}
-    weight: 2
-    _funcType: 1
-    _constants:
-    - -1.4834582
-    - -0.6003561
-  toEdges:
-  - {fileID: 8491773187933010062}
---- !u!114 &3888335634066184519
+    _constants: []
+  - node: {fileID: 584254174025067202}
+    strength: 1
+    weight: 1
+    _funcType: 8
+    _constants: []
+  toEdges: []
+--- !u!114 &1265635601877930621
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1303,21 +1407,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: P
   description: Private Nutzen
---- !u!114 &4140450735908983213
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6b67ba4ead8a294e825f98acc581876, type: 3}
-  m_Name: Category_D
-  m_EditorClassIdentifier: 
-  id: D
-  description: Direkter Nutzen
---- !u!114 &4179559744009877494
+--- !u!114 &1793516278719218645
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1327,21 +1417,139 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_SE7
+  m_Name: Node_P7
   m_EditorClassIdentifier: 
-  category: {fileID: 7658963941044496585}
+  category: {fileID: 1265635601877930621}
   index: 7
-  description: "Finanzielle F\xF6rderungen"
+  description: "Unabh\xE4ngigkeit"
   fromEdges:
-  - node: {fileID: -3793670153638981055}
-    weight: 2
-    _funcType: 2
-    _constants:
-    - 1.9935327
-    - -0.17154235
-  toEdges:
-  - {fileID: 129550261926428658}
---- !u!114 &4277213926043206869
+  - node: {fileID: 6595498654226717546}
+    strength: 3
+    weight: 1
+    _funcType: 7
+    _constants: []
+  - node: {fileID: -3032134513581926010}
+    strength: 2
+    weight: 1
+    _funcType: 5
+    _constants: []
+  - node: {fileID: 584254174025067202}
+    strength: 3
+    weight: 1
+    _funcType: 7
+    _constants: []
+  toEdges: []
+--- !u!114 &1890183593211064392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6b67ba4ead8a294e825f98acc581876, type: 3}
+  m_Name: Category_Z
+  m_EditorClassIdentifier: 
+  id: Z
+  description: "Zuk\xFCnftige Effekte"
+--- !u!114 &2671799646463801395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_Z5
+  m_EditorClassIdentifier: 
+  category: {fileID: 1890183593211064392}
+  index: 5
+  description: "Ver\xE4nderte Wettbewerbslandschaft"
+  fromEdges:
+  - node: {fileID: 6595498654226717546}
+    strength: 3
+    weight: 1
+    _funcType: 9
+    _constants: []
+  - node: {fileID: 7503638794130490439}
+    strength: 2
+    weight: 1
+    _funcType: 1
+    _constants: []
+  - node: {fileID: -1926935277156042713}
+    strength: 1
+    weight: 1
+    _funcType: 6
+    _constants: []
+  toEdges: []
+--- !u!114 &2857212359453843202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_D9
+  m_EditorClassIdentifier: 
+  category: {fileID: 7626927868811945440}
+  index: 9
+  description: Entwicklungsgeschwindigkeit
+  fromEdges:
+  - node: {fileID: 6595498654226717546}
+    strength: 3
+    weight: 1
+    _funcType: 9
+    _constants: []
+  - node: {fileID: -3723746005209509038}
+    strength: 3
+    weight: 1
+    _funcType: 7
+    _constants: []
+  - node: {fileID: -3032134513581926010}
+    strength: 3
+    weight: 1
+    _funcType: 7
+    _constants: []
+  - node: {fileID: -1926935277156042713}
+    strength: 2
+    weight: 1
+    _funcType: 1
+    _constants: []
+  - node: {fileID: 584254174025067202}
+    strength: 2
+    weight: 1
+    _funcType: 1
+    _constants: []
+  toEdges: []
+--- !u!114 &3091378226726232224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_P3
+  m_EditorClassIdentifier: 
+  category: {fileID: 1265635601877930621}
+  index: 3
+  description: Essen/Genuss
+  fromEdges:
+  - node: {fileID: -3233687300594107511}
+    strength: 1
+    weight: 1
+    _funcType: 8
+    _constants: []
+  toEdges: []
+--- !u!114 &4114508732256936707
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1353,163 +1561,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
   m_Name: Node_D1
   m_EditorClassIdentifier: 
-  category: {fileID: 4140450735908983213}
+  category: {fileID: 7626927868811945440}
   index: 1
   description: Gewinnsteigerung
   fromEdges:
-  - node: {fileID: 8758310427775393446}
+  - node: {fileID: 6595498654226717546}
+    strength: 3
     weight: 1
-    _funcType: 1
-    _constants:
-    - 0.9867579
-    - -0.7785258
-  - node: {fileID: 8842528359138838891}
+    _funcType: 7
+    _constants: []
+  - node: {fileID: -4131094473011526821}
+    strength: 3
     weight: 1
-    _funcType: 3
-    _constants:
-    - 0.4638107
-    - -0.48198617
-    - -0.093838096
-  - node: {fileID: -2715945237096112445}
-    weight: 2
-    _funcType: 4
-    _constants:
-    - -1.073372
-    - 1.1054385
-    - 1.175164
-    - -0.2910477
-  - node: {fileID: 1586940188408010041}
+    _funcType: 9
+    _constants: []
+  - node: {fileID: -3032134513581926010}
+    strength: 2
     weight: 1
-    _funcType: 2
-    _constants:
-    - 0.51095486
-    - 0.37142855
-  toEdges:
-  - {fileID: -2649222670520645309}
-  - {fileID: 7328662359320452450}
-  - {fileID: 659107048542866628}
---- !u!114 &4361309489856035353
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_Z7
-  m_EditorClassIdentifier: 
-  category: {fileID: 1859973656476710204}
-  index: 7
-  description: Innovationsdruck
-  fromEdges:
-  - node: {fileID: 8758310427775393446}
+    _funcType: 5
+    _constants: []
+  - node: {fileID: 7503638794130490439}
+    strength: 3
     weight: 1
-    _funcType: 3
-    _constants:
-    - 0.81375545
-    - 0.54701567
-    - -0.61582255
-  - node: {fileID: 4921926691693072072}
+    _funcType: 7
+    _constants: []
+  - node: {fileID: -7292606751203914520}
+    strength: 1
     weight: 1
-    _funcType: 1
-    _constants:
-    - 1.1776311
-    - -0.006507039
-  toEdges:
-  - {fileID: -8399182617030661219}
---- !u!114 &4732880025396535725
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_S10
-  m_EditorClassIdentifier: 
-  category: {fileID: 3490737655862277286}
-  index: 10
-  description: IT-Infrastruktur Upgrades
-  fromEdges: []
-  toEdges:
-  - {fileID: -941076371572357651}
-  - {fileID: 7086002487874079671}
-  - {fileID: -6413094168213162568}
-  - {fileID: -1049229747987123480}
-  - {fileID: -187848634666458895}
---- !u!114 &4921926691693072072
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_D4
-  m_EditorClassIdentifier: 
-  category: {fileID: 4140450735908983213}
-  index: 4
-  description: Produktionsoptimierung
-  fromEdges:
-  - node: {fileID: -8254268045928507946}
-    weight: 1
-    _funcType: 4
-    _constants:
-    - 1.9193537
-    - -1.3923994
-    - 2.2404628
-    - 0.4811041
-  - node: {fileID: -3020525090173019726}
-    weight: 1
-    _funcType: 1
-    _constants:
-    - 1.788876
-    - 0.88967276
-  toEdges:
-  - {fileID: 4361309489856035353}
---- !u!114 &5299478905371139947
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_Z8
-  m_EditorClassIdentifier: 
-  category: {fileID: 1859973656476710204}
-  index: 8
-  description: Kultureller Wandel
-  fromEdges:
-  - node: {fileID: -3793670153638981055}
-    weight: 1
-    _funcType: 2
-    _constants:
-    - 0.57976425
-    - 0.49785426
-  - node: {fileID: -2715945237096112445}
-    weight: 1
-    _funcType: 1
-    _constants:
-    - 0.45999447
-    - -0.9272337
-  - node: {fileID: 3234855629402933925}
-    weight: 1
-    _funcType: 1
-    _constants:
-    - 1.3354889
-    - 0.31033918
-  toEdges:
-  - {fileID: -769685115792179150}
---- !u!114 &6801082254000949997
+    _funcType: 8
+    _constants: []
+  toEdges: []
+--- !u!114 &5070704866260987386
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1521,24 +1603,59 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
   m_Name: Node_P4
   m_EditorClassIdentifier: 
-  category: {fileID: 3888335634066184519}
+  category: {fileID: 1265635601877930621}
   index: 4
+  description: Familie
+  fromEdges:
+  - node: {fileID: -3723746005209509038}
+    strength: 3
+    weight: 2
+    _funcType: 9
+    _constants: []
+  - node: {fileID: -7292606751203914520}
+    strength: 1
+    weight: 1
+    _funcType: 8
+    _constants: []
+  - node: {fileID: -3233687300594107511}
+    strength: 1
+    weight: 1
+    _funcType: 8
+    _constants: []
+  toEdges: []
+--- !u!114 &5080825490681953573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_P5
+  m_EditorClassIdentifier: 
+  category: {fileID: 1265635601877930621}
+  index: 5
   description: Ehre/Stolz
   fromEdges:
-  - node: {fileID: 2202487329829712379}
+  - node: {fileID: 6595498654226717546}
+    strength: 3
     weight: 1
-    _funcType: 2
-    _constants:
-    - 1.0492421
-    - 0.54138845
-  - node: {fileID: -1651072287670501126}
+    _funcType: 9
+    _constants: []
+  - node: {fileID: 7503638794130490439}
+    strength: 2
     weight: 1
-    _funcType: 2
-    _constants:
-    - 1.1316161
-    - 0.31732696
+    _funcType: 1
+    _constants: []
+  - node: {fileID: -1926935277156042713}
+    strength: 1
+    weight: 1
+    _funcType: 8
+    _constants: []
   toEdges: []
---- !u!114 &7086002487874079671
+--- !u!114 &5127907991300997923
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1548,39 +1665,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_D10
+  m_Name: Node_SE3
   m_EditorClassIdentifier: 
-  category: {fileID: 4140450735908983213}
-  index: 10
-  description: Risikominimierung
+  category: {fileID: 5396564150699813101}
+  index: 3
+  description: "Politische Unterst\xFCtzung/Gegenwind"
   fromEdges:
-  - node: {fileID: -1760925726557219736}
-    weight: 2
-    _funcType: 1
-    _constants:
-    - -0.5764682
-    - 0.64932203
-  - node: {fileID: -3793670153638981055}
+  - node: {fileID: 6595498654226717546}
+    strength: 1
     weight: 1
-    _funcType: 1
-    _constants:
-    - 1.1999382
-    - -0.008549571
-  - node: {fileID: 4732880025396535725}
-    weight: 2
-    _funcType: 1
-    _constants:
-    - -1.1968603
-    - 0.29082558
-  - node: {fileID: -5141072098743514039}
+    _funcType: 6
+    _constants: []
+  - node: {fileID: -7292606751203914520}
+    strength: 1
     weight: 1
-    _funcType: 1
-    _constants:
-    - 0.7686751
-    - -0.32091987
-  toEdges:
-  - {fileID: -8028967334632617291}
---- !u!114 &7328662359320452450
+    _funcType: 8
+    _constants: []
+  - node: {fileID: -3233687300594107511}
+    strength: 1
+    weight: 1
+    _funcType: 8
+    _constants: []
+  toEdges: []
+--- !u!114 &5355800606961494561
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1590,34 +1697,39 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_SE2
+  m_Name: Node_D2
   m_EditorClassIdentifier: 
-  category: {fileID: 7658963941044496585}
+  category: {fileID: 7626927868811945440}
   index: 2
-  description: "Sichtbarkeit in der \xD6ffentlichkeit"
+  description: Kostensenkung
   fromEdges:
-  - node: {fileID: 2202487329829712379}
+  - node: {fileID: -4131094473011526821}
+    strength: 1
+    weight: 2
+    _funcType: 6
+    _constants: []
+  - node: {fileID: -3723746005209509038}
+    strength: 1
+    weight: 2
+    _funcType: 8
+    _constants: []
+  - node: {fileID: -5719427482660807267}
+    strength: 1
+    weight: 2
+    _funcType: 6
+    _constants: []
+  - node: {fileID: -7292606751203914520}
+    strength: 2
     weight: 1
-    _funcType: 3
-    _constants:
-    - 0.27364933
-    - -0.80400705
-    - -0.35013878
-  - node: {fileID: 4277213926043206869}
+    _funcType: 5
+    _constants: []
+  - node: {fileID: 584254174025067202}
+    strength: 3
     weight: 1
-    _funcType: 2
-    _constants:
-    - 1.7712032
-    - 0.18459097
-  - node: {fileID: -1938424854164862005}
-    weight: 1
-    _funcType: 1
-    _constants:
-    - 1.9613359
-    - 0.88869214
-  toEdges:
-  - {fileID: 9142215486897131142}
---- !u!114 &7658963941044496585
+    _funcType: 9
+    _constants: []
+  toEdges: []
+--- !u!114 &5396564150699813101
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1631,7 +1743,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: SE
   description: "Sekund\xE4re Effekte"
---- !u!114 &8491773187933010062
+--- !u!114 &5730085777268789959
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1641,21 +1753,112 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_Z9
+  m_Name: Node_SE5
   m_EditorClassIdentifier: 
-  category: {fileID: 1859973656476710204}
-  index: 9
-  description: "Neue Gesch\xE4ftsfelder"
+  category: {fileID: 5396564150699813101}
+  index: 5
+  description: Mitarbeiterzufriedenheit
   fromEdges:
-  - node: {fileID: 3562547136166311868}
+  - node: {fileID: -3723746005209509038}
+    strength: 1
+    weight: 2
+    _funcType: 8
+    _constants: []
+  - node: {fileID: -7292606751203914520}
+    strength: 3
+    weight: 1
+    _funcType: 9
+    _constants: []
+  - node: {fileID: -3233687300594107511}
+    strength: 3
+    weight: 1
+    _funcType: 7
+    _constants: []
+  - node: {fileID: 584254174025067202}
+    strength: 2
     weight: 1
     _funcType: 1
-    _constants:
-    - 0.94065565
-    - -0.17159545
-  toEdges:
-  - {fileID: 992412925382781280}
---- !u!114 &8758310427775393446
+    _constants: []
+  toEdges: []
+--- !u!114 &5903119763373296720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6b67ba4ead8a294e825f98acc581876, type: 3}
+  m_Name: Category_S
+  m_EditorClassIdentifier: 
+  id: S
+  description: "Stellgr\xF6\xDFen"
+--- !u!114 &5955527952635436329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_SE7
+  m_EditorClassIdentifier: 
+  category: {fileID: 5396564150699813101}
+  index: 7
+  description: Lobbying-Potenzial
+  fromEdges:
+  - node: {fileID: -5719427482660807267}
+    strength: 1
+    weight: 1
+    _funcType: 8
+    _constants: []
+  - node: {fileID: 7503638794130490439}
+    strength: 2
+    weight: 1
+    _funcType: 5
+    _constants: []
+  - node: {fileID: -1926935277156042713}
+    strength: 1
+    weight: 1
+    _funcType: 6
+    _constants: []
+  toEdges: []
+--- !u!114 &6595458537321543148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_Z2
+  m_EditorClassIdentifier: 
+  category: {fileID: 1890183593211064392}
+  index: 2
+  description: Umweltprobleme
+  fromEdges:
+  - node: {fileID: -4131094473011526821}
+    strength: 2
+    weight: 1
+    _funcType: 5
+    _constants: []
+  - node: {fileID: -3233687300594107511}
+    strength: 1
+    weight: 1
+    _funcType: 6
+    _constants: []
+  - node: {fileID: 584254174025067202}
+    strength: 1
+    weight: 2
+    _funcType: 6
+    _constants: []
+  toEdges: []
+--- !u!114 &6595498654226717546
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1667,17 +1870,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
   m_Name: Node_S1
   m_EditorClassIdentifier: 
-  category: {fileID: 3490737655862277286}
+  category: {fileID: 5903119763373296720}
   index: 1
   description: Entwicklungsbudget
   fromEdges: []
   toEdges:
-  - {fileID: 4277213926043206869}
-  - {fileID: -941076371572357651}
-  - {fileID: 4361309489856035353}
-  - {fileID: -1032316317692246804}
-  - {fileID: -8399182617030661219}
---- !u!114 &8842528359138838891
+  - {fileID: 4114508732256936707}
+  - {fileID: -3647617005713996955}
+  - {fileID: 7548776125512952451}
+  - {fileID: -3709928925417557818}
+  - {fileID: 2857212359453843202}
+  - {fileID: -2734995552207117451}
+  - {fileID: 8104401055387252068}
+  - {fileID: -3576878120578200509}
+  - {fileID: -6409571458276652987}
+  - {fileID: 2671799646463801395}
+  - {fileID: -6386457613901803204}
+  - {fileID: 637523021075846334}
+  - {fileID: 7209464470266854159}
+  - {fileID: -6909975414878539230}
+  - {fileID: 8294820466987824668}
+  - {fileID: 5127907991300997923}
+  - {fileID: 990338897903980185}
+  - {fileID: -7514303324008311329}
+  - {fileID: -4796569938039171847}
+  - {fileID: -1466209600781383981}
+  - {fileID: 6718651067185375050}
+  - {fileID: -7917368522940620109}
+  - {fileID: -4214471203506041644}
+  - {fileID: -4483884330297611543}
+  - {fileID: 5080825490681953573}
+  - {fileID: 512930521791557838}
+  - {fileID: 1793516278719218645}
+  - {fileID: -7364600732643152832}
+  - {fileID: 9019646319106303108}
+--- !u!114 &6642979325197182739
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1687,19 +1914,400 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
-  m_Name: Node_S5
+  m_Name: Node_P15
   m_EditorClassIdentifier: 
-  category: {fileID: 3490737655862277286}
+  category: {fileID: 1265635601877930621}
+  index: 15
+  description: Ruhe / Stressfreiheit
+  fromEdges:
+  - node: {fileID: -3723746005209509038}
+    strength: 3
+    weight: 2
+    _funcType: 9
+    _constants: []
+  - node: {fileID: -1926935277156042713}
+    strength: 2
+    weight: 1
+    _funcType: 5
+    _constants: []
+  - node: {fileID: -3233687300594107511}
+    strength: 3
+    weight: 1
+    _funcType: 9
+    _constants: []
+  - node: {fileID: 584254174025067202}
+    strength: 2
+    weight: 1
+    _funcType: 5
+    _constants: []
+  toEdges: []
+--- !u!114 &6718651067185375050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_SE10
+  m_EditorClassIdentifier: 
+  category: {fileID: 5396564150699813101}
+  index: 10
+  description: Mediale Aufmerksamkeit
+  fromEdges:
+  - node: {fileID: 6595498654226717546}
+    strength: 2
+    weight: 1
+    _funcType: 5
+    _constants: []
+  - node: {fileID: 7503638794130490439}
+    strength: 3
+    weight: 1
+    _funcType: 7
+    _constants: []
+  - node: {fileID: -3233687300594107511}
+    strength: 1
+    weight: 1
+    _funcType: 6
+    _constants: []
+  toEdges: []
+--- !u!114 &7113672321243912555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_P1
+  m_EditorClassIdentifier: 
+  category: {fileID: 1265635601877930621}
+  index: 1
+  description: Akzeptanz
+  fromEdges:
+  - node: {fileID: 7503638794130490439}
+    strength: 3
+    weight: 1
+    _funcType: 9
+    _constants: []
+  - node: {fileID: -7292606751203914520}
+    strength: 2
+    weight: 1
+    _funcType: 1
+    _constants: []
+  - node: {fileID: -1926935277156042713}
+    strength: 1
+    weight: 1
+    _funcType: 8
+    _constants: []
+  toEdges: []
+--- !u!114 &7209464470266854159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_Z8
+  m_EditorClassIdentifier: 
+  category: {fileID: 1890183593211064392}
+  index: 8
+  description: Regulatorische Anforderungen
+  fromEdges:
+  - node: {fileID: 6595498654226717546}
+    strength: 1
+    weight: 1
+    _funcType: 8
+    _constants: []
+  - node: {fileID: -3032134513581926010}
+    strength: 2
+    weight: 1
+    _funcType: 1
+    _constants: []
+  - node: {fileID: 584254174025067202}
+    strength: 2
+    weight: 1
+    _funcType: 5
+    _constants: []
+  toEdges: []
+--- !u!114 &7433993652240602400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_ETH5
+  m_EditorClassIdentifier: 
+  category: {fileID: -4355678490679928069}
   index: 5
-  description: Budget Fremdleistungen
+  description: Regionale Verantwortung
+  fromEdges:
+  - node: {fileID: -5719427482660807267}
+    strength: 1
+    weight: 1
+    _funcType: 10
+    _constants: []
+  - node: {fileID: -1926935277156042713}
+    strength: 2
+    weight: 1
+    _funcType: 5
+    _constants: []
+  - node: {fileID: -3233687300594107511}
+    strength: 3
+    weight: 1
+    _funcType: 9
+    _constants: []
+  toEdges: []
+--- !u!114 &7453320394151965818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_P11
+  m_EditorClassIdentifier: 
+  category: {fileID: 1265635601877930621}
+  index: 11
+  description: Romantik/Zuneigung
+  fromEdges:
+  - node: {fileID: -3723746005209509038}
+    strength: 3
+    weight: 2
+    _funcType: 9
+    _constants: []
+  - node: {fileID: -7292606751203914520}
+    strength: 1
+    weight: 1
+    _funcType: 6
+    _constants: []
+  toEdges: []
+--- !u!114 &7503638794130490439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_S6
+  m_EditorClassIdentifier: 
+  category: {fileID: 5903119763373296720}
+  index: 6
+  description: Marketingausgaben
   fromEdges: []
   toEdges:
-  - {fileID: 4277213926043206869}
-  - {fileID: 3234855629402933925}
-  - {fileID: -1938424854164862005}
-  - {fileID: -1032316317692246804}
-  - {fileID: 234768925413870107}
---- !u!114 &9142215486897131142
+  - {fileID: 4114508732256936707}
+  - {fileID: -3647617005713996955}
+  - {fileID: -3709928925417557818}
+  - {fileID: 2671799646463801395}
+  - {fileID: -6386457613901803204}
+  - {fileID: -6909975414878539230}
+  - {fileID: 8294820466987824668}
+  - {fileID: -7514303324008311329}
+  - {fileID: 5955527952635436329}
+  - {fileID: 6718651067185375050}
+  - {fileID: 1245222115641774263}
+  - {fileID: 7113672321243912555}
+  - {fileID: 5080825490681953573}
+  - {fileID: -7364600732643152832}
+  - {fileID: 9019646319106303108}
+--- !u!114 &7548776125512952451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_D5
+  m_EditorClassIdentifier: 
+  category: {fileID: 7626927868811945440}
+  index: 5
+  description: "Produktqualit\xE4t"
+  fromEdges:
+  - node: {fileID: 6595498654226717546}
+    strength: 3
+    weight: 1
+    _funcType: 7
+    _constants: []
+  - node: {fileID: -3723746005209509038}
+    strength: 2
+    weight: 1
+    _funcType: 5
+    _constants: []
+  - node: {fileID: -7292606751203914520}
+    strength: 3
+    weight: 1
+    _funcType: 9
+    _constants: []
+  toEdges: []
+--- !u!114 &7582207505834649639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_P12
+  m_EditorClassIdentifier: 
+  category: {fileID: 1265635601877930621}
+  index: 12
+  description: "Sparen/Zur\xFCckhaltung"
+  fromEdges:
+  - node: {fileID: -4131094473011526821}
+    strength: 1
+    weight: 2
+    _funcType: 6
+    _constants: []
+  - node: {fileID: -5719427482660807267}
+    strength: 3
+    weight: 2
+    _funcType: 7
+    _constants: []
+  - node: {fileID: 584254174025067202}
+    strength: 2
+    weight: 2
+    _funcType: 5
+    _constants: []
+  toEdges: []
+--- !u!114 &7626927868811945440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6b67ba4ead8a294e825f98acc581876, type: 3}
+  m_Name: Category_D
+  m_EditorClassIdentifier: 
+  id: D
+  description: Direkter Nutzen
+--- !u!114 &8104401055387252068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_Z1
+  m_EditorClassIdentifier: 
+  category: {fileID: 1890183593211064392}
+  index: 1
+  description: "Abh\xE4ngigkeit von Zulieferern"
+  fromEdges:
+  - node: {fileID: 6595498654226717546}
+    strength: 2
+    weight: 2
+    _funcType: 5
+    _constants: []
+  - node: {fileID: -4131094473011526821}
+    strength: 1
+    weight: 2
+    _funcType: 6
+    _constants: []
+  - node: {fileID: -5719427482660807267}
+    strength: 3
+    weight: 1
+    _funcType: 9
+    _constants: []
+  toEdges: []
+--- !u!114 &8294820466987824668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_SE2
+  m_EditorClassIdentifier: 
+  category: {fileID: 5396564150699813101}
+  index: 2
+  description: "Sichtbarkeit in der \xD6ffentlichkeit"
+  fromEdges:
+  - node: {fileID: 6595498654226717546}
+    strength: 1
+    weight: 1
+    _funcType: 6
+    _constants: []
+  - node: {fileID: 7503638794130490439}
+    strength: 3
+    weight: 1
+    _funcType: 7
+    _constants: []
+  - node: {fileID: -3233687300594107511}
+    strength: 1
+    weight: 1
+    _funcType: 8
+    _constants: []
+  toEdges: []
+--- !u!114 &8307732341849675082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_ETH1
+  m_EditorClassIdentifier: 
+  category: {fileID: -4355678490679928069}
+  index: 1
+  description: Faire Arbeitsbedingungen
+  fromEdges:
+  - node: {fileID: -3723746005209509038}
+    strength: 3
+    weight: 2
+    _funcType: 9
+    _constants: []
+  - node: {fileID: -7292606751203914520}
+    strength: 3
+    weight: 1
+    _funcType: 7
+    _constants: []
+  - node: {fileID: -1926935277156042713}
+    strength: 2
+    weight: 1
+    _funcType: 1
+    _constants: []
+  - node: {fileID: -3233687300594107511}
+    strength: 3
+    weight: 1
+    _funcType: 9
+    _constants: []
+  toEdges: []
+--- !u!114 &8706761511007866131
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1711,15 +2319,92 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
   m_Name: Node_ETH6
   m_EditorClassIdentifier: 
-  category: {fileID: -3653630390883137960}
+  category: {fileID: -4355678490679928069}
   index: 6
-  description: Ehrliche Kommunikation
+  description: "Integrit\xE4t / Korruptionsfreiheit"
   fromEdges:
-  - node: {fileID: 7328662359320452450}
+  - node: {fileID: -5719427482660807267}
+    strength: 2
+    weight: 1
+    _funcType: 5
+    _constants: []
+  - node: {fileID: -7292606751203914520}
+    strength: 3
+    weight: 1
+    _funcType: 9
+    _constants: []
+  - node: {fileID: 584254174025067202}
+    strength: 2
     weight: 1
     _funcType: 1
-    _constants:
-    - 1.651369
-    - -0.77448845
-  toEdges:
-  - {fileID: -4253295364131094153}
+    _constants: []
+  toEdges: []
+--- !u!114 &8764340132780847495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_ETH4
+  m_EditorClassIdentifier: 
+  category: {fileID: -4355678490679928069}
+  index: 4
+  description: Gesundheit & Sicherheit
+  fromEdges:
+  - node: {fileID: -3723746005209509038}
+    strength: 2
+    weight: 2
+    _funcType: 1
+    _constants: []
+  - node: {fileID: -7292606751203914520}
+    strength: 3
+    weight: 1
+    _funcType: 7
+    _constants: []
+  - node: {fileID: -3233687300594107511}
+    strength: 2
+    weight: 1
+    _funcType: 5
+    _constants: []
+  - node: {fileID: 584254174025067202}
+    strength: 1
+    weight: 1
+    _funcType: 10
+    _constants: []
+  toEdges: []
+--- !u!114 &9019646319106303108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad8ac33b3f0f2f48ab1510fbe32303d, type: 3}
+  m_Name: Node_P16
+  m_EditorClassIdentifier: 
+  category: {fileID: 1265635601877930621}
+  index: 16
+  description: Vergeltung/Wettbewerbsgeist
+  fromEdges:
+  - node: {fileID: 6595498654226717546}
+    strength: 3
+    weight: 1
+    _funcType: 7
+    _constants: []
+  - node: {fileID: 7503638794130490439}
+    strength: 2
+    weight: 1
+    _funcType: 1
+    _constants: []
+  - node: {fileID: -1926935277156042713}
+    strength: 1
+    weight: 1
+    _funcType: 10
+    _constants: []
+  toEdges: []

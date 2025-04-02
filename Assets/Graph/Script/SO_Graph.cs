@@ -12,8 +12,8 @@ namespace Graph
         {
             foreach(SO_GraphNode node in nodes)
             {
-
-                node.GenerateEdgeFunctions();
+                node.GenerateFunctions();
+                //node.GenerateEdgeFunctions();
             }
         }
     }

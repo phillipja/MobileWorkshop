@@ -6,6 +6,7 @@ namespace Graph
     public class MathModeledEdge
     {
         public SO_GraphNode node;
+        public Strength strength;
         public Weight weight;
 
         [SerializeField] private MathFunc _funcType;
@@ -13,15 +14,33 @@ namespace Graph
 
         public bool IsActive { get; set; }
 
-        public MathModeledEdge(SO_GraphNode toNode, Weight weight)
+        public MathModeledEdge(SO_GraphNode node, Strength strength, Weight weight)
         {
-            this.node = toNode;
+            this.node = node;
+            this.strength = strength;
             this.weight = weight;
         }
 
         public float Evaluate(Settings settings)
         {
             var x = node.GetValue(settings);
+            float weightVal = weight == Weight.Negative ? -1f : 1f;
+            return weightVal * _funcType switch
+            {
+                MathFunc.Linear => MathFunctions.EvaluateLinear(x),
+                MathFunc.Sawtooth => MathFunctions.EvaluateSawtooth(x),
+
+                MathFunc.Quad_A => MathFunctions.EvaluateQuad_A(x),
+                MathFunc.Quad_B => MathFunctions.EvaluateQuad_B(x),
+
+                MathFunc.Sigmuid_A => MathFunctions.EvaluateSigmuide_A(x),
+                MathFunc.Sigmuid_B => MathFunctions.EvaluateSigmuide_B(x),
+
+                MathFunc.Bounce_A => MathFunctions.EvaluateBounce_A(x),
+                MathFunc.Bounce_B => MathFunctions.EvaluateBounce_B(x),
+
+                _ => throw new System.NotImplementedException()
+            };
             return _funcType switch
             {
                 MathFunc.Linear => settings.useEaseFunctions
@@ -47,6 +66,11 @@ namespace Graph
             {
                 return weight == Weight.Negative ? -1 : 1;
             }
+        }
+
+        public void SetMathFunc(MathFunc funcType)
+        {
+            _funcType = funcType;
         }
 
         public void GenerateConstants(MathFunc funcType)

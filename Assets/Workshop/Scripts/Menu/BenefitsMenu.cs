@@ -44,6 +44,7 @@ public class BenefitsMenu : MonoBehaviour
 
     private void UpdateUI(SO_GraphNode node, LevelIndicator indicator)
     {
-        indicator.SetValue(node.GetValue(_manager.settings));
+        float value = node.GetValue(_manager.settings);
+        indicator.SetValue(value);
     }
 }

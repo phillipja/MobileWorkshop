@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 namespace Graph
@@ -17,7 +18,7 @@ namespace Graph
         public List<MathModeledEdge> fromEdges = new(2);
         public List<SO_GraphNode> toEdges = new(2);
 
-        private float _bufferValue;
+        private float? _bufferValue;
 
         public string id => $"{category.id}{index}";
 
@@ -37,33 +38,30 @@ namespace Graph
 
         public void ClearBufferValue()
         {
-            _bufferValue = 0f;
+            _bufferValue = null;
         }
 
         public float GetValue(Settings settings)
         {
-            if(_bufferValue > 0f)
-            {
-                return _bufferValue;
-            }
+            if(_bufferValue.HasValue)
+                return _bufferValue.Value;
 
-            var activeEdges = fromEdges.Where(e => e.IsActive);
-            foreach(var edge in activeEdges)
+            _bufferValue = 0f;
+
+            int amount = 0;
+            foreach(var edge in fromEdges.Where(e => e.IsActive))
             {
                 _bufferValue += edge.Evaluate(settings);
+                amount++;
             }
 
-            //int amount = activeEdges.Count();
             //if(settings.useNormalizedValue && amount > 0)
-            //{
-            //    _bufferValue /= amount;
-            //}
-            if(settings.useNormalizedValue)
+            if(amount > 0)
             {
-                _bufferValue = Mathf.Clamp01(_bufferValue);
+                _bufferValue /= amount;
             }
 
-            return _bufferValue;
+            return _bufferValue.Value;
         }
 
         public void GenerateEdgeFunctions()
@@ -80,6 +78,32 @@ namespace Graph
                     : MathFunc.Sinus;
 
                 edge.GenerateConstants(funcType);
+            }
+        }
+
+        public void GenerateFunctions()
+        {
+            foreach(var edge in fromEdges)
+            {
+                if(edge.weight == Weight.None
+                    || edge.strength == Strength.None)
+                    continue;
+
+                float r = Random.Range(0f, 1f);
+                MathFunc func = edge.strength switch
+                {
+                    Strength.Weak => r < .45f ? MathFunc.Quad_A
+                            : r < .9f ? MathFunc.Sigmuid_A : MathFunc.Bounce_A,
+
+                    Strength.Medium => r < .5f ? MathFunc.Linear : MathFunc.Sawtooth,
+
+                    Strength.Strong => r < .45f ? MathFunc.Quad_B
+                            : r < .9f ? MathFunc.Sigmuid_B : MathFunc.Bounce_B,
+
+                    _ => MathFunc.None,
+                };
+
+                edge.SetMathFunc(func);
             }
         }
     }

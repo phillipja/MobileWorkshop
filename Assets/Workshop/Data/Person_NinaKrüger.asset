@@ -22,6 +22,6 @@ MonoBehaviour:
     sie gleichzeitig darauf achtet, sich nicht von Stress und negativen Energien
     vereinnahmen zu lassen."
   <nodes>k__BackingField:
-  - {fileID: 234768925413870107, guid: 7234189702dadc04e928a2cb3a205957, type: 2}
-  - {fileID: -5315727278599014273, guid: 7234189702dadc04e928a2cb3a205957, type: 2}
-  - {fileID: 409271655690756279, guid: 7234189702dadc04e928a2cb3a205957, type: 2}
+  - {fileID: 5080825490681953573, guid: 7234189702dadc04e928a2cb3a205957, type: 2}
+  - {fileID: -753156790803868225, guid: 7234189702dadc04e928a2cb3a205957, type: 2}
+  - {fileID: 7582207505834649639, guid: 7234189702dadc04e928a2cb3a205957, type: 2}

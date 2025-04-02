@@ -112,14 +112,15 @@ public class WorkshopManager : MonoBehaviour
         {
             if(_startNodes.ContainsKey(kvp.Key))
             {
-                float value = settings.useNormalizedValue ? kvp.Value
-                    :_startBudget * _startNodes[kvp.Key] * kvp.Value;
-                kvp.Key.SetBufferValue(value);
+                //float value = settings.useNormalizedValue ? kvp.Value
+                //    :_startBudget * _startNodes[kvp.Key] * kvp.Value;
+
+                kvp.Key.SetBufferValue(kvp.Value);
             }
         }
 
         _currentBudget = _startBudget * (1f - _inputMenu.CurrentInputValueSum);
-        foreach(var node in _subGraphNodes.Where(n => n.category == _outputCategory))
+        foreach(var node in _subGraphNodes.Where(n => n.category != _inputCategory))
         {
             node.GetValue(settings);
         }
@@ -164,6 +165,8 @@ public class WorkshopManager : MonoBehaviour
             GetSubgraphRecursive(node, _subGraphNodes);
             _subGraphNodes.Add(node);
         }
+
+        Debug.Log($"Subgraph with {_subGraphNodes.Count} nodes.");
     }
 
     private void GetSubgraphRecursive(SO_GraphNode node, HashSet<SO_GraphNode> nodes)

@@ -1,0 +1,461 @@
+flowchart LR
+    %% --------------------------------------------------
+    %% ------------------ Stellgrößen -------------------
+    %% --------------------------------------------------
+    subgraph S["Stellgrößen (S1–S10)"]
+    S1(Entwicklungsbudget)
+    S2(Maschinenstunden)
+    S3(Personentage)
+    S4(Serverzeit)
+    S5(Budget Fremdleistungen)
+    S6(Marketingausgaben)
+    S7(Schulungsinvestitionen)
+    S8(Einstellung neuer Mitarbeitender)
+    S9(Erweiterung Büroflächen)
+    S10(IT-Infrastruktur Upgrades)
+    end
+
+    %% --------------------------------------------------
+    %% -------- Direkter Unternehmensnutzen ------------
+    %% --------------------------------------------------
+    subgraph D["Direkter Nutzen (D1–D10)"]
+    D1(Gewinnsteigerung)
+    D2(Kostensenkung)
+    D3(Marktanteilsgewinn)
+    D4(Produktionsoptimierung)
+    D5(Produktqualität)
+    D6(Kundenzufriedenheit)
+    D7(Lieferfähigkeit)
+    D8(Flexibilität)
+    D9(Entwicklungsgeschwindigkeit)
+    D10(Risikominimierung)
+    end
+
+    %% --------------------------------------------------
+    %% --------------- Zukünftige Effekte --------------
+    %% --------------------------------------------------
+    subgraph Z["Zukünftige Effekte (Z1–Z10)"]
+    Z1(Abhängigkeit von Zulieferern)
+    Z2(Umweltprobleme)
+    Z3(Technologische Obsoleszenz)
+    Z4(Späte Kundenunzufriedenheit)
+    Z5(Veränderte Wettbewerbslandschaft)
+    Z6(Langfristige Reputation +/-)
+    Z7(Innovationsdruck)
+    Z8(Regulatorische Anforderungen)
+    Z9(Kultureller Wandel)
+    Z10(Neue Geschäftsfelder)
+    end
+
+    %% --------------------------------------------------
+    %% ---------------- Sekundäre Effekte --------------
+    %% --------------------------------------------------
+    subgraph SE["Sekundäre Effekte (SE1–SE10)"]
+    SE1(Umweltauswirkungen)
+    SE2(Sichtbarkeit in der Öffentlichkeit)
+    SE3(Politische Unterstützung/Gegenwind)
+    SE4(Attraktivität als Arbeitgeber)
+    SE5(Mitarbeiterzufriedenheit)
+    SE6(Branchentrends)
+    SE7(Lobbying-Potenzial)
+    SE8(Finanzielle Förderungen)
+    SE9(Kooperation mit NGOs/Universitäten)
+    SE10(Mediale Aufmerksamkeit)
+    end
+
+    %% --------------------------------------------------
+    %% ---------------- Ethische Aspekte ----------------
+    %% --------------------------------------------------
+    subgraph Eth["Ethische Aspekte (Eth1–Eth10)"]
+    Eth1(Faire Arbeitsbedingungen)
+    Eth2(Umweltschutz & Nachhaltigkeit)
+    Eth3(Transparenz in Lieferketten)
+    Eth4(Gesundheit & Sicherheit)
+    Eth5(Regionale Verantwortung)
+    Eth6(Integrität / Korruptionsfreiheit)
+    Eth7(Datenschutz)
+    Eth8(Ethische Investitionen)
+    Eth9(Diversity & Inclusion)
+    Eth10(Ehrliche Kommunikation)
+    end
+
+    %% --------------------------------------------------
+    %% -------- Private Nutzenfunktionen (Reiss) --------
+    %% --------------------------------------------------
+    subgraph P["Private Nutzen (P1–P16)"]
+    P1(Akzeptanz)
+    P2(Neugier)
+    P3(Essen/Genuss)
+    P4(Familie)
+    P5(Ehre/Stolz)
+    P6(Idealismus)
+    P7(Unabhängigkeit)
+    P8(Ordnung)
+    P9(Physische Aktivität)
+    P10(Macht)
+    P11(Romantik/Zuneigung)
+    P12(Sparen/Zurückhaltung)
+    P13(Soziale Zugehörigkeit)
+    P14(Status)
+    P15(Ruhe / Stressfreiheit)
+    P16(Vergeltung/Wettbewerbsgeist)
+    end
+
+    %% Direkter Nutzen (D1-D10)
+    %% D1: Gewinnsteigerung
+    
+    S1 --> | stark, pos | D1 
+    S2 --> | stark, pos | D1 
+    S4 --> | mittel, pos | D1 
+    S6 --> | stark, pos | D1 
+    S7 --> | schwach, pos | D1 
+    
+    %% D2: Kostensenkung
+    
+    S2 --> | schwach, neg | D2
+    S3 --> | schwach, neg | D2
+    S5 --> | schwach, neg | D2
+    S7 --> | mittel, pos | D2 
+    S10 --> | stark, pos | D2 
+    
+    %% D3: Marktanteilsgewinn
+    
+    S1 --> | stark, pos | D3 
+    S5 --> | mittel, pos | D3
+    S6 --> | stark, pos | D3 
+    S8 --> | schwach, pos | D3
+    
+    %% D4: Produktionsoptimierung
+    
+    S2 --> | stark, pos | D4 
+    S3 --> | stark, pos | D4 
+    S7 --> | mittel, pos | D4
+    S10 --> | stark, pos | D4
+    
+    %% D5: Produktqualität
+    
+    S1 --> | stark, pos | D5 
+    S3 --> | mittel, pos | D5
+    S7 --> | stark, pos | D5 
+    
+    %% D6: Kundenzufriedenheit
+    
+    S1 --> | mittel, pos | D6 
+    S3 --> | stark, pos | D6
+    S5 --> | schwach, pos | D6
+    S6 --> | mittel, pos | D6 
+    S7 --> | mittel, pos | D6 
+    
+    %% D7: Lieferfähigkeit
+    
+    S2 --> | stark, pos | D7
+    S3 --> | stark, pos | D7
+    S4 --> | mittel, pos | D7 
+    S9 --> | schwach, pos | D7
+    S10 --> | stark, pos | D7 
+    
+    %% D8: Flexibilität
+    
+    S3 --> | stark, pos | D8 
+    S4 --> | mittel, pos | D8
+    S8 --> | stark, pos | D8 
+    S10 --> | stark, pos | D8
+    
+    %% D9: Entwicklungsgeschwindigkeit
+    
+    S1 --> | stark, pos | D9 
+    S3 --> | stark, pos | D9 
+    S4 --> | stark, pos | D9 
+    S8 --> | mittel, pos | D9
+    S10 --> | mittel, pos | D9
+    
+    %% D10: Risikominimierung
+    
+    S1 --> | mittel, pos | D10 
+    S3 --> | schwach, pos | D10
+    S4 --> | mittel, pos | D10 
+    S7 --> | stark, pos | D10
+    S10 --> | stark, pos | D10 
+    
+    %% Zukünftige Effekte (Z1-Z10)
+    %% Z1: Abhängigkeit von Zulieferern
+    
+    S1 --> | mittel, neg | Z1 
+    S2 --> | schwach, neg | Z1
+    S5 --> | stark, pos | Z1 
+    
+    %% Z2: Umweltprobleme
+    
+    S2 --> | mittel, pos | Z2
+    S9 --> | schwach, pos | Z2 
+    S10 --> | schwach, neg | Z2
+    
+    %% Z3: Technologische Obsoleszenz
+    
+    S1 --> | stark, neg | Z3 
+    S4 --> | mittel, neg | Z3
+    S7 --> | stark, neg | Z3 
+    S10 --> | stark, neg | Z3
+    
+    %% Z4: Späte Kundenunzufriedenheit
+    
+    S1 --> | stark, neg | Z4 
+    S3 --> | mittel, neg | Z4
+    S7 --> | mittel, neg | Z4
+    
+    %% Z5: Veränderte Wettbewerbslandschaft
+    
+    S1 --> | stark, pos | Z5
+    S6 --> | mittel, pos | Z5
+    S8 --> | schwach, pos | Z5
+    
+    %% Z6: Langfristige Reputation
+    
+    S1 --> | mittel, pos | Z6 
+    S6 --> | stark, pos | Z6
+    S7 --> | schwach, pos | Z6
+    
+    %% Z7: Innovationsdruck
+    
+    S1 --> | schwach, neg | Z7
+    S5 --> | mittel, pos | Z7 
+    S8 --> | schwach, neg | Z7
+    
+    %% Z8: Regulatorische Anforderungen
+    
+    S1 --> | schwach, pos | Z8
+    S4 --> | mittel, pos | Z8 
+    S10 --> | mittel, pos | Z8
+    
+    %% Z9: Kultureller Wandel
+    
+    S7 --> | stark, pos | Z9
+    S8 --> | stark, pos | Z9
+    S9 --> | schwach, pos | Z9
+    
+    %% Z10: Neue Geschäftsfelder
+    
+    S1 --> | stark, pos | Z10 
+    S4 --> | mittel, pos | Z10 
+    S6 --> | mittel, pos | Z10 
+    S8 --> | schwach, pos | Z10
+    
+    %% Sekundäre Effekte (SE1-SE10)
+    %% SE1: Umweltauswirkungen
+    
+    S2 --> | stark, neg | SE1 
+    S9 --> | mittel, neg | SE1
+    S10 --> | schwach, pos | SE1
+    
+    %% SE2: Sichtbarkeit in der Öffentlichkeit
+    
+    S1 --> | schwach, pos | SE2
+    S6 --> | stark, pos | SE2 
+    S9 --> | schwach, pos | SE2
+    
+    %% SE3: Politische Unterstützung/Gegenwind
+    
+    S1 --> | schwach, pos | SE3 
+    S7 --> | schwach, pos | SE3 
+    S9 --> | schwach, pos | SE3 
+    
+    %% SE4: Attraktivität als Arbeitgeber
+    
+    S1 --> | mittel, pos | SE4 
+    S7 --> | stark, pos | SE4 
+    S8 --> | schwach, pos | SE4
+    S9 --> | mittel, pos | SE4 
+    S10 --> | mittel, pos | SE4
+    
+    %% SE5: Mitarbeiterzufriedenheit
+    
+    S3 --> | schwach, neg | SE5
+    S7 --> | stark, pos | SE5 
+    S9 --> | stark, pos | SE5 
+    S10 --> | mittel, pos | SE5
+    
+    %% SE6: Branchentrends
+    
+    S1 --> | stark, pos | SE6 
+    S4 --> | mittel, pos | SE6
+    S6 --> | mittel, pos | SE6
+    
+    %% SE7: Lobbying-Potenzial
+    
+    S5 --> | schwach, pos | SE7
+    S6 --> | mittel, pos | SE7 
+    S8 --> | schwach, pos | SE7
+    
+    %% SE8: Finanzielle Förderungen
+    
+    S1 --> | stark, pos | SE8 
+    S7 --> | mittel, pos | SE8
+    S10 --> | schwach, pos | SE8
+    
+    %% SE9: Kooperation mit NGOs/Universitäten
+    
+    S1 --> | stark, pos | SE9 
+    S7 --> | mittel, pos | SE9 
+    S8 --> | schwach, pos | SE9
+    
+    %% SE10: Mediale Aufmerksamkeit
+    
+    S1 --> | mittel, pos | SE10 
+    S6 --> | stark, pos | SE10 
+    S9 --> | schwach, pos | SE10
+    
+    %% Ethische Aspekte (Eth1-Eth10)
+    %% Eth1: Faire Arbeitsbedingungen
+    
+    S3 --> | stark, neg | Eth1 
+    S7 --> | stark, pos | Eth1 
+    S8 --> | mittel, pos | Eth1
+    S9 --> | stark, pos | Eth1 
+    
+    %% Eth2: Umweltschutz & Nachhaltigkeit
+    
+    S2 --> | stark, neg | Eth2 
+    S9 --> | mittel, neg | Eth2 
+    S10 --> | schwach, pos | Eth2
+    
+    %% Eth3: Transparenz in Lieferketten
+    
+    S1 --> | schwach, pos | Eth3
+    S5 --> | mittel, pos | Eth3 
+    S10 --> | stark, pos | Eth3 
+    
+    %% Eth4: Gesundheit & Sicherheit
+    
+    S3 --> | mittel, neg | Eth4 
+    S7 --> | stark, pos | Eth4 
+    S9 --> | mittel, pos | Eth4 
+    S10 --> | schwach, pos | Eth4
+    
+    %% Eth5: Regionale Verantwortung
+    
+    S5 --> | schwach, pos | Eth5
+    S8 --> | mittel, pos | Eth5 
+    S9 --> | stark, pos | Eth5 
+    
+    %% Eth6: Integrität / Korruptionsfreiheit
+    
+    S5 --> | mittel, pos | Eth6 
+    S7 --> | stark, pos | Eth6 
+    S10 --> | mittel, pos | Eth6
+    
+    %% Eth7: Datenschutz
+    
+    S4 --> | stark, neg | Eth7 
+    S7 --> | stark, pos | Eth7 
+    S10 --> | stark, pos | Eth7
+    
+    %% Eth8: Ethische Investitionen
+    
+    S1 --> | mittel, pos | Eth8 
+    S5 --> | stark, pos | Eth8 
+    S9 --> | schwach, pos | Eth8
+    
+    %% Eth9: Diversity & Inclusion
+    
+    S7 --> | stark, pos | Eth9
+    S8 --> | stark, pos | Eth9
+    S9 --> | schwach, pos | Eth9
+    
+    %% Eth10: Ehrliche Kommunikation
+    
+    S6 --> | stark, pos | Eth10 
+    S7 --> | mittel, pos | Eth10
+    S10 --> | schwach, pos | Eth10
+    
+    %% Private Nutzen (P1-P16)
+    %% P1: Akzeptanz
+    
+    S6 --> | stark, pos | P1 
+    S7 --> | mittel, pos | P1 
+    S8 --> | schwach, pos | P1
+    
+    %% P2: Neugier
+    
+    S1 --> | stark, pos | P2 
+    S4 --> | mittel, pos | P2
+    S7 --> | mittel, pos | P2
+    
+    %% P3: Essen/Genuss
+    
+    S9 --> | schwach, pos | P3
+    
+    %% P4: Familie
+    
+    S3 --> | stark, neg | P4
+    S7 --> | schwach, pos | P4
+    S9 --> | schwach, pos | P4
+    
+    %% P5: Ehre/Stolz
+    
+    S1 --> | stark, pos | P5
+    S6 --> | mittel, pos | P5 
+    S8 --> | schwach, pos | P5
+    
+    %% P6: Idealismus
+    
+    S1 --> | mittel, pos | P6 
+    S7 --> | mittel, pos | P6 
+    
+    %% P7: Unabhängigkeit
+    
+    S1 --> | stark, pos | P7 
+    S4 --> | mittel, pos | P7 
+    S10 --> | stark, pos | P7 
+    
+    %% P8: Ordnung
+    
+    S7 --> | mittel, pos | P8 
+    S9 --> | schwach, pos | P8
+    S10 --> | stark, pos | P8 
+    
+    %% P9: Physische Aktivität
+    
+    S3 --> | schwach, neg | P9
+    S9 --> | mittel, pos | P9 
+    
+    %% P10: Macht
+    
+    S3 --> | stark, pos | P10 
+    S5 --> | mittel, pos | P10
+    S8 --> | stark, pos | P10 
+    
+    %% P11: Romantik/Zuneigung
+    
+    S3 --> | stark, neg | P11 
+    S7 --> | schwach, pos | P11
+    
+    %% P12: Sparen/Zurückhaltung
+    
+    S2 --> | schwach, neg | P12
+    S5 --> | stark, neg | P12
+    S10 --> | mittel, neg | P12
+    
+    %% P13: Soziale Zugehörigkeit
+    
+    S7 --> | stark, pos | P13 
+    S8 --> | mittel, pos | P13
+    S9 --> | mittel, pos | P13
+    
+    %% P14: Status
+    
+    S1 --> | mittel, pos | P14
+    S6 --> | stark, pos | P14 
+    S9 --> | mittel, pos | P14
+    
+    %% P15: Ruhe / Stressfreiheit
+    
+    S3 --> | stark, neg | P15 
+    S8 --> | mittel, pos | P15
+    S9 --> | stark, pos | P15 
+    S10 --> | mittel, pos | P15
+    
+    %% P16: Vergeltung/Wettbewerbsgeist
+    
+    S1 --> | stark, pos | P16 
+    S6 --> | mittel, pos | P16
+    S8 --> | schwach, pos | P16

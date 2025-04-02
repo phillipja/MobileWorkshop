@@ -24,7 +24,8 @@ namespace Graph
         const string COMMENT = @"(?s)%%.*?\r?\n";
         const string SUBGRAPH = @"subgraph\s+(\w+)?\s*\[""(.+?)\((?:.|\n|\r)+?end(?:\s)";
         const string NODE = @"(\d+)\((.+?)\)";
-        const string EDGE = @"(\w+\d+)\s*-->\s*\|(neg|pos)\|\s*(\w+\d+)";
+        //const string EDGE = @"(\w+\d+)\s*-->\s*\|(neg|pos)\|\s*(\w+\d+)";
+        const string EDGE = @"(\w+\d+)\s*-->\s*\|\s*(\w+),\s*(neg|pos)\s*\|\s*(\w+\d+)";
 
         private string _path;
         private string _assetName;
@@ -151,6 +152,10 @@ namespace Graph
 
         private void GenerateEdges(SO_Graph graph, string cleanedText)
         {
+            const string weak = "schwach";
+            const string medium = "mittel";
+            const string strong = "stark";
+
             const string positiveWeight = "pos";
             const string negativeWeight = "neg";
 
@@ -158,8 +163,9 @@ namespace Graph
             foreach(Match edgeMatch in edgeMatches)
             {
                 string from = edgeMatch.Groups[1].Value.ToUpper();
-                string to = edgeMatch.Groups[3].Value.ToUpper();
-                string weightInfo = edgeMatch.Groups[2].Value;
+                string to = edgeMatch.Groups[4].Value.ToUpper();
+                string strengthInfo = edgeMatch.Groups[2].Value;
+                string weightInfo = edgeMatch.Groups[3].Value;
 
                 SO_GraphNode fromNode = graph.nodes.FirstOrDefault(n => n.id.Equals(from));
                 SO_GraphNode toNode = graph.nodes.FirstOrDefault(n => n.id.Equals(to));
@@ -174,7 +180,7 @@ namespace Graph
                 if(isValid == false)
                     continue;
 
-                toNode.fromEdges.Add(new MathModeledEdge(fromNode, DetermineWeight(weightInfo)));
+                toNode.fromEdges.Add(new MathModeledEdge(fromNode, DetermineStrength(strengthInfo), DetermineWeight(weightInfo)));
                 fromNode.toEdges.Add(toNode);
             }
 
@@ -194,6 +200,20 @@ namespace Graph
                 }
 
                 return Weight.None;
+            }
+
+            Strength DetermineStrength(string info)
+            {
+                if(info.Equals(weak))
+                    return Strength.Weak;
+
+                if(info.Equals(medium))
+                    return Strength.Medium;
+
+                if(info.Equals(strong))
+                    return Strength.Strong;
+
+                return Strength.None;
             }
         }
     }

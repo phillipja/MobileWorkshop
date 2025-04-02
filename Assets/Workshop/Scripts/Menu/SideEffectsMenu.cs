@@ -57,8 +57,7 @@ public class SideEffectsMenu : MonoBehaviour
             sum += node.GetValue(_manager.settings);
         }
 
-        if(_manager.settings.useNormalizedValue
-            && nodes.Length > 0)
+        if(nodes.Length > 0)
         {
             sum /= nodes.Length;
         }
