@@ -2724,9 +2724,9 @@ RectTransform:
   m_Father: {fileID: 1094887384}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 79.1673, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &486515993
 MonoBehaviour:
@@ -11345,9 +11345,9 @@ RectTransform:
   m_Father: {fileID: 579036862}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 79.1673, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2135510012
 MonoBehaviour:
@@ -11595,6 +11595,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3d716d1fb7c78af4d9cf7a636e112b70, type: 2}
   _graph: {fileID: 11400000, guid: 7234189702dadc04e928a2cb3a205957, type: 2}
   _inputCategory: {fileID: 5903119763373296720, guid: 7234189702dadc04e928a2cb3a205957,
+    type: 2}
+  _directUseCategory: {fileID: 7626927868811945440, guid: 7234189702dadc04e928a2cb3a205957,
     type: 2}
   _outputCategory: {fileID: 1265635601877930621, guid: 7234189702dadc04e928a2cb3a205957,
     type: 2}

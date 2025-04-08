@@ -17,18 +17,18 @@ public class TreasuryMenu : MonoBehaviour
 
         _manager.OnGraphUpdated += OnGraphUpdated;
         _budgetField.maxValue = _manager.StartBudget;
-        SetBudgetValues(_manager.StartBudget);
+        SetBudgetValues(_manager.StartBudget, _manager.NextBudget);
     }
 
     private void OnGraphUpdated()
     {
-        SetBudgetValues(_manager.CurrentBudget);
+        SetBudgetValues(_manager.CurrentBudget, _manager.NextBudget);
     }
 
-    private void SetBudgetValues(float currentBudget)
+    private void SetBudgetValues(float currentBudget, float nextBudget)
     {
         _budgetField.SetValue(currentBudget, "0.0");
-        _profitValueField.text = currentBudget.ToString("0.0");
+        _profitValueField.text = nextBudget.ToString("0.0");
     }
 
     private void OnDestroy()

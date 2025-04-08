@@ -72,14 +72,6 @@ public class InputMenu : MonoBehaviour
             _manager.UpdateInputValues(_currentInputValues);
             _inputValuesChanged = false;
         }
-
-        if(Input.GetKeyDown(KeyCode.P))
-        {
-            foreach(var item in _currentInputValues)
-            {
-                Debug.Log($"Node: {item.Key.id} - Value: {item.Value}");
-            }
-        }
     }
 
     private void OnDestroy()

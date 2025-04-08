@@ -23,6 +23,7 @@ public class WorkshopManager : MonoBehaviour
     [Header("Graph")]
     [SerializeField] private SO_Graph _graph;
     [SerializeField] private SO_GraphCategory _inputCategory;
+    [SerializeField] private SO_GraphCategory _directUseCategory;
     [SerializeField] private SO_GraphCategory _outputCategory;
 
     private Dictionary<SO_GraphNode, float> _startNodes;
@@ -45,6 +46,8 @@ public class WorkshopManager : MonoBehaviour
 
     public float StartBudget => _startBudget;
     public float CurrentBudget => _currentBudget;
+    public float NextBudget => _startBudget * 1.125f * _nextBudgetMulti;
+    private float _nextBudgetMulti;
 
     public event Action OnGraphUpdated;
 
@@ -124,6 +127,15 @@ public class WorkshopManager : MonoBehaviour
         {
             node.GetValue(settings);
         }
+
+        int amount =0;
+        _nextBudgetMulti = 0f;
+        foreach(var node in _subGraphNodes.Where(n => n.category == _directUseCategory))
+        {
+            _nextBudgetMulti += node.GetValue(settings);
+            amount++;
+        }
+        _nextBudgetMulti /= amount;
 
         OnGraphUpdated?.Invoke();
     }
