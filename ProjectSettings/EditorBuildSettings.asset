@@ -5,10 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Workshop.unity
     guid: f6c8be5db9d08ef429551169feba272f
   - enabled: 0
     path: Assets/Scenes/Mobile Workshop.unity
     guid: 0cd1bd1b3e6a58743b2f079b8f7f8669
+  - enabled: 1
+    path: Assets/Scenes/Workshop_NewConnection.unity
+    guid: 877b32e71c205914a87a2c80d23b7ad7
   m_configObjects: {}
