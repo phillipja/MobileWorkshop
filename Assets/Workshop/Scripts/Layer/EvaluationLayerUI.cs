@@ -158,6 +158,19 @@ public class EvaluationLayerUI : MonoBehaviour
     {
         _easingUI.SetActive(true);
         _activeState = activeState;
+        _easingType.SetValueWithoutNotify((int)GetEasingType());
+    }
+
+    private int GetEasingType()
+    {
+        return _activeState switch
+        {
+            DisplayState.Direct => (int)_layer.DirectEasing,
+            DisplayState.Futhure => (int)_layer.FuthureEasing,
+            DisplayState.Secondary => (int)_layer.SecondaryEasing,
+            DisplayState.Ethics => (int)_layer.EthicsEasing,
+            _ => throw new NotImplementedException(),
+        };
     }
 
     private void OnEasingTypeChosen(int idx)

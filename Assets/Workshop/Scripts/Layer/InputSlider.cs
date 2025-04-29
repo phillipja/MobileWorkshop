@@ -44,4 +44,9 @@ public class InputSlider : MonoBehaviour
         _inputSlider.SetValueWithoutNotify(Value * _inputSlider.maxValue);
         _valueField.SetText(Value.ToString("0.00"));
     }
+
+    public void SetValue(float val)
+    {
+        _inputSlider.SetValueWithoutNotify(val * _inputSlider.maxValue);
+    }
 }

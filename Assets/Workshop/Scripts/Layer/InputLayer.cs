@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -70,6 +69,15 @@ public class InputLayer : MonoBehaviour
             _inputChanged = oldVal - ensuredVal != 0f;
             return ensuredVal;
         }
+    }
+
+    public void ResetInput()
+    {
+        _valueSum = 0f;
+        _inputOne.SetValue(0);
+        _inputTwo.SetValue(0);
+        _inputThree.SetValue(0);
+        _inputFour.SetValue(0);
     }
 }
 
