@@ -24,14 +24,23 @@ public class EvaluationLayerUI : MonoBehaviour
     [SerializeField] private Button _secondaryOptions;
     [SerializeField] private Button _ethicsOptions;
     [Space]
-    [SerializeField] private Button _close;
-    [Header("Evaluation UI")]
-    [SerializeField] private GameObject _ui;
+    [SerializeField] private Button _directEasing;
+    [SerializeField] private Button _futhureEasing;
+    [SerializeField] private Button _secondaryEasing;
+    [SerializeField] private Button _ethicsEasing;
     [Space]
+    [SerializeField] private Button _closeOptions;
+    [SerializeField] private Button _closeEasing;
+    [Header("UIs")]
+    [SerializeField] private GameObject _optionsUI;
+    [SerializeField] private GameObject _easingUI;
+    [Header("Options")]
     [SerializeField] private EvaluationOptionUI _inputOne;
     [SerializeField] private EvaluationOptionUI _inputTwo;
     [SerializeField] private EvaluationOptionUI _inputThree;
     [SerializeField] private EvaluationOptionUI _inputFour;
+    [Header("Options")]
+    [SerializeField] private TMP_Dropdown _easingType;
 
     private DisplayState _activeState;
 
@@ -49,45 +58,61 @@ public class EvaluationLayerUI : MonoBehaviour
         _inputFour.Init();
         _inputFour.OptionChanged += (opt) => GetEvaluationOptions()[3] = opt;
 
-        _directOptions.onClick.AddListener(OnDirectClicked);
-        _futhureOptions.onClick.AddListener(OnFuthureClicked);
-        _secondaryOptions.onClick.AddListener(OnSecondaryClicked);
-        _ethicsOptions.onClick.AddListener(OnEthicsClicked);
-        _close.onClick.AddListener(OnCloseClicked);
+        _directOptions.onClick.AddListener(OnDirectOptionsClicked);
+        _futhureOptions.onClick.AddListener(OnFuthureOptionsClicked);
+        _secondaryOptions.onClick.AddListener(OnSecondaryOptionsClicked);
+        _ethicsOptions.onClick.AddListener(OnEthicsOptionsClicked);
+
+        _directEasing.onClick.AddListener(OnDirectEasingClicked);
+        _futhureEasing.onClick.AddListener(OnFuthureEasingClicked);
+        _secondaryEasing.onClick.AddListener(OnSecondaryEasingClicked);
+        _ethicsEasing.onClick.AddListener(OnEthicsEasingClicked);
+
+        _easingType.onValueChanged.AddListener(OnEasingTypeChosen);
+
+        _closeOptions.onClick.AddListener(OnCloseClicked);
+        _closeEasing.onClick.AddListener(OnCloseClicked);
     }
 
     private void OnDestroy()
     {
-        _directOptions.onClick.RemoveListener(OnDirectClicked);
-        _futhureOptions.onClick.RemoveListener(OnFuthureClicked);
-        _secondaryOptions.onClick.RemoveListener(OnSecondaryClicked);
-        _ethicsOptions.onClick.RemoveListener(OnEthicsClicked);
-        _close.onClick.RemoveListener(OnCloseClicked);
+        _directOptions.onClick.RemoveListener(OnDirectOptionsClicked);
+        _futhureOptions.onClick.RemoveListener(OnFuthureOptionsClicked);
+        _secondaryOptions.onClick.RemoveListener(OnSecondaryOptionsClicked);
+        _ethicsOptions.onClick.RemoveListener(OnEthicsOptionsClicked);
+
+        _directEasing.onClick.RemoveListener(OnDirectEasingClicked);
+        _futhureEasing.onClick.RemoveListener(OnFuthureEasingClicked);
+        _secondaryEasing.onClick.RemoveListener(OnSecondaryEasingClicked);
+        _ethicsEasing.onClick.RemoveListener(OnEthicsEasingClicked);
+
+        _closeOptions.onClick.RemoveListener(OnCloseClicked);
+        _closeEasing.onClick.RemoveListener(OnCloseClicked);
     }
 
-    private void OnDirectClicked()
+    private void OnDirectOptionsClicked()
     {
         SetOptionUIs(DisplayState.Direct);
     }
 
-    private void OnFuthureClicked()
+    private void OnFuthureOptionsClicked()
     {
         SetOptionUIs(DisplayState.Futhure);
     }
 
-    private void OnSecondaryClicked()
+    private void OnSecondaryOptionsClicked()
     {
         SetOptionUIs(DisplayState.Secondary);
     }
 
-    private void OnEthicsClicked()
+    private void OnEthicsOptionsClicked()
     {
         SetOptionUIs(DisplayState.Ethics);
     }
 
     private void SetOptionUIs(DisplayState activeState)
     {
-        _ui.SetActive(true);
+        _optionsUI.SetActive(true);
         _activeState = activeState;
 
         var options = GetEvaluationOptions();
@@ -109,9 +134,59 @@ public class EvaluationLayerUI : MonoBehaviour
         };
     }
 
+    private void OnDirectEasingClicked()
+    {
+        SetEasingUI(DisplayState.Direct);
+    }
+
+    private void OnFuthureEasingClicked()
+    {
+        SetEasingUI(DisplayState.Futhure);
+    }
+
+    private void OnSecondaryEasingClicked()
+    {
+        SetEasingUI(DisplayState.Secondary);
+    }
+
+    private void OnEthicsEasingClicked()
+    {
+        SetEasingUI(DisplayState.Ethics);
+    }
+
+    private void SetEasingUI(DisplayState activeState)
+    {
+        _easingUI.SetActive(true);
+        _activeState = activeState;
+    }
+
+    private void OnEasingTypeChosen(int idx)
+    {
+        switch(_activeState)
+        {
+            case DisplayState.Direct:
+                _layer.DirectEasing = (EasingType)idx;
+                break;
+            case DisplayState.Futhure:
+                _layer.FuthureEasing = (EasingType)idx;
+                break;
+            case DisplayState.Secondary:
+                _layer.SecondaryEasing = (EasingType)idx;
+                break;
+            case DisplayState.Ethics:
+                _layer.EthicsEasing = (EasingType)idx;
+                break;
+
+            case DisplayState.None:
+            default:
+                throw new NotImplementedException();
+        }
+    }
+
     private void OnCloseClicked()
     {
-        _ui.SetActive(false);
+        _optionsUI.SetActive(false);
+        _easingUI.SetActive(false);
         _activeState = DisplayState.None;
     }
 
@@ -140,7 +215,7 @@ public class EvaluationLayerUI : MonoBehaviour
 
         public void SetData(EvaluationOption evaluationOption)
         {
-            if (_variables == null)
+            if(_variables == null)
             {
                 Debug.LogWarning("Call init befor setting data.");
                 return;
@@ -165,7 +240,7 @@ public class EvaluationLayerUI : MonoBehaviour
 
         private void OnTypeChanged(int idx)
         {
-            if (Enum.TryParse(_type.options[idx].text, true, out EvaluationType type))
+            if(Enum.TryParse(_type.options[idx].text, true, out EvaluationType type))
             {
                 var newData = EvaluationOption.CreateInstance(type);
                 SetData(newData);
@@ -198,13 +273,13 @@ public class EvaluationLayerUI : MonoBehaviour
 
         private void UpdateVariables()
         {
-            foreach (var varGO in _variables.Select(v => v.gameObject))
+            foreach(var varGO in _variables.Select(v => v.gameObject))
             {
                 Destroy(varGO);
             }
             _variables.Clear();
 
-            foreach (var variable in _evaluationData.GetVariables())
+            foreach(var variable in _evaluationData.GetVariables())
             {
                 var floatRangeUI = Instantiate(_varTemplate, _varContainer);
                 floatRangeUI.start.SetText(variable.start.ToString());

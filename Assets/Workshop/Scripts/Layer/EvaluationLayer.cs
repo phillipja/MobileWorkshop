@@ -43,6 +43,11 @@ public class EvaluationLayer : MonoBehaviour
     public EvaluationOption[] SecondaryOptions => _secondaryOptions;
     public EvaluationOption[] EthicsOptions => _ethicsOptions;
 
+    public EasingType DirectEasing { get; set; }
+    public EasingType FuthureEasing { get; set; }
+    public EasingType SecondaryEasing { get; set; }
+    public EasingType EthicsEasing { get; set; }
+
     private void Awake()
     {
         _directOptions = GenerateOptions(_directTransition);
@@ -79,10 +84,10 @@ public class EvaluationLayer : MonoBehaviour
         _secondaryRaw = CalculateRaw(SecondaryOptions, args);
         _ethicsRaw = CalculateRaw(EthicsOptions, args);
 
-        _directVal = Mathf.InverseLerp(0.0f, 4.0f, _directRaw);
-        _futhureVal = Mathf.InverseLerp(0.0f, 4.0f, _futhureRaw);
-        _secondaryVal = Mathf.InverseLerp(0.0f, 4.0f, _secondaryRaw);
-        _ethicsVal = Mathf.InverseLerp(0.0f, 4.0f, _ethicsRaw);
+        _directVal = DirectEasing.Evaluate(Mathf.InverseLerp(0.0f, 4.0f, _directRaw));
+        _futhureVal = FuthureEasing.Evaluate(Mathf.InverseLerp(0.0f, 4.0f, _futhureRaw));
+        _secondaryVal = SecondaryEasing.Evaluate(Mathf.InverseLerp(0.0f, 4.0f, _secondaryRaw));
+        _ethicsVal = EthicsEasing.Evaluate(Mathf.InverseLerp(0.0f, 4.0f, _ethicsRaw));
 
         UpdateUI();
     }
