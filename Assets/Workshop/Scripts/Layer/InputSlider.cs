@@ -43,10 +43,16 @@ public class InputSlider : MonoBehaviour
         Value = ensuredValue ?? newValue;
         UpdateUI();
     }
+    public void SetValue(float newValue)
+    {
+        Value = Mathf.Clamp01(newValue);
+        UpdateUI();
+    }
 
     public void ResetValue()
     {
         Value = 0.0f;
+        _inputSlider.SetValueWithoutNotify(0);
         UpdateUI();
     }
 
