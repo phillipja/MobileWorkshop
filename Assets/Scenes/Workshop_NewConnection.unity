@@ -3925,26 +3925,14 @@ MonoBehaviour:
     _fromInputTwo: 2
     _fromInputThree: 3
     _fromInputFour: 0
-  _roundLable: {fileID: 846256933}
-  _budget: {fileID: 1148985022}
-  _return: {fileID: 133828033}
-  _endRoundButton: {fileID: 1294857086}
-  _endScreen: {fileID: 2096347343}
-  _outro: {fileID: 743936621}
-  _continue: {fileID: 1528517058}
-  _restart: {fileID: 242842602}
   _directRawField: {fileID: 330677503}
   _directMapField: {fileID: 475130858}
-  _directValField: {fileID: 2109752533}
   _futhureRawField: {fileID: 1307190160}
   _futhureMapField: {fileID: 189213896}
-  _futhureValField: {fileID: 450904031}
   _secondaryRawField: {fileID: 1562707057}
   _secondaryMapField: {fileID: 1466279343}
-  _secondaryValField: {fileID: 588908075}
   _ethicsRawField: {fileID: 2128783326}
   _ethicsMapField: {fileID: 1216184124}
-  _ethicsValField: {fileID: 1560094422}
 --- !u!114 &227950824
 MonoBehaviour:
   m_ObjectHideFlags: 0
