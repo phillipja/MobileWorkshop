@@ -31,15 +31,16 @@ public class EvaluationLayerUI : MonoBehaviour
     [Space]
     [SerializeField] private Button _closeOptions;
     [SerializeField] private Button _closeEasing;
-    [Header("UIs")]
-    [SerializeField] private GameObject _optionsUI;
-    [SerializeField] private GameObject _easingUI;
     [Header("Options")]
+    [SerializeField] private GameObject _optionsUI;
+    [Space]
     [SerializeField] private EvaluationOptionUI _inputOne;
     [SerializeField] private EvaluationOptionUI _inputTwo;
     [SerializeField] private EvaluationOptionUI _inputThree;
     [SerializeField] private EvaluationOptionUI _inputFour;
-    [Header("Options")]
+    [Header("Evaluation")]
+    [SerializeField] private GameObject _easingUI;
+    [Space]
     [SerializeField] private TMP_Dropdown _easingType;
 
     private DisplayState _activeState;
@@ -207,6 +208,7 @@ public class EvaluationLayerUI : MonoBehaviour
     private class EvaluationOptionUI
     {
         [SerializeField] private TMP_Dropdown _type;
+        [SerializeField] private Button _weight;
         [SerializeField] private UiLineRenderer _visual;
         [SerializeField] private Transform _varContainer;
         [SerializeField] private FloatRangeUI _varTemplate;
@@ -222,6 +224,7 @@ public class EvaluationLayerUI : MonoBehaviour
         {
             _variables = new(5);
             _type.onValueChanged.AddListener(OnTypeChanged);
+            _weight.onClick.AddListener(OnWeightClicked);
             _remove.onClick.AddListener(OnRemoveClicked);
             _add.onClick.AddListener(OnAddClicked);
         }
@@ -265,10 +268,11 @@ public class EvaluationLayerUI : MonoBehaviour
             }
         }
 
-        private void OnValueChanged(float val)
+        private void OnWeightClicked()
         {
-            _evaluationData.SetVariables(
-                _variables.Select(v => v.valueSlider.value).ToArray());
+            _evaluationData.ChangeWeight();
+            (_visual.transform as RectTransform).pivot = _evaluationData.IsPositive
+                ? Vector2.zero : Vector2.up;
             _visual.PlotEvaluationOption(_evaluationData);
         }
 
@@ -305,7 +309,7 @@ public class EvaluationLayerUI : MonoBehaviour
                     floatRangeUI.valueSlider.wholeNumbers = true;
                 }
                 floatRangeUI.valueSlider.SetValueWithoutNotify(variable.value);
-                floatRangeUI.valueSlider.onValueChanged.AddListener(OnValueChanged);
+                floatRangeUI.valueSlider.onValueChanged.AddListener(OnVarChanged);
 
                 floatRangeUI.gameObject.SetActive(true);
                 _variables.Add(floatRangeUI);
@@ -315,6 +319,13 @@ public class EvaluationLayerUI : MonoBehaviour
 
             _remove.interactable = _evaluationData.CanRemoveVariable;
             _add.interactable = _evaluationData.CanAddVariable;
+        }
+
+        private void OnVarChanged(float val)
+        {
+            _evaluationData.SetVariables(
+                _variables.Select(v => v.valueSlider.value).ToArray());
+            _visual.PlotEvaluationOption(_evaluationData);
         }
     }
 }

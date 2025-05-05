@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,14 +14,25 @@ public enum EvaluationType
 
 public abstract class EvaluationOption
 {
+    protected float _weight = 1.0f;
+    public bool IsPositive => _weight > 0;
     public abstract bool CanAddVariable { get; }
     public abstract bool CanRemoveVariable { get; }
     public abstract void AddVariable();
     public abstract void RemoveVariable();
     public abstract IEnumerable<FloatRange> GetVariables();
     public abstract void SetVariables(float[] variables);
+    public void ChangeWeight()
+    {
+        _weight *= -1.0f;
+    }
 
-    public abstract float Evaluate(float t);
+    public float Evaluate(float t)
+    {
+        return _weight * Calculate(t);
+    }
+
+    protected abstract float Calculate(float t);
 
     public static EvaluationOption CreateInstance(EvaluationType type)
     {
@@ -82,7 +94,7 @@ public class LinearEvaluation : EvaluationOption
         a = variables[0];
     }
 
-    public override float Evaluate(float t)
+    protected override float Calculate(float t)
     {
         return a * t;
     }
@@ -153,7 +165,7 @@ public class StepEvaluation : EvaluationOption
         _variables = _variables.OrderBy(t => t.Item1).ToList();
     }
 
-    public override float Evaluate(float t)
+    protected override float Calculate(float t)
     {
         for (int i = _variables.Count - 1; i > -1; i--)
         {
@@ -205,7 +217,7 @@ public class EaseEvaluation : EvaluationOption
         a = Mathf.Clamp(Mathf.Round(variables[0]), MIN, MAX);
     }
 
-    public override float Evaluate(float t)
+    protected override float Calculate(float t)
     {
         return t < 0.5f
             ? Mathf.Pow(2.0f, a - 1.0f) * Mathf.Pow(t, a)
@@ -271,7 +283,7 @@ public class SinEvaluation : EvaluationOption
         }
     }
 
-    public override float Evaluate(float t)
+    protected override float Calculate(float t)
     {
         var sinVal = 0.0f;
         foreach (var a in _variables)

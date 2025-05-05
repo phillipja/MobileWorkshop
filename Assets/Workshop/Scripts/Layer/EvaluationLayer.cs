@@ -10,7 +10,7 @@ public class EvaluationLayer : MonoBehaviour
     private const float DIREKT_START_MULTI = 1.25992104989f;
 
     [SerializeField] private InputLayer _input;
-    [Header("Transitions")]
+    [Header("Default Transitions")]
     [SerializeField] private EvaluationTransition _directTransition;
     [SerializeField] private EvaluationTransition _futhureTransition;
     [SerializeField] private EvaluationTransition _secondaryTransition;
@@ -88,12 +88,17 @@ public class EvaluationLayer : MonoBehaviour
         _endRoundButton.onClick.AddListener(EndRound);
         _continue.onClick.AddListener(Continue);
         _restart.onClick.AddListener(RestartWorkshop);
+
+        PrepareRound();
     }
 
     private void OnDestroy()
     {
         _input.OnInputChanged -= OnInputChanged;
+
         _endRoundButton.onClick.RemoveListener(EndRound);
+        _continue.onClick.RemoveListener(Continue);
+        _restart.onClick.RemoveListener(RestartWorkshop);
     }
 
     private EvaluationOption[] GenerateOptions(EvaluationTransition transition)
@@ -189,7 +194,7 @@ public class EvaluationLayer : MonoBehaviour
         _directRaw = CalculateRaw(DirectOptions, args);
         _futhureRaw = CalculateRaw(FuthureOptions, args);
         _secondaryRaw = CalculateRaw(SecondaryOptions, args);
-        _ethicsRaw = CalculateEthicRaw(args);
+        _ethicsRaw = CalculateRaw(EthicsOptions, args);
 
         _directMap = DirectEasing.Evaluate(Mathf.InverseLerp(0.0f, 4.0f, _directRaw));
         _futhureMap = FuthureEasing.Evaluate(Mathf.InverseLerp(0.0f, 4.0f, _futhureRaw));
@@ -215,7 +220,7 @@ public class EvaluationLayer : MonoBehaviour
 
         _futhureRawField.SetText(_futhureRaw.ToString("0.000"));
         _futhureMapField.SetText(_futhureMap.ToString("0.000"));
-        _futhureValField.SetText(_futhureVal.ToString("0.000"));
+        _futhureValField.SetText(_futhureVal.ToString("0.00"));
 
         _secondaryRawField.SetText(_secondaryRaw.ToString("0.000"));
         _secondaryMapField.SetText(_secondaryMap.ToString("0.000"));
@@ -235,14 +240,6 @@ public class EvaluationLayer : MonoBehaviour
             + options[1].Evaluate(args.inputTwoValue)
             + options[2].Evaluate(args.inputThreeValue)
             + options[3].Evaluate(args.inputFourValue);
-    }
-
-    private float CalculateEthicRaw(InputChangedArgs args)
-    {
-        return _ethicsOptions[0].Evaluate(args.inputOneValue)
-            - _ethicsOptions[1].Evaluate(args.inputTwoValue)
-            + _ethicsOptions[2].Evaluate(args.inputThreeValue)
-            - _ethicsOptions[3].Evaluate(args.inputFourValue);
     }
 
     [System.Serializable]

@@ -21,10 +21,10 @@ public class InputLayer : MonoBehaviour
 
     void Start()
     {
-        _inputOne.valueChanged = EnsureValue;
-        _inputTwo.valueChanged = EnsureValue;
-        _inputThree.valueChanged = EnsureValue;
-        _inputFour.valueChanged = EnsureValue;
+        foreach (var input in GetSlider()) 
+        {
+            input.valueChanged = EnsureValue;
+        }
     }
 
     private void LateUpdate()
@@ -46,38 +46,50 @@ public class InputLayer : MonoBehaviour
 
     private void OnDestroy()
     {
-        _inputOne.valueChanged = null;
-        _inputTwo.valueChanged = null;
-        _inputThree.valueChanged = null;
-        _inputFour.valueChanged = null;
+        foreach (var input in GetSlider())
+        {
+            input.valueChanged = null;
+        }
     }
 
     private float EnsureValue(float oldVal, float newVal)
     {
         _valueSum -= oldVal;
+        _valueSum += newVal;
 
-        if (newVal < oldVal)
-        {
-            _valueSum += newVal;
-            _inputChanged = true;
-            return newVal;
-        }
-        else
-        {
-            float ensuredVal = Mathf.Min(newVal, _maxValueSum - _valueSum);
-            _valueSum += ensuredVal;
-            _inputChanged = oldVal - ensuredVal != 0f;
-            return ensuredVal;
-        }
+        _inputChanged = oldVal != newVal;
+        return newVal;
+
+        //if (newVal < oldVal)
+        //{
+        //    _valueSum += newVal;
+        //    _inputChanged = true;
+        //    return newVal;
+        //}
+        //else
+        //{
+        //    float ensuredVal = Mathf.Min(newVal, _maxValueSum - _valueSum);
+        //    _valueSum += ensuredVal;
+        //    _inputChanged = oldVal - ensuredVal != 0f;
+        //    return ensuredVal;
+        //}
     }
 
     public void ResetInput()
     {
+        foreach (var input in GetSlider())
+        {
+            input.ResetValue();
+        }
         _valueSum = 0f;
-        _inputOne.SetValue(0);
-        _inputTwo.SetValue(0);
-        _inputThree.SetValue(0);
-        _inputFour.SetValue(0);
+    }
+
+    private IEnumerable<InputSlider> GetSlider()
+    {
+        yield return _inputOne;
+        yield return _inputTwo;
+        yield return _inputThree;
+        yield return _inputFour;
     }
 }
 

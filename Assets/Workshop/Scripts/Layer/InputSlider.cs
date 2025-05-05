@@ -41,12 +41,18 @@ public class InputSlider : MonoBehaviour
 
         float? ensuredValue = valueChanged?.Invoke(Value, newValue);
         Value = ensuredValue ?? newValue;
-        _inputSlider.SetValueWithoutNotify(Value * _inputSlider.maxValue);
-        _valueField.SetText(Value.ToString("0.00"));
+        UpdateUI();
     }
 
-    public void SetValue(float val)
+    public void ResetValue()
     {
-        _inputSlider.SetValueWithoutNotify(val * _inputSlider.maxValue);
+        Value = 0.0f;
+        UpdateUI();
+    }
+
+    private void UpdateUI()
+    {
+        _inputSlider.SetValueWithoutNotify(Value * _inputSlider.maxValue);
+        _valueField.SetText(Value.ToString("0.00"));
     }
 }
