@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -98,10 +99,21 @@ public class EvaluationLayer : MonoBehaviour
         _secondaryRaw = CalculateRaw(SecondaryOptions, args);
         _ethicsRaw = CalculateRaw(EthicsOptions, args);
 
-        _directMap = DirectEasing.Evaluate(Mathf.InverseLerp(0.0f, 4.0f, _directRaw));
-        _futhureMap = FuthureEasing.Evaluate(Mathf.InverseLerp(0.0f, 4.0f, _futhureRaw));
-        _secondaryMap = SecondaryEasing.Evaluate(Mathf.InverseLerp(0.0f, 4.0f, _secondaryRaw));
-        _ethicsMap = EthicsEasing.Evaluate(Mathf.InverseLerp(0.0f, 4.0f, _ethicsRaw));
+        (float rawMin, float rawMax) = GetMinMax(_directOptions);
+        (float mapMin, float mapMax) = GetMinMax(rawMin, rawMax);
+        _directMap = Mathf.Lerp(mapMin, mapMax, DirectEasing.Evaluate(Mathf.InverseLerp(rawMin, rawMax, _directRaw)));
+
+        (rawMin, rawMax) = GetMinMax(_futhureOptions);
+        (mapMin, mapMax) = GetMinMax(rawMin, rawMax);
+        _futhureMap = Mathf.Lerp(mapMin, mapMax, FuthureEasing.Evaluate(Mathf.InverseLerp(rawMin, rawMax, _futhureRaw)));
+
+        (rawMin, rawMax) = GetMinMax(_secondaryOptions);
+        (mapMin, mapMax) = GetMinMax(rawMin, rawMax);
+        _secondaryMap = Mathf.Lerp(mapMin, mapMax, SecondaryEasing.Evaluate(Mathf.InverseLerp(rawMin, rawMax, _secondaryRaw)));
+
+        (rawMin, rawMax) = GetMinMax(_ethicsOptions);
+        (mapMin, mapMax) = GetMinMax(rawMin, rawMax);
+        _ethicsMap = Mathf.Lerp(mapMin, mapMax, EthicsEasing.Evaluate(Mathf.InverseLerp(rawMin, rawMax, _ethicsRaw)));
 
         OnEvaluationChanged?.Invoke(new()
         {
@@ -113,6 +125,30 @@ public class EvaluationLayer : MonoBehaviour
         });
 
         UpdateUI();
+    }
+
+    private (float, float) GetMinMax(EvaluationOption[] directOptions)
+    {
+        float min = 0.0f;
+        float max = 0.0f;
+        foreach(var option in directOptions)
+        {
+            if(option.IsPositive)
+            {
+                max ++;
+            }
+            else
+            {
+                min --;
+            }
+        }
+        return (min, max);
+    }
+
+    private (float, float) GetMinMax(float min, float max)
+    {
+        float quotient = max - min;
+        return (min / quotient, max / quotient);
     }
 
     private void UpdateUI()
