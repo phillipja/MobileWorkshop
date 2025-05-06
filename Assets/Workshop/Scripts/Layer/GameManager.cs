@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     private float _currentBudget;
     private float _nextBudget;
     private float _prevFuthureVal;
+    private float _prevSecondaryVal;
     private int _round;
 
     [Header("Output")]
@@ -36,6 +37,11 @@ public class GameManager : MonoBehaviour
     private float _futhureVal;
     private float _secondaryVal;
     private float _ethicsVal;
+
+    [field: SerializeField, Range(0f, 1f)] public float DirectBreakpoint { get; set; } = 0.5f;
+    [field: SerializeField, Range(1f, 4f)] public float FuthureMulti { get; set; } = 2.0f;
+    [field: SerializeField, Range(0f, 1f)] public float SecondaryContinue { get; set; } = 0.5f;
+    [field: SerializeField, Range(0.5f, 2f)] public float EthicsMulti { get; set; } = 1.0f;
 
     private void Start()
     {
@@ -68,6 +74,7 @@ public class GameManager : MonoBehaviour
 
         if (r <= _secondaryVal)
         {
+            _prevSecondaryVal = 0.0f;
             var bonus = (10 * _round * _round) * _ethicsVal;
             _nextBudget += bonus;
 
@@ -95,6 +102,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
+            _prevSecondaryVal = _secondaryVal * SecondaryContinue;
             _outro.SetText($"Your decisions have been too insignificant. The public has not become aware of you." +
                     $"\n\nYour final return for this round is {_nextBudget:0.0€}.");
         }
@@ -113,7 +121,7 @@ public class GameManager : MonoBehaviour
         if (_round > 2)
         {
             var r = Random.Range(0f, 1f);
-            float probability = 1.0f / _round - 2;
+            float probability = 1.0f / ((float)_round - 2.0f);
             bool continueGame = r < probability;
             _continue.gameObject.SetActive(continueGame);
             _restart.gameObject.SetActive(!continueGame);
@@ -126,8 +134,11 @@ public class GameManager : MonoBehaviour
     {
         _directVal = 0.0f;
         _futhureVal = 0.0f;
-        _secondaryVal = 0.0f;
+        _secondaryVal = _prevSecondaryVal;
         _ethicsVal = 0.0f;
+        _currentBudget = _startBudget;
+
+        _layer.ResetEvaluation();
 
         UpdateUI();
     }
@@ -139,12 +150,12 @@ public class GameManager : MonoBehaviour
 
     private void OnEvaluationChanged(EvaluationChangedArgs args)
     {
-        _directVal = _startBudget * DIREKT_START_MULTI * Mathf.Pow(args.directMap, 1.0f / 3.0f);
-        _futhureVal = Mathf.Lerp(0.5f, 2.0f, args.futhureMap);
-        _secondaryVal = args.secondaryMap;
-        _ethicsVal = args.ethicsMap;
+        _directVal = _startBudget * (1.0f / Mathf.Pow(DirectBreakpoint, 1.0f / 3.0f)) * Mathf.Pow(args.directMap, 1.0f / 3.0f);
+        _futhureVal = Mathf.Lerp(1.0f / FuthureMulti, FuthureMulti, args.futhureMap);
+        _secondaryVal = _prevSecondaryVal + args.secondaryMap;
+        _ethicsVal = EthicsMulti * args.ethicsMap;
 
-        _currentBudget = _startBudget * (1.0f - args.budgetMultiplier);
+        _currentBudget = _startBudget * args.budgetMultiplier;
         _nextBudget = _currentBudget + _directVal * _prevFuthureVal;
 
         UpdateUI();

@@ -7,6 +7,7 @@ using System.IO;
 public class EvaluationSaver : MonoBehaviour
 {
     [SerializeField] private EvaluationLayer _evaluationLayer;
+    [SerializeField] private GameManager _gameManager;
     [SerializeField] private bool _loadOnStart = true;
     [SerializeField] private string _defaultFileName = "evaluation_data.json";
 
@@ -26,6 +27,7 @@ public class EvaluationSaver : MonoBehaviour
     {
         public OptionData[] Options;
         public int EasingType;
+        public float Multiplier;
     }
 
     [Serializable]
@@ -54,10 +56,10 @@ public class EvaluationSaver : MonoBehaviour
 
         EvaluationData data = new EvaluationData
         {
-            Direct = ExtractCategoryData(_evaluationLayer.DirectOptions, (int)_evaluationLayer.DirectEasing),
-            Future = ExtractCategoryData(_evaluationLayer.FuthureOptions, (int)_evaluationLayer.FuthureEasing),
-            Secondary = ExtractCategoryData(_evaluationLayer.SecondaryOptions, (int)_evaluationLayer.SecondaryEasing),
-            Ethics = ExtractCategoryData(_evaluationLayer.EthicsOptions, (int)_evaluationLayer.EthicsEasing)
+            Direct = ExtractCategoryData(_evaluationLayer.DirectOptions, (int)_evaluationLayer.DirectEasing, _gameManager.DirectBreakpoint),
+            Future = ExtractCategoryData(_evaluationLayer.FuthureOptions, (int)_evaluationLayer.FuthureEasing, _gameManager.FuthureMulti),
+            Secondary = ExtractCategoryData(_evaluationLayer.SecondaryOptions, (int)_evaluationLayer.SecondaryEasing, _gameManager.SecondaryContinue),
+            Ethics = ExtractCategoryData(_evaluationLayer.EthicsOptions, (int)_evaluationLayer.EthicsEasing, _gameManager.EthicsMulti)
         };
 
         string json = JsonUtility.ToJson(data, true);
@@ -70,12 +72,13 @@ public class EvaluationSaver : MonoBehaviour
         SaveToJson();
     }
 
-    private CategoryData ExtractCategoryData(EvaluationOption[] options, int easingType)
+    private CategoryData ExtractCategoryData(EvaluationOption[] options, int easingType, float multiplier)
     {
         CategoryData category = new CategoryData
         {
             Options = new OptionData[options.Length],
-            EasingType = easingType
+            EasingType = easingType,
+            Multiplier = multiplier,
         };
 
         for (int i = 0; i < options.Length; i++)
@@ -136,6 +139,11 @@ public class EvaluationSaver : MonoBehaviour
         _evaluationLayer.SecondaryEasing = (EasingType)data.Secondary.EasingType;
         _evaluationLayer.EthicsEasing = (EasingType)data.Ethics.EasingType;
 
+        _gameManager.DirectBreakpoint = data.Direct.Multiplier;
+        _gameManager.FuthureMulti = data.Future.Multiplier;
+        _gameManager.SecondaryContinue = data.Secondary.Multiplier;
+        _gameManager.EthicsMulti = data.Ethics.Multiplier;
+
         ApplyOptionData(_evaluationLayer.DirectOptions, data.Direct.Options);
         ApplyOptionData(_evaluationLayer.FuthureOptions, data.Future.Options);
         ApplyOptionData(_evaluationLayer.SecondaryOptions, data.Secondary.Options);
@@ -155,7 +163,7 @@ public class EvaluationSaver : MonoBehaviour
             string currentType = options[i].GetEvaluationType().ToString();
             if (currentType != optionData[i].Type)
             {
-                if (Enum.TryParse<EvaluationType>(optionData[i].Type, out EvaluationType type))
+                if (Enum.TryParse(optionData[i].Type, out EvaluationType type))
                 {
                     options[i] = EvaluationOption.CreateInstance(type);
                 }
