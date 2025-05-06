@@ -4115,6 +4115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _evaluationLayer: {fileID: 227950823}
+  _gameManager: {fileID: 2068882803}
   _loadOnStart: 1
   _defaultFileName: evaluation_data.json
 --- !u!114 &227950826

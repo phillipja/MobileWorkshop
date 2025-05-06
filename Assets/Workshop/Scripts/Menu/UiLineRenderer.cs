@@ -12,6 +12,7 @@ public class UiLineRenderer : Graphic
 
     private AspectRatioFitter _ratioFitter;
 
+#if UNITY_EDITOR
     protected override void OnValidate()
     {
         base.OnValidate();
@@ -26,6 +27,7 @@ public class UiLineRenderer : Graphic
         _ratioFitter.aspectMode = AspectRatioFitter.AspectMode.FitInParent;
         _ratioFitter.aspectRatio = 1;
     }
+#endif
 
     protected override void OnPopulateMesh(VertexHelper vh)
     {
