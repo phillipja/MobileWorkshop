@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Button _endRoundButton;
     [SerializeField] private GameObject _endScreen;
     [SerializeField] private TextMeshProUGUI _outro;
+    [SerializeField] private GameObject _endPanel;
     [SerializeField] private Button _continue;
     [SerializeField] private Button _restart;
 
@@ -97,6 +98,7 @@ public class GameManager : MonoBehaviour
 
                     _continue.gameObject.SetActive(false);
                     _restart.gameObject.SetActive(true);
+                    _endPanel.SetActive(true);
                 }
             }
         }
@@ -125,6 +127,7 @@ public class GameManager : MonoBehaviour
             bool continueGame = r < probability;
             _continue.gameObject.SetActive(continueGame);
             _restart.gameObject.SetActive(!continueGame);
+            _endPanel.SetActive(!continueGame);
         }
 
         PrepareRound();
@@ -156,6 +159,7 @@ public class GameManager : MonoBehaviour
         _ethicsVal = EthicsMulti * args.ethicsMap;
 
         _currentBudget = _startBudget * args.budgetMultiplier;
+        _currentBudget *= _currentBudget < 0 ? 2.0f : 1.0f;
         _nextBudget = _currentBudget + _directVal * _prevFuthureVal;
 
         UpdateUI();
